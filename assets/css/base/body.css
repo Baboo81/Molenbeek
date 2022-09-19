@@ -1,9 +1,10 @@
-/* Error: Undefined variable.
+/* Error: This file is already being loaded.
  *   ,
- * 7 |     font-family: $font-main;
- *   |                  ^^^^^^^^^^
+ * 6 | @import 'base/body.scss';
+ *   |         ^^^^^^^^^^^^^^^^
  *   '
- *   sass/base/body.scss 7:18  root stylesheet */
+ *   sass/main.scss 6:9       @import
+ *   sass/base/body.scss 1:9  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 7 \2502      font-family: $font-main;\a   \2502                   ^^^^^^^^^^\a   \2575 \a   sass/base/body.scss 7:18  root stylesheet";
+  content: "Error: This file is already being loaded.\a   \2577 \a 6 \2502  @import 'base/body.scss';\a   \2502          ^^^^^^^^^^^^^^^^\a   \2575 \a   sass/main.scss 6:9       @import\a   sass/base/body.scss 1:9  root stylesheet";
 }

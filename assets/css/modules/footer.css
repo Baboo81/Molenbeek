@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *   ,
- * 2 |     padding: $section-padding-std;
+ * 4 |     padding: $section-padding-std;
  *   |              ^^^^^^^^^^^^^^^^^^^^
  *   '
- *   sass/modules/footer.scss 2:14  root stylesheet */
+ *   sass/modules/footer.scss 4:14  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      padding: $section-padding-std;\a   \2502               ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass/modules/footer.scss 2:14  root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      padding: $section-padding-std;\a   \2502               ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass/modules/footer.scss 4:14  root stylesheet";
 }
