@@ -1,105 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-  
-  		<meta http-equiv="Content-Type"  content="text/html; charset=utf-8" />
-  		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  		<!-- jQuery -->
-  		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<head>
 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-		<!--Lien: Normalize, permet de supprimer le CSS pré-programmé-->
-		<link rel="stylesheet" href="./assets/css/normalize.css" />
-		<!--Lien: CSS-->
- 		<link rel="stylesheet" href="./assets/css/style.css" />
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<!--Lien : main.css : Rassemble toutes les feuilles de style scss, compilées en css. -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<!--Leaflet.js -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+		crossorigin="" />
 
-  		<!--Leaflet.js -->
-  		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
+	<!--Lien  trace itinéraire-->
 
-		
+</head>
 
-  		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-
-		<!--Lien  trace itinéraire-->
-
-
-	</head>
-
-	<body>
-
-		<header>
-
-		<img id="logo" src="./assets/img/logo2.svg" alt="image du logo">
-
-		</header>
-
-		<div>
-			<!--Itinéraire Chris-->
-			<div id = "card1">
+<body>
+	<header class="global-header">
+		<nav></nav>
+	</header>
+	<main>
+		<section id="title-section">
+			<h1>Molenbeek</h1>
+			<h2>en promenade</h2>
+			<div id="title-img">
+			</div>
+			<div class="text">
+				<p>Molenbeek est une des communes les plus passionnantes de Bruxelles.
+				</p>
+				<p>Autrefois centre industriel, Molenbeek est. Aujourd’hui un quartier diversifié et de plus en plus durable.
+				</p>
+				<p>Choisissez entre trois itinéraires différents qui vous emmèneront à travers l’histoire de Molenbeek, ses beaux parcs et sa communauté maritime.
+				</p>
+				<button>les itinéraires</button>
+			</div>
+		</section>
+	</main>
+	<div>
+		<!--Itinéraire Chris-->
+		<div id="card1">
 
 			<h3>Itinéraire 1:</h3>
 
-			<img  src = ""  alt = "">
+			<img src="" alt="">
 
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-		   	Ea voluptatem quia temporibus tempore ex, officia laborum. 
-		   	Consectetur, tempore nisi error repellendus quos id esse modi 
-		  	aliquid, voluptatem qui illo odit fugit. Obcaecati animi amet 
-		  	sequi aspernatur. Asperiores hic ad, error incidunt tempora 
-		    consequuntur reiciendis a ullam! Ab alias eligendi debitis?</p>
-			</div>
-			<a href = "itinéraire1.html">Page itinéraire 1 :</a>
-
-
-
-
-			<!--Itinéraire Ellie-->
-			<div id = "card2">
-
-			<h3>Itinéraire 1:</h3>
-
-			<img  src = ""  alt = "">
-
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-		   	Ea voluptatem quia temporibus tempore ex, officia laborum. 
-		   	Consectetur, tempore nisi error repellendus quos id esse modi 
-		   	aliquid, voluptatem qui illo odit fugit. Obcaecati animi amet 
-		   	sequi aspernatur. Asperiores hic ad, error incidunt tempora 
-		   	consequuntur reiciendis a ullam! Ab alias eligendi debitis?</p>
-			</div>
-			<a href= "itinéraire2.html">Page itinéraire 2 :</a>
-
-
-
-
-			<!--Itinéraire Vicky-->
-			<div id = "card3">
-
-			<h3>Itinéraire 1:</h3>
-
-			<img  src = ""  alt = "">
-
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-		   	Ea voluptatem quia temporibus tempore ex, officia laborum. 
-		   	Consectetur, tempore nisi error repellendus quos id esse modi 
-		  	aliquid, voluptatem qui illo odit fugit. Obcaecati animi amet 
-		   	sequi aspernatur. Asperiores hic ad, error incidunt tempora 
-		   	consequuntur reiciendis a ullam! Ab alias eligendi debitis?</p>
-			</div>
-			<a href= "itinéraire2.html">Page itinéraire 2 :</a>
-
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+				Ea voluptatem quia temporibus tempore ex, officia laborum.
+				Consectetur, tempore nisi error repellendus quos id esse modi
+				aliquid, voluptatem qui illo odit fugit. Obcaecati animi amet
+				sequi aspernatur. Asperiores hic ad, error incidunt tempora
+				consequuntur reiciendis a ullam! Ab alias eligendi debitis?</p>
 		</div>
-
-		
-
-		<footer>
+		<a href="itinéraire1.html">Page itinéraire 1 :</a>
 
 
 
 
-    
-		</footer>
-		
-	</body>
+		<!--Itinéraire Ellie-->
+		<div id="card2">
+
+			<h3>Itinéraire 1:</h3>
+
+			<img src="" alt="">
+
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+				Ea voluptatem quia temporibus tempore ex, officia laborum.
+				Consectetur, tempore nisi error repellendus quos id esse modi
+				aliquid, voluptatem qui illo odit fugit. Obcaecati animi amet
+				sequi aspernatur. Asperiores hic ad, error incidunt tempora
+				consequuntur reiciendis a ullam! Ab alias eligendi debitis?</p>
+		</div>
+		<a href="itinéraire2.html">Page itinéraire 2 :</a>
+
+
+
+
+		<!--Itinéraire Vicky-->
+		<div id="card3">
+
+			<h3>Itinéraire 1:</h3>
+
+			<img src="" alt="">
+
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+				Ea voluptatem quia temporibus tempore ex, officia laborum.
+				Consectetur, tempore nisi error repellendus quos id esse modi
+				aliquid, voluptatem qui illo odit fugit. Obcaecati animi amet
+				sequi aspernatur. Asperiores hic ad, error incidunt tempora
+				consequuntur reiciendis a ullam! Ab alias eligendi debitis?</p>
+		</div>
+		<a href="itinéraire2.html">Page itinéraire 2 :</a>
+
+	</div>
+
+
+
+	<footer>
+
+
+
+
+
+	</footer>
+</body>
+
 </html>
