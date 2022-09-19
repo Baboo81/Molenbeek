@@ -1,0 +1,6 @@
+node_modules/
+tmp/
+debug/
+docs/techDoc/
+tests/
+TravelNotes.code-workspace

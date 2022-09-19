@@ -1,0 +1,183 @@
+/*
+Copyright - 2017 2022 - wwwouaiebe - Contact: https://www.ouaie.be/
+
+This  program is free software;
+you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation;
+either version 3 of the License, or any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+/*
+--- Roadbook.css file -------------------------------------------------------------------------------------------------
+
+This file contains:
+	- the css for the Roadbook
+Changes:
+	- v1.12.0:
+		- Issue #120 : Review the UserInterface
+	- v2.0.0:
+		- Issue #138 : Protect the app - control html entries done by user.
+	- v3.4.0:
+		- Issue ♯22 : Nice to have a table view for notes in the roadbook
+		- Issue ♯25 : Add a print button to the roadbook page
+-----------------------------------------------------------------------------------------------------------------------
+*/
+
+/*
+Menu on top of screen and always there
+*/
+
+#TravelNotes-Roadbook-Menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: white;
+	z-index: 200;
+}
+
+.TravelNotes-RoadbookButton {
+	display: inline;
+	width: 2em;
+	border: 0.1em solid white;
+	padding: 0.5em;
+}
+
+.TravelNotes-RoadbookButton:hover {
+	border: 0.1em solid black;
+}
+
+/*
+Arrow in the menu
+*/
+
+#TravelNotes-Roadbook-GoTop > a {
+	color: black;
+	text-decoration: none;
+}
+
+.TravelNotes-Roadbook-Travel-Notes,
+.TravelNotes-Roadbook-Route-ManeuversAndNotes {
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+@media screen and (max-width: 320px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	#TravelNotes-Roadbook-Menu {
+		position: static;
+	}
+
+	.TravelNotes-Roadbook-Travel {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.TravelNotes-Roadbook-NoteHtml-Url {
+		overflow: hidden;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 1023px) {
+	.TravelNotes-Roadbook-Travel {
+		padding-top: 4em;
+	}
+
+	#TravelNotes-Roadbook-Menu {
+		padding: 0.5em;
+		border-style: solid;
+		border-width: 1px;
+		margin-left: 0.5em;
+	}
+
+	#TravelNotes-Roadbook-Menu > div {
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-resolution: 200dpi),
+	screen and (min-width: 1600px) and (min-resolution: 200dpi),
+	print {
+	#TravelNotes-ButtonsDiv {
+		margin-top: 1em;
+	}
+
+	.TravelNotes-Roadbook-Travel {
+		width: 19.2cm;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.TravelNotes-BigNotes .TravelNotes-Roadbook-Travel-Notes-Row,
+	.TravelNotes-BigNotes .TravelNotes-Roadbook-Route-Maneuvers-Row,
+	.TravelNotes-BigNotes .TravelNotes-Roadbook-Route-Notes-Row {
+		border-bottom-style: solid;
+		border-bottom-width: 0.1em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.TravelNotes-BigNotes .TravelNotes-Roadbook-Travel-Notes-IconCell,
+	.TravelNotes-BigNotes .TravelNotes-Roadbook-Route-ManeuversAndNotes-IconCell {
+		background-repeat: no-repeat;
+		vertical-align: top;
+		flex-shrink: 0;
+	}
+
+	.TravelNotes-BigNotes .TravelNotes-Roadbook-Travel-Notes-Cell,
+	.TravelNotes-BigNotes .TravelNotes-Roadbook-Route-ManeuversAndNotes-Cell {
+		padding-left: 0.5em;
+		flex-shrink: 2;
+	}
+
+	.TravelNotes-SmallNotes .TravelNotes-Roadbook-Route-ManeuversAndNotes-IconCell {
+		border-style: solid;
+		border-color: black;
+		border-width: 0.1em;
+	}
+
+	.TravelNotes-SmallNotes .TravelNotes-SvgIcon {
+		border-style: none;
+	}
+
+	.TravelNotes-SmallNotes .TravelNotes-Roadbook-Route-ManeuversAndNotes {
+		display: grid;
+		grid-template-columns: repeat(3, 6.4cm);
+	}
+}
+
+@media print {
+	#TravelNotes-Roadbook-Menu {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+		margin: 0;
+		padding: 0;
+		border-width: 0;
+		border-style: none;
+	}
+
+	.TravelNotes-Roadbook-Route-Header {
+		break-before: page;
+	}
+
+	.TravelNotes-Roadbook-Travel-Notes-Row,
+	.TravelNotes-Roadbook-Route-Maneuvers-Row,
+	.TravelNotes-Roadbook-Route-Notes-Row {
+		break-inside: avoid-page;
+	}
+}
