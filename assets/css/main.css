@@ -377,10 +377,46 @@ th {
 }
 body {
   background-color: #FFFFFF;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
   color: #033333;
+}
+
+h1 {
+  font-size: 55px;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 10px 0;
+  font-family: "Shadows Into Light", cursive;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#intro {
+  padding: 0 30px;
+}
+
+footer {
+  padding: 0 30px;
+}
+footer ul a:link, footer ul a:visited {
+  color: #033333;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
