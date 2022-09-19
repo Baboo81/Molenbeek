@@ -1,0 +1,9 @@
+footer {
+    padding: $section-padding-std;
+    ul{
+        a:link, a:visited {
+            color: $text;
+            text-decoration: none;
+        }
+    }
+}
