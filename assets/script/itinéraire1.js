@@ -16,7 +16,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 textMarker1 = `
 <b>Parc du Karreveld</b>
 <br>
-<img src=./Molenbeek/assets/img/itinéraire1/karreveld.JPG" alt="parc du Karreveld" />
+<img src=./assets/img/itinéraire1/karreveld.JPG" alt="parc du Karreveld" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -29,7 +29,7 @@ const marker1 = L.marker([50.859619, 4.316703]) // Génération du marqueur
 textMarker2 = `
 <b>Cimetière de Molenbeek</b>
 <br>
-<img src="./Molenbeek/assets/img/itinéraire1/cimetiere.JPG" alt="cimetière de Molenbeek" />
+<img src="./assets/img/itinéraire1/cimetiere.JPG" alt="cimetière de Molenbeek" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -41,7 +41,7 @@ const marker2 = L.marker([50.859936, 4.310880]).addTo(map)
 textMarker3 = ` 
 <b>Quartier Diongre</b>
 <br>
-<img src="./Molenbeek/assets/img/itinéraire1/quartierDiongre.JPG" alt="maison du quartier Diongre" />
+<img src="./assets/img/itinéraire1/quartierDiongre.JPG" alt="maison du quartier Diongre" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -54,7 +54,7 @@ const marker3 = L.marker([50.857926, 4.308880]).addTo(map)
 textMarker4 = `
 <b>Stade Edmond Machtens</b>
 <br>
-<img src="./Molenbeek/assets/img/itinéraire1/stade.jpeg" alt="stade de Molenbeek" />
+<img src="./assets/img/itinéraire1/stade.jpeg" alt="stade de Molenbeek" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -66,7 +66,7 @@ const marker4 = L.marker([50.855942, 4.311382]).addTo(map)
 textMarker5 = `
 <b>Parc des muses</b>
 <br>
-<img src="./Molenbeek/assets/img/itinéraire1/parcDesMuses.JPG" alt="parc des muses" />
+<img src="./assets/img/itinéraire1/parcDesMuses.JPG" alt="parc des muses" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -78,7 +78,7 @@ const marker5 = L.marker([50.854320, 4.316353]).addTo(map)
 textMarker6 = `
 <b>Parc Albert & Marie-José</b>
 <br>
-<img src="./Molenbeek/assets/img/itinéraire1/parcAlbert&MJ.JPG" alt="parc Albert et Marie-José" />
+<img src="./assets/img/itinéraire1/parcAlbert&MJ.JPG" alt="parc Albert et Marie-José" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -90,7 +90,7 @@ const marker6 = L.marker([50.851194, 4.313364]).addTo(map)
 textMarker7 = `
 <b>Parc du Scheutbos</b>
 <br>
-<img src="./Molenbeek/assets/img/itinéraire1/parcScheutbos.JPG" alt="parc du Scheutbos" />
+<img src="./assets/img/itinéraire1/parcScheutbos.JPG" alt="parc du Scheutbos" />
 <br>
 Niveau de difficulté : facile
 <br>
