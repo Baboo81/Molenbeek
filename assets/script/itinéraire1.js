@@ -16,7 +16,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 textMarker1 = `
 <b>Parc du Karreveld</b>
 <br>
-<img src=./assets/img/itinéraire1/karreveld.JPG" alt="parc du Karreveld" />
+<img src="./assets/img/itinéraire1/karreveld.JPG" alt="parc du Karreveld" />
 <br>
 Niveau de difficulté : facile
 <br>
