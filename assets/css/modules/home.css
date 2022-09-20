@@ -1,17 +1,40 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |     padding: $section-padding-std;
- *   |              ^^^^^^^^^^^^^^^^^^^^
- *   '
- *   sass/modules/home.scss 4:14  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      padding: $section-padding-std;\a   \2502               ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass/modules/home.scss 4:14  root stylesheet";
+.btn {
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  min-width: 100px;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
 }
+
+.btn-dark {
+  background: #033333;
+  color: white;
+}
+.btn-dark:hover {
+  background: #055a5a;
+  transition: all 0.3s ease;
+}
+.btn-dark:active {
+  background: #0aabab;
+}
+
+.btn-light {
+  background: white;
+  color: #033333;
+}
+.btn-light:hover {
+  background: #ebebeb;
+  transition: all 0.3s ease;
+}
+.btn-light:active {
+  background: #bfbfbf;
+}
+
+#intro {
+  padding: 30px 40px;
+}
+
+/*# sourceMappingURL=home.css.map */

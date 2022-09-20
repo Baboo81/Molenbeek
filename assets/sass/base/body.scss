@@ -1,4 +1,4 @@
-@import '../main.scss';
+@import '../base/var.scss';
 
 body {
     background-color: $bg1;
@@ -11,7 +11,8 @@ body {
 h1 {
     font-size: 55px;
     line-height: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
 }
 
 h2 {
@@ -31,6 +32,7 @@ ul {
     list-style-type: none;
     padding: 0;
 }
+
 
 
 

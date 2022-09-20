@@ -1,18 +1,69 @@
-/* Error: This file is already being loaded.
- *   ,
- * 6 | @import 'base/body.scss';
- *   |         ^^^^^^^^^^^^^^^^
- *   '
- *   sass/main.scss 6:9       @import
- *   sass/base/body.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: This file is already being loaded.\a   \2577 \a 6 \2502  @import 'base/body.scss';\a   \2502          ^^^^^^^^^^^^^^^^\a   \2575 \a   sass/main.scss 6:9       @import\a   sass/base/body.scss 1:9  root stylesheet";
+.btn {
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  min-width: 100px;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
 }
+
+.btn-dark {
+  background: #033333;
+  color: white;
+}
+.btn-dark:hover {
+  background: #055a5a;
+  transition: all 0.3s ease;
+}
+.btn-dark:active {
+  background: #0aabab;
+}
+
+.btn-light {
+  background: white;
+  color: #033333;
+}
+.btn-light:hover {
+  background: #ebebeb;
+  transition: all 0.3s ease;
+}
+.btn-light:active {
+  background: #bfbfbf;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  color: #033333;
+}
+
+h1 {
+  font-size: 55px;
+  line-height: 45px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 10px 0;
+  font-family: "Shadows Into Light", cursive;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/*# sourceMappingURL=body.css.map */

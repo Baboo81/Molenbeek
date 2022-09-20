@@ -33,12 +33,4 @@
   background: #bfbfbf;
 }
 
-footer {
-  padding: 30px 40px;
-}
-footer ul a:link, footer ul a:visited {
-  color: #033333;
-  text-decoration: none;
-}
-
-/*# sourceMappingURL=footer.css.map */
+/*# sourceMappingURL=var.css.map */

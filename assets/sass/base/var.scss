@@ -1,0 +1,71 @@
+// Couleurs
+$bg1: #FFFFFF;
+$bg2: #BBE8EF;
+$bg3: #669999;
+$text: #033333;
+$grey: #707070;
+$route1: #003366;
+$route2: #006600;
+$route3: #A64253;
+
+// Polices
+// @use '../base/fonts.scss';
+$font-main: 'Poppins', sans-serif;
+$font-titles: 'Shadows Into Light', cursive;
+
+// Mise en page
+$padding-section: 30px 40px;
+$padding-0: 0;
+
+// Boutons
+@mixin button-bg-darken($bg) {
+    background: $bg;
+
+    &:hover {
+        background: darken($bg, 8%);
+        transition: all 0.3s ease;
+    }
+
+    &:active {
+        background: darken($bg, 25%);
+    }
+}
+
+@mixin button-bg-lighten($bg) {
+    background: $bg;
+
+    &:hover {
+        background: lighten($bg, 8%);
+        transition: all 0.3s ease;
+    }
+
+    &:active {
+        background: lighten($bg, 25%);
+    }
+}
+
+@mixin button-color($cl) {
+    color: $cl;
+}
+
+.btn 
+{
+    text-decoration: none;
+    border: none;
+    padding: 12px 25px;
+    min-width: 100px;
+    border-radius: 25px;
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-dark {
+    @include button-bg-lighten($text);
+    @include button-color(white);
+ }
+
+.btn-light {
+    @include button-bg-darken(white);
+    @include button-color($text);
+}
