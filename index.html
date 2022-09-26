@@ -19,6 +19,7 @@
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
 		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
 		crossorigin=""></script>
+	<script src="assets/script/header.js"></script>
 	<!--Lien  trace itinéraire-->
 
 </head>
@@ -40,7 +41,10 @@
 					<div class="menu-items right">
 						<ul>
 							<li><a href="#">Les Itinéraires</a>
-								<ul>
+								<div id="checkbox-wrapper"><input class="checkbox" type="checkbox" name="" id="checkbox-menu" />
+								</div>
+								<div class="arrow"><img src="./assets/img/icons/arrow-white-2.svg" alt="flèche" id="menu-arrow"></div>
+								<ul id="submenu">
 									<li><a href="#">Molenbeek Maritime</a></li>
 									<li><a href="#">Molenbeek en Vélo</a></li>
 									<li><a href="#">Molenbeek Historique</a></li>
@@ -75,7 +79,7 @@
 				</p>
 			</div>
 			<button class="btn btn-dark">les itinéraires</button>
-			<button class="btn btn-light">les itinéraires</button>
+			<!-- <button class="btn btn-light">les itinéraires</button> -->
 		</section>
 		<section id="cards">
 			<div id="carousel">

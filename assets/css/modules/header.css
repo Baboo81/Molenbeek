@@ -40,21 +40,20 @@
   background: #669999;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 62px;
-}
-
 .navbar {
   width: 100%;
 }
 .navbar .menu-items {
   display: flex;
 }
+.navbar ul li {
+  display: flex;
+}
 .navbar ul a {
   text-transform: uppercase;
+}
+.navbar ul img {
+  transform: rotate(180deg);
 }
 .navbar ul a:link,
 .navbar ul a:visited {
@@ -66,6 +65,28 @@
 }
 .navbar ul a:active {
   font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+#checkbox-wrapper {
+  width: 40px;
+  height: 40px;
+}
+
+#checkbox-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+}
+
+#checkbox-menu {
+  position: relative;
+  z-index: 2;
 }
 
 .nav-container {
@@ -122,15 +143,21 @@
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
-  margin-left: -40px;
-  padding-left: 50px;
   transition: transform 1s ease-in-out;
-  text-align: center;
+  text-align: left;
+}
+.nav-container .menu-items ul {
+  display: flex;
+  flex-direction: column;
 }
 .nav-container .menu-items li {
-  margin-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 50px;
   font-size: 1.5rem;
   font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .logo {
