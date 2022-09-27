@@ -517,6 +517,10 @@ img {
   background: #bfbfbf;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .container {
   max-width: 1050px;
   width: 100%;
@@ -549,10 +553,6 @@ img {
 }
 .navbar ul a:active {
   font-weight: 600;
-}
-
-.hidden {
-  display: none;
 }
 
 #checkbox-wrapper {
@@ -635,8 +635,7 @@ img {
   flex-direction: column;
 }
 .nav-container .menu-items li {
-  padding-bottom: 1.2rem;
-  padding-left: 50px;
+  padding-left: 40px;
   font-size: 1.5rem;
   font-weight: 500;
   display: flex;
@@ -651,18 +650,23 @@ img {
   font-size: 1.2rem;
   color: #0e2431;
 }
+.logo img {
+  width: 120px;
+}
 
 .nav-container input[type=checkbox]:checked ~ .menu-items {
   transform: translateX(0);
 }
 .nav-container input[type=checkbox]:checked ~ .hamburger-lines .line1 {
-  transform: rotate(45deg);
+  transform: translateY(11px) scaleX(1.4) rotate(55deg);
+  transition: transform 300ms ease-out;
 }
 .nav-container input[type=checkbox]:checked ~ .hamburger-lines .line2 {
   transform: scaleY(0);
 }
 .nav-container input[type=checkbox]:checked ~ .hamburger-lines .line3 {
-  transform: rotate(-45deg);
+  transform: translateY(-11px) scaleX(1.4) rotate(-55deg);
+  transition: transform 300ms ease-out;
 }
 .nav-container input[type=checkbox]:checked ~ .logo {
   display: none;

@@ -1,8 +1,8 @@
 @import '../base/var.scss';
-.hidden
-{
-    display: none !important;
-}
+// .hidden
+// {
+//     display: none !important;
+// }
 
 .container {
     max-width: 1050px;
@@ -22,6 +22,7 @@
 
         li {
             display: flex;
+            flex-wrap: wrap;
         }
 
         a {
@@ -29,7 +30,7 @@
         }
 
         img {
-            transform: rotate(180deg);
+            transform: rotate(270deg);
         }
 
         a:link,
@@ -143,6 +144,8 @@
             flex-direction: row;
             align-items: center;
         }
+
+
 
     }
 }
