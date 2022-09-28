@@ -61,7 +61,6 @@
   color: white;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1;
   padding: 0.7rem;
 }
 .navbar ul a:active {
@@ -143,17 +142,30 @@
   transition: transform 1s ease-in-out;
   text-align: left;
 }
-.nav-container .menu-items ul {
+.nav-container .menu-items ul.main-menu {
   display: flex;
   flex-direction: column;
+  padding-left: 40px;
 }
 .nav-container .menu-items li {
-  padding-left: 40px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.nav-container .menu-items li .submenu li::before {
+  content: "";
+  background-image: url("/assets/img/icons/arrow-white-1.svg");
+  background-size: 30px 30px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+}
+.nav-container .menu-items li .submenu a {
+  text-transform: none;
+  font-size: 1.2rem;
 }
 
 .logo {
