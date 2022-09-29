@@ -33,6 +33,18 @@
   background: #bfbfbf;
 }
 
+.hidden {
+  height: 0;
+  overflow: hidden;
+  margin: 0px !important;
+}
+
+.active {
+  background: #94b8b8;
+  color: #033333 !important;
+  font-weight: 600;
+}
+
 .container {
   max-width: 1050px;
   width: 100%;
@@ -50,8 +62,16 @@
   display: flex;
   flex-wrap: wrap;
 }
+.navbar ul #first-child {
+  justify-content: space-between !important;
+}
 .navbar ul a {
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 5px;
 }
 .navbar ul img {
   transform: rotate(270deg);
@@ -60,24 +80,29 @@
 .navbar ul a:visited {
   color: white;
   text-decoration: none;
-  font-weight: 500;
-  padding: 0.7rem;
+  padding: 13px 20px;
 }
 .navbar ul a:active {
   font-weight: 600;
+  color: #033333;
+  background: #94b8b8;
+}
+.navbar ul a:active #dropdown-arrow {
+  background-image: url(/assets/img/icons/arrow-green.svg) !important;
 }
 
-#checkbox-wrapper {
-  width: 40px;
-  height: 40px;
+#dropdown-arrow {
+  width: 15px;
+  height: 20px;
+  background-image: url(/assets/img/icons/arrow-white.svg);
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  display: flex;
 }
 
-#checkbox-wrapper::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  z-index: 1;
+.rotate {
+  transform: rotate(270deg) !important;
+  background-image: url(/assets/img/icons/arrow-green.svg) !important;
 }
 
 #checkbox-menu {
@@ -133,7 +158,6 @@
 }
 .nav-container .menu-items {
   padding-top: 120px;
-  padding-left: 40px;
   height: 100vh;
   width: 100%;
   background: #669999;
@@ -141,12 +165,12 @@
   display: flex;
   flex-direction: column;
   transition: transform 1s ease-in-out;
-  text-align: left;
+  align-items: center;
 }
 .nav-container .menu-items ul.main-menu {
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
+  width: 80%;
 }
 .nav-container .menu-items li {
   font-size: 1.4rem;
@@ -154,19 +178,35 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-radius: 5px;
 }
-.nav-container .menu-items li .submenu li::before {
-  content: "";
+.nav-container .menu-items li .submenu {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.nav-container .menu-items li .submenu li {
+  width: 100%;
+}
+.nav-container .menu-items li .submenu .bullet {
   background-image: url("/assets/img/icons/moulin-shape-white.svg");
-  background-size: 30px 30px;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  z-index: 1;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
 }
 .nav-container .menu-items li .submenu a {
   text-transform: none;
   font-size: 1.2rem;
+}
+.nav-container .menu-items li .submenu a:link,
+.nav-container .menu-items li .submenu a:visited {
+  padding: 10px, 20px;
+}
+.nav-container .menu-items li .submenu a:active {
+  font-weight: 600;
+}
+.nav-container .menu-items li .submenu a:active .bullet {
+  background-image: url("/assets/img/icons/moulin-shape.svg");
 }
 
 .logo {
@@ -193,9 +233,6 @@
 .nav-container input[type=checkbox]:checked ~ .hamburger-lines .line3 {
   transform: translateY(-11px) scaleX(1.4) rotate(-55deg);
   transition: transform 300ms ease-out;
-}
-.nav-container input[type=checkbox]:checked ~ .logo {
-  display: none;
 }
 
 /*# sourceMappingURL=header-1.css.map */

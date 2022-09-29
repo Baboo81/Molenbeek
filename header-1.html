@@ -20,7 +20,7 @@
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
 		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
 		crossorigin=""></script>
-	<script src="assets/script/header.js"></script>
+	<script src="assets/script/header.js" defer></script>
 	<!--Lien  trace itinéraire-->
 
 </head>
@@ -41,16 +41,23 @@
 					</div>
 					<div class="menu-items right">
 						<ul class="main-menu">
-							<li><a href="#">Les Itinéraires</a>
-								<div id="checkbox-wrapper"><input class="checkbox" type="checkbox" name="" id="checkbox-menu" />
-								</div>
-								<div class="arrow"><img src="./assets/img/icons/arrow-white-2.svg" alt="flèche" id="menu-arrow"></div>
-								<ul class="submenu">
-									<li><a href="#">Molenbeek Maritime</a></li>
-									<li><a href="#">Molenbeek en Vélo</a></li>
-									<li><a href="#">Molenbeek Historique</a></li>
+							<li><a id="first-child" href="#">Les Itinéraires<div id="dropdown-arrow">
+						</div>
+						</a>
+								
+								<ul class="submenu hidden">
+									<li><a href="#">
+											<div class="bullet"></div>Molenbeek Maritime
+										</a></li>
+									<li><a href="#">
+											<div class="bullet"></div>Molenbeek en Vélo
+										</a></li>
+									<li><a href="#">
+											<div class="bullet"></div>Molenbeek Historique
+										</a></li>
 								</ul>
 							</li>
+
 							<li><a href="#">Contact</a></li>
 							<li><a href="#">Le Projet</a></li>
 						</ul>
@@ -59,7 +66,7 @@
 			</div>
 		</nav>
 	</header>
-	
+
 </body>
 
 </html>
