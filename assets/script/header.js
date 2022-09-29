@@ -13,7 +13,6 @@ burger.addEventListener("click", () => {
     burger.classList.toggle("checked"); 
 });
 
-
 dropdown.addEventListener("click", () => {
     submenu.classList.toggle("hidden");
     dropdownArrow.classList.toggle("rotate");

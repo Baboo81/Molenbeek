@@ -227,6 +227,7 @@ th {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  display: flex;
 }
 
 .btn-dark {
@@ -419,6 +420,7 @@ th {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  display: flex;
 }
 
 .btn-dark {
@@ -454,9 +456,9 @@ body {
 }
 
 h1 {
-  font-size: 55px;
+  font-size: 52px;
   line-height: 45px;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
   font-weight: 500;
 }
 
@@ -469,7 +471,7 @@ h2 {
 h3 {
   font-size: 30px;
   line-height: 1.5;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
   font-family: "Shadows Into Light", cursive;
 }
 
@@ -482,6 +484,22 @@ img {
   min-width: 100%;
 }
 
+div {
+  display: flex;
+}
+
+#intro {
+  padding: 30px 40px;
+}
+#intro #intro-title, #intro #intro-text {
+  flex-wrap: wrap;
+}
+
+.btn-wrapper {
+  justify-content: center;
+  padding: 20px 0;
+}
+
 .btn {
   text-decoration: none;
   border: none;
@@ -491,6 +509,7 @@ img {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  display: flex;
 }
 
 .btn-dark {
@@ -717,6 +736,7 @@ img {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  display: flex;
 }
 
 .btn-dark {
@@ -749,45 +769,6 @@ footer {
 footer ul a:link, footer ul a:visited {
   color: #033333;
   text-decoration: none;
-}
-
-.btn {
-  text-decoration: none;
-  border: none;
-  padding: 12px 25px;
-  min-width: 100px;
-  border-radius: 25px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.btn-dark {
-  background: #033333;
-  color: white;
-}
-.btn-dark:hover {
-  background: #055a5a;
-  transition: all 0.3s ease;
-}
-.btn-dark:active {
-  background: #0aabab;
-}
-
-.btn-light {
-  background: white;
-  color: #033333;
-}
-.btn-light:hover {
-  background: #ebebeb;
-  transition: all 0.3s ease;
-}
-.btn-light:active {
-  background: #bfbfbf;
-}
-
-#intro {
-  padding: 30px 40px;
 }
 
 /*# sourceMappingURL=main.css.map */
