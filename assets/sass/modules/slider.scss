@@ -13,19 +13,21 @@
 }
 
 .slide {
-    width: 100%;
-    max-width: 800px;
+    width: 100vw;
     height: 640px;
     position: absolute;
     transition: all 0.5s;
+    justify-content: center;
   }
+
 .card-item {
 	overflow: hidden;
 	margin: 20px 10px 20px 10px;
 	border-radius: 10px;
 	width: 80vw;
 	flex-wrap: wrap;
-	flex-direction: rowcv;
+	flex-direction: row;
+
 	.thumb {
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
