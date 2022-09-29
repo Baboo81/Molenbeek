@@ -11,7 +11,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
 }).addTo(map);
 
-//Ajout de POI:
+//Ajout de POI:bonjour baboo
 
 textMarker1 = `
 <b>Parc du Karreveld</b>
