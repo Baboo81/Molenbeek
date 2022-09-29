@@ -11,7 +11,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
 }).addTo(map);
 
-//Ajout de POI:
+//Ajout de POI:bonjour baboo
 
 textMarker1 = `
 <b>Parc du Karreveld</b>
@@ -98,4 +98,17 @@ Distance : 7.5km<br>Dénivelé : nulle    `
 const marker7 = L.marker([50.851597, 4.300140]).addTo(map)
     .addTo(map)
     .bindPopup(textMarker7);
+
+//Trace itinéraire:
+var latLng = [
+    [50.859619, 4.316703],
+    [50.859936, 4.310880],
+    [50.857926, 4.308880],
+    [50.855942, 4.311382],
+    [50.854320, 4.316353],
+    [50.851194, 4.313364],
+    [50.851597, 4.300140]
+];
+
+var polyline = L.polyline(latLng, {color: 'red'}).addTo(map);
 
