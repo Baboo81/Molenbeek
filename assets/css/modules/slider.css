@@ -38,15 +38,16 @@
 .cards-wrapper {
   height: 100vh;
   background-color: #FFFFFF;
-  display: grid;
-  place-items: center;
 }
 
 .slider {
   width: 100%;
   max-width: 800px;
-  height: 640px;
+  height: 660px;
   position: relative;
+  background: #BBE8EF;
+  display: grid;
+  place-items: center;
 }
 
 .slide {
@@ -119,29 +120,24 @@
 }
 
 .arrow {
+  height: 100%;
   position: absolute;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  border: none;
-  border-radius: 50%;
-  z-index: 10px;
-  cursor: pointer;
-  background-color: #BBE8EF;
-  font-size: 18px;
+  align-items: center;
 }
 .arrow:active {
   transform: scale(1.1);
 }
 
 .arrow-prev {
-  top: 45%;
-  left: 2%;
+  left: 0;
+  padding: 0 2vw 0 1vw;
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .arrow-next {
-  top: 45%;
-  right: 2%;
+  right: 0;
+  padding: 0 1vw 0 2vw;
+  background: linear-gradient(to left, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 /*# sourceMappingURL=slider.css.map */

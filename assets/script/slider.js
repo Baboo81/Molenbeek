@@ -15,13 +15,23 @@ slides.forEach( ( slide, index ) =>
 // select next slide arrow
 const nextSlide = document.querySelector( ".arrow-next" );
 
-console.log( nextSlide );
+const arrowNext = document.querySelector( ".arrow-next svg" );
+
+const arrowPrev = document.querySelector( ".arrow-prev svg" );
+
+
 
 // current slide counter
 let curSlide = 0;
 // maximum number of slides
 let maxSlide = slides.length - 1;
 
+let midSlide = slides.length - 2;
+
+//TODO Sort out arrows so they fade on first/last slide
+//TODO Bring if/else statement out of event listener? Into function of its own (that is called when page is in view?)?
+
+//TODO Make slide 2 appear at right edge to give impression of carousel
 // add event listener to next button
 nextSlide.addEventListener( "click", function ()
 {
@@ -30,15 +40,59 @@ nextSlide.addEventListener( "click", function ()
     if ( curSlide === maxSlide )
     {
         curSlide = 0;
+
         // if not, go to next slide
     } else
     {
         curSlide++;
     }
 
-//   move slide by -100%
-slides.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-  });
-});
+    //   move slide by -100%
+    slides.forEach( ( slide, indx ) =>
+    {
+        slide.style.transform = `translateX(${ 100 * ( indx - curSlide ) }%)`;
+    } );
 
+    if ( curSlide === maxSlide )
+    {
+        arrowNext.style.opacity = `0.2`;
+    }
+    else
+    {
+        arrowNext.style.opacity = `1`;
+    }
+} );
+
+// select prev slide button
+const prevSlide = document.querySelector( ".arrow-prev" );
+
+// add event listener and navigation functionality
+prevSlide.addEventListener( "click", function ()
+{
+    // check if current slide is the first
+    // if so, set previous to last slide
+    if ( curSlide === 0 )
+    {
+        curSlide = maxSlide;
+
+        // if not, go to previous slide
+    } else
+    {
+        curSlide--;
+    }
+
+    //   move slide by 100%
+    slides.forEach( ( slide, index ) =>
+    {
+        slide.style.transform = `translateX(${ 100 * ( index - curSlide ) }%)`;
+    } );
+    if ( curSlide === 0 )
+    {
+        arrowPrev.style.opacity = `0.2`;
+    }
+    else
+    {
+        arrowPrev.style.opacity = `1`;
+    }
+
+} );
