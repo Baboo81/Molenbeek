@@ -1,11 +1,11 @@
 # Comte de Flandre (Station de métro)
 Rue Sainte-Marie 1-6, 1080 Molenbeek-Saint-Jean
 50.85538037305153, 4.339400499483728
-
+#####
 # Administration communale de Molenbeek-Saint-Jean
 50.85533107240288, 4.3386152723646605
 Rue du Comte de Flandre 20, 1080 Molenbeek-Saint-Jean
-
+###
 # La flamme de l’espoir
 50.854828, 4.338677
 Place Communale, 1080 Molenbeek-Saint-Jean
