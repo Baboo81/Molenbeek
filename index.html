@@ -1,59 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  		<!-- jQuery -->
-  		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-
-		<!--Lien: Normalize, permet de supprimer le CSS pré-programmé-->
-		<link rel="stylesheet" href="./assets/css/normalize.css" />
-		<!--Lien: CSS-->
- 		<link rel="stylesheet" href="./assets/css/style-1.css" />
-
-  		<!--Leaflet.js -->
-  		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-
-		
-
-  		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-
-		<!--Lien  trace itinéraire-->
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-		<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
-		<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-		<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
-
-
-	</head>
-
-	<body>
-
-		<header>
-
-		<img id="logo" src="" alt="image du logo">
-
-		</header>
-
-		<div>
-			<!--Itinéraire Chris-->
-			<div id = "card1">
-
-			<h3>Itinéraire 1:</h3>
-
-			<img  src = "./assets/img/itinéraire1/card1.JPG"  alt = "photo ponton en bois">
-
-				<p> Molenbeek est un géant étiré tout en longueur: les pieds <br>
-				dans la zone du canal, marqué par l’industrie du 19ième siècle;<br>
-				du diaphragme à la tête, de plus en plus verdoyant. Ce géant<br>
-				est un exemple de diversité : tant sur le plan de l’environnement<br>
-				que sur celui de ses habitants, mais également par des histoires<br>
-				et son passé riche, comme au niveau de sa vie associative et<br>
-				l’expérience est totale.<br>
-			    Nous vous proposons un parcours vélo pour partir à la découverte<br>
-			    de cette belle commune !</p>
-			</div>
-			<a href = "itinéraire1.html">Page itinéraire 1 :</a>
-<head>
+  <head>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -63,6 +11,8 @@
 		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<!--Lien : main.css : Rassemble toutes les feuilles de style scss, compilées en css. -->
 	<link rel="stylesheet" href="/assets/css/main.css">
+	<!--Lien pour leaflet-->
+	<link rel="stylesheet" href="./assets/css/style-1.css">
 	<!--Leaflet.js -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -72,9 +22,9 @@
 		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
 		crossorigin=""></script>
 	<script src="assets/script/header.js"></script>
-	<!--Lien  trace itinéraire-->
+	
 
-</head>
+  </head>
 
 <body>
 	<header class="global-header">
@@ -130,6 +80,40 @@
 					ses beaux parcs et sa communauté maritime.
 				</p>
 			</div>
+
+			
+			<div id="blocCards">      
+				<!--Itinéraire Chris-->
+				<div id = "card1">
+
+					<h3>Itinéraire 1:</h3>
+
+					<img  src = ""  alt = "">
+					<a href = "itinéraire1.html">Page itinéraire 1 :</a>
+
+				</div>
+
+				<!--Itinéraire Ellie-->
+				<div id = "card2">
+
+					<h3>Itinéraire 2:</h3>
+	
+					<img  src = ""  alt = "">
+					<a href = "itinéraire2.html">Page itinéraire 2 :</a>
+	
+				</div>
+
+				<!--Itinéraire Vicky-->
+				<div id = "card3">
+
+					<h3>Itinéraire 3:</h3>
+	
+					<img  src = ""  alt = "">
+					<a href = "itinéraire3.html">Page itinéraire 3 :</a>
+	
+				</div>
+			</div>
+
 			<button class="btn btn-dark">les itinéraires</button>
 			<!-- <button class="btn btn-light">les itinéraires</button> -->
 		</section>
