@@ -1,0 +1,44 @@
+.btn {
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  min-width: 100px;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn-dark {
+  background: #033333;
+  color: white;
+}
+.btn-dark:hover {
+  background: #055a5a;
+  transition: all 0.3s ease;
+}
+.btn-dark:active {
+  background: #0aabab;
+}
+
+.btn-light {
+  background: white;
+  color: #033333;
+}
+.btn-light:hover {
+  background: #ebebeb;
+  transition: all 0.3s ease;
+}
+.btn-light:active {
+  background: #bfbfbf;
+}
+
+footer {
+  padding: 30px 40px;
+}
+footer ul a:link, footer ul a:visited {
+  color: #033333;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=footer.css.map */

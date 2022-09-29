@@ -1,0 +1,159 @@
+// Couleurs
+$bg1: #FFFFFF;
+$bg2: #BBE8EF;
+$bg3: #669999;
+$text: #033333;
+$grey: #707070;
+$route1: #003366;
+$route2: #006600;
+$route3: #A64253;
+
+// Polices
+// @use '../base/fonts.scss';
+$font-main: 'Poppins', sans-serif;
+$font-titles: 'Shadows Into Light', cursive;
+
+// Mise en page
+$padding-section: 30px 40px;
+$padding-0: 0;
+
+// Boutons
+@mixin button-bg-darken($bg) {
+    background: $bg;
+
+    &:hover {
+        background: darken($bg, 8%);
+        transition: all 0.3s ease;
+    }
+
+    &:active {
+        background: darken($bg, 25%);
+    }
+}
+
+@mixin button-bg-lighten($bg) {
+    background: $bg;
+
+    &:hover {
+        background: lighten($bg, 8%);
+        transition: all 0.3s ease;
+    }
+
+    &:active {
+        background: lighten($bg, 25%);
+    }
+}
+
+@mixin button-color($cl) {
+    color: $cl;
+}
+
+.btn {
+    text-decoration: none;
+    border: none;
+    padding: 12px 25px;
+    min-width: 100px;
+    border-radius: 25px;
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-dark {
+    @include button-bg-lighten($text);
+    @include button-color(white);
+}
+
+.btn-light {
+    @include button-bg-darken(white);
+    @include button-color($text);
+}
+
+// Box-shadow
+@mixin box_shadow ($level, $side) {
+
+// Si tu veux une ombre plus lourde en bas...
+    @if $side =='bottom' {
+        // et que tu veux une ombre moins intense...
+        @if $level ==1 {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.12);
+        }
+
+        // ou sinon une ombre assez intense...
+        @else if $level ==2 {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 5px 10px rgba(0, 0, 0, 0.14);
+        }
+
+        // ou bien une ombre très intense...
+        @else if $level ==3 {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 17px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    @if $side =='left' {
+
+        @if $level ==1 {
+            box-shadow: 3px 0 6px rgba(0, 0, 0, 0.16), 2px 0 4px rgba(0, 0, 0, 0.12);
+        }
+
+        @else if $level ==2 {
+            box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 5px 0 10px rgba(0, 0, 0, 0.14);
+        }
+
+        @else if $level ==3 {
+            box-shadow: 14px 0 28px rgba(0, 0, 0, 0.25), 10px 0 17px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    @if $side =='top' {
+
+        @if $level ==1 {
+            box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16), 0 -2px 4px rgba(0, 0, 0, 0.12);
+        }
+
+        @else if $level ==2 {
+            box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -5px 10px rgba(0, 0, 0, 0.14);
+        }
+
+        @else if $level ==3 {
+            box-shadow: 0 -14px 28px rgba(0, 0, 0, 0.25), 0 -10px 17px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    @if $side =='right' {
+        @if $level ==1 {
+            box-shadow: -3px 0 6px rgba(0, 0, 0, 0.16), -2px 0 4px rgba(0, 0, 0, 0.12);
+        }
+
+        @else if $level ==2 {
+            box-shadow: -10px 0 20px rgba(0, 0, 0, 0.19), -5px 0 10px rgba(0, 0, 0, 0.14);
+        }
+
+        @else if $level ==3 {
+            box-shadow: -14px 0 28px rgba(0, 0, 0, 0.25), -10px 0 17px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    @if $side =='middle' {
+        @if $level ==1 {
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.12);
+        }
+
+        @else if $level ==2 {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.19), 0 0 10px rgba(0, 0, 0, 0.14);
+        }
+
+        @else if $level ==3 {
+            box-shadow: 0 0 28px rgba(0, 0, 0, 0.25), 0 0 17px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+}
+
+// Alors écrire le niveau d'intensité (1-3), 
+// puis la direction de l'ombre (left, right, bottom, top, middle) 
+// dans le Sass, comme ça :
+    // { @include box_shadow(1, 'bottom');}
+    // { @include box_shadow(3, 'top'); } 
+    // etc... 
+

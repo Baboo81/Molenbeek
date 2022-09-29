@@ -1,0 +1,10 @@
+@import '../base/var.scss';
+footer {
+    padding: $padding-section;
+    ul{
+        a:link, a:visited {
+            color: $text;
+            text-decoration: none;
+        }
+    }
+}

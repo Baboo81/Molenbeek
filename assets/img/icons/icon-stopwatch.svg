@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.517" height="16.5" viewBox="0 0 14.517 16.5">
+  <g id="icon-stopwatch" transform="translate(0)">
+    <path id="Path_10" data-name="Path 10" d="M16.313,17.188h1.815V12.375H16.313Z" transform="translate(-9.961 -7.071)" fill="#fff"/>
+    <g id="Group_5" data-name="Group 5">
+      <path id="Path_11" data-name="Path 11" d="M17.492,9.485l1.164-1.134L17.373,7.1,16.209,8.235A7.35,7.35,0,0,0,11.758,6.75,7.167,7.167,0,0,0,4.5,13.821a7.167,7.167,0,0,0,7.258,7.071,7.167,7.167,0,0,0,7.258-7.071A6.926,6.926,0,0,0,17.492,9.485Zm-1.724,8.242a5.777,5.777,0,0,1-8.02,0,5.424,5.424,0,0,1,0-7.813,5.777,5.777,0,0,1,8.02,0,5.424,5.424,0,0,1,0,7.813Z" transform="translate(-4.5 -4.393)" fill="#fff"/>
+      <path id="Path_12" data-name="Path 12" d="M13.5,2.25h4.839V4.018H13.5Z" transform="translate(-8.661 -2.25)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
