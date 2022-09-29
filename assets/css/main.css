@@ -824,7 +824,6 @@ footer ul a:link, footer ul a:visited {
 
 .slide {
   width: 100vw;
-  height: 640px;
   position: absolute;
   transition: all 0.5s;
   justify-content: center;
@@ -849,7 +848,7 @@ footer ul a:link, footer ul a:visited {
 }
 .card-item .description {
   max-width: 100%;
-  padding: 30px 20px;
+  padding: 20px 20px 30px 20px;
   background: #003366;
   font-size: 14px;
   color: #FFFFFF;
@@ -888,6 +887,7 @@ footer ul a:link, footer ul a:visited {
 
 .btn-wrapper-card {
   display: flex;
+  width: 100%;
   justify-content: center;
 }
 

@@ -14,7 +14,6 @@
 
 .slide {
     width: 100vw;
-    height: 640px;
     position: absolute;
     transition: all 0.5s;
     justify-content: center;
@@ -39,7 +38,7 @@
 	}
 	.description {
 		max-width: 100%;
-		padding: 30px 20px;
+		padding: 20px 20px 30px 20px;
 		background: $route1;
 		font-size: 14px;
 		color: $bg1;
@@ -83,6 +82,7 @@
 
 .btn-wrapper-card {
 	display: flex;
+	width: 100%;
 	justify-content: center;
 }
 .arrow {

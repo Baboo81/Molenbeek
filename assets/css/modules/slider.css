@@ -51,7 +51,6 @@
 
 .slide {
   width: 100vw;
-  height: 640px;
   position: absolute;
   transition: all 0.5s;
   justify-content: center;
@@ -76,7 +75,7 @@
 }
 .card-item .description {
   max-width: 100%;
-  padding: 30px 20px;
+  padding: 20px 20px 30px 20px;
   background: #003366;
   font-size: 14px;
   color: #FFFFFF;
@@ -115,6 +114,7 @@
 
 .btn-wrapper-card {
   display: flex;
+  width: 100%;
   justify-content: center;
 }
 
