@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -222,7 +223,7 @@ th {
   text-decoration: none;
   border: none;
   padding: 12px 25px;
-  min-width: 100px;
+  width: fit-content;
   border-radius: 25px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -415,7 +416,7 @@ th {
   text-decoration: none;
   border: none;
   padding: 12px 25px;
-  min-width: 100px;
+  width: fit-content;
   border-radius: 25px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -504,7 +505,7 @@ div {
   text-decoration: none;
   border: none;
   padding: 12px 25px;
-  min-width: 100px;
+  width: fit-content;
   border-radius: 25px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -731,7 +732,7 @@ div {
   text-decoration: none;
   border: none;
   padding: 12px 25px;
-  min-width: 100px;
+  width: fit-content;
   border-radius: 25px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -775,7 +776,7 @@ footer ul a:link, footer ul a:visited {
   text-decoration: none;
   border: none;
   padding: 12px 25px;
-  min-width: 100px;
+  width: fit-content;
   border-radius: 25px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -807,13 +808,19 @@ footer ul a:link, footer ul a:visited {
   background: #bfbfbf;
 }
 
-body {
+.cards-wrapper {
+  height: 100vh;
   background-color: #FFFFFF;
+  display: grid;
+  place-items: center;
 }
 
-.cards-wrapper {
-  flex-wrap: nowrap;
-  padding: 20px;
+.slider {
+  width: 100%;
+  max-width: 800px;
+  height: 80vh;
+  position: relative;
+  /* overflow: hidden; */
 }
 
 .card-item {
@@ -826,19 +833,14 @@ body {
   flex-direction: column;
 }
 
-.card-item:focus div.thumb {
-  transform: scale(1.2);
-}
-
 .card-item div.thumb {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   width: 80vw;
   height: 230px;
-  transition: all 0.2s ease-in-out;
   z-index: 0;
-  position: relative;
+  background-image: url("/assets/img/itinéraire-maritime/maritime-sm/Groot_Eiland-sm.jpeg");
 }
 
 .description {
@@ -853,7 +855,7 @@ body {
 }
 
 .filter {
-  margin: 15px;
+  margin: 15px 5px;
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: repeat(3);
@@ -873,8 +875,9 @@ body {
   margin-right: 15px;
 }
 
-div.thumb {
-  background-image: url("/assets/img/");
+.btn-wrapper-card {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
