@@ -227,6 +227,7 @@ th {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  display: flex;
 }
 
 .btn-dark {
@@ -419,6 +420,7 @@ th {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  display: flex;
 }
 
 .btn-dark {
@@ -454,9 +456,9 @@ body {
 }
 
 h1 {
-  font-size: 55px;
+  font-size: 52px;
   line-height: 45px;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
   font-weight: 500;
 }
 
@@ -469,7 +471,7 @@ h2 {
 h3 {
   font-size: 30px;
   line-height: 1.5;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
   font-family: "Shadows Into Light", cursive;
 }
 
@@ -482,6 +484,22 @@ img {
   min-width: 100%;
 }
 
+div {
+  display: flex;
+}
+
+#intro {
+  padding: 30px 40px;
+}
+#intro #intro-title, #intro #intro-text {
+  flex-wrap: wrap;
+}
+
+.btn-wrapper {
+  justify-content: center;
+  padding: 20px 0;
+}
+
 .btn {
   text-decoration: none;
   border: none;
@@ -491,6 +509,7 @@ img {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  display: flex;
 }
 
 .btn-dark {
@@ -599,17 +618,6 @@ img {
   position: relative;
   height: 60px;
 }
-.nav-container .checkbox {
-  position: absolute;
-  display: block;
-  height: 32px;
-  width: 32px;
-  top: 20px;
-  left: 20px;
-  z-index: 5;
-  opacity: 0;
-  cursor: pointer;
-}
 .nav-container .hamburger-lines {
   display: block;
   height: 26px;
@@ -618,9 +626,6 @@ img {
   top: 17px;
   left: 20px;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .nav-container .hamburger-lines .line {
   display: block;
@@ -629,18 +634,36 @@ img {
   border-radius: 10px;
   background: white;
 }
-.nav-container .hamburger-lines.line-1 {
+.nav-container .hamburger-lines .line-1 {
+  margin-bottom: 8px;
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;
 }
-.nav-container .hamburger-lines.line-2 {
+.nav-container .hamburger-lines .line-2 {
   transition: transform 0.2s ease-in-out;
 }
-.nav-container .hamburger-lines.line-3 {
+.nav-container .hamburger-lines .line-3 {
+  margin-top: 8px;
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
 }
-.nav-container .menu-items {
+
+.nav-container .hamburger-lines.checked .line1 {
+  transform: translateY(11px) scaleX(1.4) rotate(55deg);
+  transition: transform 300ms ease-out;
+}
+.nav-container .hamburger-lines.checked .line2 {
+  transform: scaleY(0);
+}
+.nav-container .hamburger-lines.checked .line3 {
+  transform: translateY(-11px) scaleX(1.4) rotate(-55deg);
+  transition: transform 300ms ease-out;
+}
+.nav-container .hamburger-lines.checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.menu-items {
   padding-top: 120px;
   height: 100vh;
   width: 100%;
@@ -651,12 +674,12 @@ img {
   transition: transform 1s ease-in-out;
   align-items: center;
 }
-.nav-container .menu-items ul.main-menu {
+.menu-items ul.main-menu {
   display: flex;
   flex-direction: column;
   width: 80%;
 }
-.nav-container .menu-items li {
+.menu-items li {
   font-size: 1.4rem;
   font-weight: 500;
   display: flex;
@@ -664,32 +687,32 @@ img {
   align-items: center;
   border-radius: 5px;
 }
-.nav-container .menu-items li .submenu {
+.menu-items li .submenu {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.nav-container .menu-items li .submenu li {
+.menu-items li .submenu li {
   width: 100%;
 }
-.nav-container .menu-items li .submenu .bullet {
+.menu-items li .submenu .bullet {
   background-image: url("/assets/img/icons/moulin-shape-white.svg");
   background-size: 20px 20px;
   width: 20px;
   height: 20px;
   margin: 10px;
 }
-.nav-container .menu-items li .submenu a {
+.menu-items li .submenu a {
   text-transform: none;
   font-size: 1.2rem;
 }
-.nav-container .menu-items li .submenu a:link,
-.nav-container .menu-items li .submenu a:visited {
+.menu-items li .submenu a:link,
+.menu-items li .submenu a:visited {
   padding: 10px, 20px;
 }
-.nav-container .menu-items li .submenu a:active {
+.menu-items li .submenu a:active {
   font-weight: 600;
 }
-.nav-container .menu-items li .submenu a:active .bullet {
+.menu-items li .submenu a:active .bullet {
   background-image: url("/assets/img/icons/moulin-shape.svg");
 }
 
@@ -704,21 +727,6 @@ img {
   width: 120px;
 }
 
-.nav-container input[type=checkbox]:checked ~ .menu-items {
-  transform: translateX(0);
-}
-.nav-container input[type=checkbox]:checked ~ .hamburger-lines .line1 {
-  transform: translateY(11px) scaleX(1.4) rotate(55deg);
-  transition: transform 300ms ease-out;
-}
-.nav-container input[type=checkbox]:checked ~ .hamburger-lines .line2 {
-  transform: scaleY(0);
-}
-.nav-container input[type=checkbox]:checked ~ .hamburger-lines .line3 {
-  transform: translateY(-11px) scaleX(1.4) rotate(-55deg);
-  transition: transform 300ms ease-out;
-}
-
 .btn {
   text-decoration: none;
   border: none;
@@ -728,6 +736,7 @@ img {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  display: flex;
 }
 
 .btn-dark {
@@ -760,45 +769,6 @@ footer {
 footer ul a:link, footer ul a:visited {
   color: #033333;
   text-decoration: none;
-}
-
-.btn {
-  text-decoration: none;
-  border: none;
-  padding: 12px 25px;
-  min-width: 100px;
-  border-radius: 25px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.btn-dark {
-  background: #033333;
-  color: white;
-}
-.btn-dark:hover {
-  background: #055a5a;
-  transition: all 0.3s ease;
-}
-.btn-dark:active {
-  background: #0aabab;
-}
-
-.btn-light {
-  background: white;
-  color: #033333;
-}
-.btn-light:hover {
-  background: #ebebeb;
-  transition: all 0.3s ease;
-}
-.btn-light:active {
-  background: #bfbfbf;
-}
-
-#intro {
-  padding: 30px 40px;
 }
 
 /*# sourceMappingURL=main.css.map */
