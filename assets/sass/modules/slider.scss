@@ -1,81 +1,109 @@
-@import '../base/var.scss';
-
+@import "../base/var.scss";
 .cards-wrapper {
-    height: 100vh;
-    background-color: $bg1;
-    display: grid;
-    place-items: center;
+	height: 100vh;
+	background-color: $bg1;
+	display: grid;
+	place-items: center;
+}
+.slider {
+	width: 100%;
+	max-width: 800px;
+	height: 640px;
+	position: relative;
 }
 
-.slider {
+.slide {
     width: 100%;
     max-width: 800px;
-    height: 80vh;
-    position: relative;
-    /* overflow: hidden; */
-  }  
-
-// .cards-wrapper {
-//     flex-wrap: nowrap;
-//     padding: 20px;
-// }
-
+    height: 640px;
+    position: absolute;
+    transition: all 0.5s;
+  }
 .card-item {
-    flex-direction: column;
-    overflow: hidden;
-    margin: 20px 10px 20px 10px;
-    border-radius: 10px;
-    width: 80vw;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
+	overflow: hidden;
+	margin: 20px 10px 20px 10px;
+	border-radius: 10px;
+	width: 80vw;
+	flex-wrap: wrap;
+	flex-direction: rowcv;
+	.thumb {
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 80vw;
+		height: 230px;
+		z-index: 0;
+		background-image: url("/assets/img/itinéraire-maritime/maritime-sm/Groot_Eiland-sm.jpeg");
+	}
+	.description {
+		max-width: 100%;
+		padding: 30px 20px;
+		background: $route1;
+		font-size: 14px;
+		color: $bg1;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
 
-.card-item div.thumb {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 80vw;
-    height: 230px;
-    z-index: 0;
-    background-image: url("/assets/img/itinéraire-maritime/maritime-sm/Groot_Eiland-sm.jpeg");
-}
-
-.description {
-    max-width: 100%;
-    padding: 30px 20px;
-    background: $route1;
-    font-size: 14px;
-    color: $bg1;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.filter {
-    margin: 15px 5px;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: repeat(3);
-    grid-column-gap: 5px;
-    grid-row-gap: 10px;
-    font-weight: 300;
-}
-
-.filter p {
-    padding: 0;
-    margin:0;
-}
-.filter img {
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
-}
-
-div.thumb {
+        &.description-1 {
+            background: $route1;
+        }
     
+        &.description-2 {
+            background: $route2;
+        }
+    
+        &.description-3 {
+            background: $route3;
+        }
+	}
 }
+
+	.filter {
+		margin: 15px 5px;
+		display: grid;
+		grid-template-columns: 1fr 5fr;
+		grid-template-rows: repeat(3);
+		grid-column-gap: 5px;
+		grid-row-gap: 10px;
+		font-weight: 300;
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+        img {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+        }
+	}
 
 .btn-wrapper-card {
-    display: flex;
-    justify-content: center;
-  }
+	display: flex;
+	justify-content: center;
+}
+.arrow {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	border: none;
+	border-radius: 50%;
+	z-index: 10px;
+	cursor: pointer;
+	background-color: $bg2;
+	font-size: 18px;
+	&:active {
+		transform: scale(1.1);
+	}
+}
+.arrow-prev {
+	top: 45%;
+	left: 2%;
+}
+.arrow-next {
+	top: 45%;
+	right: 2%;
+}
+
