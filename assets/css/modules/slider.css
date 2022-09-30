@@ -38,6 +38,7 @@
 .cards-wrapper {
   height: 100vh;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .slider {
@@ -51,7 +52,7 @@
 }
 
 .slide {
-  width: 100vw;
+  width: 85vw;
   position: absolute;
   transition: all 0.5s;
   justify-content: center;
@@ -72,7 +73,15 @@
   width: 80vw;
   height: 230px;
   z-index: 0;
-  background-image: url("/assets/img/itinéraire-maritime/maritime-sm/Groot_Eiland-sm.jpeg");
+}
+.card-item .thumb.thumb-1 {
+  background-image: url("/assets/img/itinéraire-maritime/maritime-sm/canal-soir-sm.jpeg");
+}
+.card-item .thumb.thumb-2 {
+  background-image: url("/assets/img/itinéraire-maritime/maritime-sm/fleurs-sm.jpeg");
+}
+.card-item .thumb.thumb-3 {
+  background-image: url("/assets/img/itinéraire-maritime/maritime-sm/De_Vaartkapoen-sm.jpeg");
 }
 .card-item .description {
   max-width: 100%;
