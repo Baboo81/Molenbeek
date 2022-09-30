@@ -1,7 +1,7 @@
 // Création de la map numéro 3:
 
 const centroid = [50.859619, 4.316703];
-const map = L.map('mapid').setView(centroid, 16.5);
+const map = L.map('mapid3').setView(centroid, 16.5);
 // const map = L.map('mapid1').setView(centroid, 16.5);
 
 let current_red = 0;
@@ -62,7 +62,7 @@ Distance : 1.5km<br>Dénivelé : nulle`
 //     .openPopup();                               // Ouvre le popup
 
 textMarker2 = `
-<b>Sculture de l'argent</b>
+<b>Sculpture de l'argent</b>
 <br>
 <img class="mini" src="./assets/img/itinéraire3/flic.JPG" alt="" />
 <br>
@@ -102,7 +102,7 @@ Distance : 4.5km<br>Dénivelé : nulle    `
 //     .bindPopup(textMarker4);
 
 textMarker5 = `
-<b></b>
+<b>L'église St Jean-Baptiste</b>
 <br>
 <img class="mini" src="./assets/img/itinéraire3/saint-baptiste.JPG" alt="" />
 <br>
@@ -114,7 +114,7 @@ Distance : 5.5km<br>Dénivelé : nulle   `
 //     .bindPopup(textMarker5);
 
 textMarker6 = `
-<b></b>
+<b>Maison communale</b>
 <br>
 <img class="mini" src="./assets/img/itinéraire3/placeCommunale.JPG" alt="" />
 <br>
@@ -126,7 +126,7 @@ Distance : 6.5km<br>Dénivelé : nulle    `
 //     .bindPopup(textMarker6);
 
 textMarker7 = `
-<b></b>
+<b>La Fonderie</b>
 <br>
 <img class="mini" src="./assets/img/itinéraire3/fonderie.JPG" alt="" />
 <br>
@@ -238,3 +238,18 @@ function update_markers(new_red) {
         current_red = new_red;
     }
 }
+
+//Trace itinéraire:
+
+var latLng = [
+    [50.86048, 4.31557],
+    [50.85968, 4.34562],
+    [50.857623, 4.325175],
+    [50.85802, 4.33831],
+    [50.854320, 4.316353],
+    [50.851194, 4.313364],
+    [50.851194, 4.313364]
+   
+];
+
+var polyline = L.polyline(latLng, {color: '#A64253'}).addTo(map);

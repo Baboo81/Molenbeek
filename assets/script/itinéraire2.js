@@ -1,7 +1,7 @@
 // Création de la map numéro 2:
 
 const centroid = [50.85538037305153, 4.339400499483728];
-const map = L.map('mapid').setView(centroid, 16.5);
+const map = L.map('mapid2').setView(centroid, 16.5);
 
 // Add OSM tiles:
 //L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
