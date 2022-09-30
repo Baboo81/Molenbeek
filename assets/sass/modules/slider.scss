@@ -64,6 +64,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 
+
 		&.description-1 {
 			background: $route1;
 		}
@@ -74,6 +75,11 @@
 
 		&.description-3 {
 			background: $route3;
+		}
+
+		h3 {
+			width: 100%;
+			text-align: center;
 		}
 	}
 }
@@ -105,14 +111,15 @@
 	justify-content: center;
 }
 
-.arrow {
-	height: 100%;
-	position: absolute;
-	align-items: center;
+// Intersection observer (something happens when an element scrolls into view)
 
-	&:active {
-		transform: scale(1.1);
-	}
+
+
+
+
+.loaded {
+	opacity: 1;
+
 }
 
 .arrow-prev {
@@ -126,3 +133,30 @@
 	padding: 0 1vw 0 2vw;
 	background: $grad-left;
 }
+
+.arrow {
+
+	height: 100%;
+	position: absolute;
+	align-items: center;
+
+
+	&:active {
+		transform: scale(1.1);
+	}
+}
+
+.arrow {
+
+	svg {
+	opacity: 1;
+	transition: opacity 0.9s;
+
+	&.pale {
+		opacity: 0.2;
+	}
+
+	}
+
+}
+
