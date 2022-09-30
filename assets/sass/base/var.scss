@@ -7,6 +7,8 @@ $grey: #707070;
 $route1: #003366;
 $route2: #006600;
 $route3: #A64253;
+$grad-right: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+$grad-left: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 
 // Polices
 // @use '../base/fonts.scss';
@@ -52,7 +54,7 @@ $padding-0: 0;
     text-decoration: none;
     border: none;
     padding: 12px 25px;
-    min-width: 100px;
+    width: fit-content;
     border-radius: 25px;
     font-family: $font-main;
     font-weight: 600;
