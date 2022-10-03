@@ -44,6 +44,18 @@ div {
 
 a {
     text-decoration: none;
+    font-style: inherit;
+    color: inherit;
+}
+
+address {
+    text-decoration: none;
+    font-style: inherit;
+}
+
+p {
+    padding: 0;
+    margin: 0;
 }
 
 // home
@@ -51,17 +63,21 @@ a {
 #intro {
     padding: $padding-section;
 
+
     #intro-title, #intro-text {
         flex-wrap: wrap;
+        width: 100%;
     }
 
-    #intro-title {
-        img {
-            z-index: 1;
-        }
-    }
+    // #intro-title {
+        // img {
+        //     z-index: 1;
+        // }
+    // }
 }
-
+#wrapper {
+    flex-direction: column;
+}
 .btn-wrapper {
     justify-content: center;
     padding: 20px 0;
@@ -69,7 +85,11 @@ a {
 
 #intro-img {
     width: 100%;
-    transform:scale(1.15);
-    z-index: 0;
+    flex-wrap: wrap;
+    // transform:scale(1.15); //! gâche le z-index !
+    // z-index: 0;
     margin-bottom: 20px;
+    img{
+        flex-wrap: wrap;
+    }
 }

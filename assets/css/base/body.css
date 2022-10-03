@@ -77,6 +77,18 @@ div {
 
 a {
   text-decoration: none;
+  font-style: inherit;
+  color: inherit;
+}
+
+address {
+  text-decoration: none;
+  font-style: inherit;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 #intro {
@@ -84,9 +96,11 @@ a {
 }
 #intro #intro-title, #intro #intro-text {
   flex-wrap: wrap;
+  width: 100%;
 }
-#intro #intro-title img {
-  z-index: 1;
+
+#wrapper {
+  flex-direction: column;
 }
 
 .btn-wrapper {
@@ -96,9 +110,11 @@ a {
 
 #intro-img {
   width: 100%;
-  transform: scale(1.15);
-  z-index: 0;
+  flex-wrap: wrap;
   margin-bottom: 20px;
+}
+#intro-img img {
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=body.css.map */
