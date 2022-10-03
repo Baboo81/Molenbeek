@@ -59,9 +59,10 @@ Distance : 1.5km<br>Dénivelé : nulle`
 textMarker2 = `
 <b>Administration communale de Molenbeek Saint-Jean</b>
 <br>
-<img src="/assets/img/itinéraire2/maritime-sm/" alt="Administration communale de Molenbeek Saint-Jean" />
+<img src="/assets/img/itinéraire2/maritime-sm/Maison_Communale_1-sm.jpeg" alt="Administration communale de Molenbeek Saint-Jean" />
 <br>
 Rue du Comte de Flandre 20, 1080 Bxl
+<br>
 Niveau de difficulté : facile
 <br>
 Distance : 2.5km<br>Dénivelé : nulle  `
