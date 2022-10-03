@@ -36,6 +36,7 @@
 
 footer {
   padding: 30px 40px 50px 40px;
+  border-top: solid #033333 2px;
 }
 footer a:link,
 footer a:visited {
