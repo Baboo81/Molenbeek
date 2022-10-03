@@ -47,7 +47,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 textMarker1 = `
 <b>Parc du Karreveld</b>
 <br>
-<img src=./assets/img/itinéraire1/karreveld.JPG" alt="parc du Karreveld" />
+<img src="/assets/img/itinéraire1/karreveld.JPG" alt="parc du Karreveld" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -57,7 +57,7 @@ Distance : 1.5km<br>Dénivelé : nulle`
 textMarker2 = `
 <b>Cimetière de Molenbeek</b>
 <br>
-<img src="./assets/img/itinéraire1/cimetiere.JPG" alt="cimetière de Molenbeek" />
+<img src="/assets/img/itinéraire1/cimetiere.JPG" alt="cimetière de Molenbeek" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -67,7 +67,7 @@ Distance : 2.5km<br>Dénivelé : nulle  `
 textMarker3 = ` 
 <b>Quartier Diongre</b>
 <br>
-<img src="./assets/img/itinéraire1/quartierDiongre.JPG" alt="maison du quartier Diongre" />
+<img src="/assets/img/itinéraire1/quartierDiongre.JPG" alt="maison du quartier Diongre" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -78,7 +78,7 @@ Distance : 3.5km<br>Dénivelé : nulle  `
 textMarker4 = `
 <b>Stade Edmond Machtens</b>
 <br>
-<img src="./assets/img/itinéraire1/stade.jpeg" alt="stade de Molenbeek" />
+<img src="/assets/img/itinéraire1/stade.jpeg" alt="stade de Molenbeek" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -88,7 +88,7 @@ Distance : 4.5km<br>Dénivelé : nulle    `
 textMarker5 = `
 <b>Parc des muses</b>
 <br>
-<img src="./assets/img/itinéraire1/parcDesMuses.JPG" alt="parc des muses" />
+<img src="/assets/img/itinéraire1/parcDesMuses.JPG" alt="parc des muses" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -98,7 +98,7 @@ Distance : 5.5km<br>Dénivelé : nulle   `
 textMarker6 = `
 <b>Parc Albert & Marie-José</b>
 <br>
-<img src="./assets/img/itinéraire1/parcAlbert&MJ.JPG" alt="parc Albert et Marie-José" />
+<img src="/assets/img/itinéraire1/parcAlbert&MJ.JPG" alt="parc Albert et Marie-José" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -108,7 +108,7 @@ Distance : 6.5km<br>Dénivelé : nulle    `
 textMarker7 = `
 <b>Parc du Scheutbos</b>
 <br>
-<img src="./assets/img/itinéraire1/parcScheutbos.JPG" alt="parc du Scheutbos" />
+<img src="/assets/img/itinéraire1/parcScheutbos.JPG" alt="parc du Scheutbos" />
 <br>
 Niveau de difficulté : facile
 <br>
