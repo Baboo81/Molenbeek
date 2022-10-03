@@ -3,6 +3,37 @@
 const centroid = [50.85538037305153, 4.339400499483728];
 const map = L.map('mapid2').setView(centroid, 16.5);
 
+//Définition des couleurs des marqeurs
+let current_red = 0;
+
+
+const greenIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+  });
+
+const redIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+  });
+
+  const blueIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+  });
+
 // Add OSM tiles:
 //L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
@@ -23,10 +54,7 @@ Rue Sainte-Marie 1-6, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 1.5km<br>Dénivelé : nulle`
-const marker1 = L.marker([50.85538037305153, 4.339400499483728]) // Génération du marqueur
-                 .addTo(map)                                 // Ajout à la carte
-                 .bindPopup(textMarker1)                     // Ajout du popup au marker
-                 .openPopup();                               // Ouvre le popup
+
 
 textMarker2 = `
 <b>Administration communale de Molenbeek Saint-Jean</b>
@@ -37,9 +65,7 @@ Rue du Comte de Flandre 20, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 2.5km<br>Dénivelé : nulle  `
-const marker2 = L.marker([50.85533107240288, 4.3386152723646605]).addTo(map)
-                 .addTo(map)
-                 .bindPopup(textMarker2);
+
 
 textMarker3 = ` 
 <b>La flamme de l'espoir</b>
@@ -52,9 +78,6 @@ Niveau de difficulté : facile
 <br>
 Distance : 3.5km<br>Dénivelé : nulle  `
 
-const marker3 = L.marker([50.854828, 4.338677]).addTo(map)
-                 .addTo(map)
-                 .bindPopup(textMarker3);
 
 textMarker4 = `
 <b>Place communale</b>
@@ -64,9 +87,7 @@ textMarker4 = `
 Niveau de difficulté : facile
 <br>
 Distance : 4.5km<br>Dénivelé : nulle    `
-const marker4 = L.marker([50.854702473961176, 4.338428822706077]).addTo(map)
-                 .addTo(map)
-                 .bindPopup(textMarker4);
+
 
 textMarker5 = `
 <b>Rue Fin</b>
@@ -78,9 +99,6 @@ Rue Fin, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 5.5km<br>Dénivelé : nulle   `
-const marker5 = L.marker([50.85280408956153, 4.337271600409956]).addTo(map)
-                 .addTo(map)
-                 .bindPopup(textMarker5);
 
 textMarker6 = `
 <b>La fonderie</b>
@@ -92,9 +110,7 @@ Rue Ransfort 27, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 6.5km<br>Dénivelé : nulle    `
-const marker6 = L.marker([50.85265509314037, 4.335905653001505]).addTo(map)
-                 .addTo(map)
-                 .bindPopup(textMarker6);
+
 
 textMarker7 = `
 <b>Parc de la fonderie</b>
@@ -106,9 +122,7 @@ Rue de l'Éléphant, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker7 = L.marker([50.85199792005185, 4.333654601478056]).addTo(map)
-                 .addTo(map)
-                 .bindPopup(textMarker7);
+
 
 textMarker8 = `
 <b>Belmundo / Hôtel BELVUE</b>
@@ -120,9 +134,7 @@ Quai du Hainaut 41-43, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker8 = L.marker([50.85107281916792, 4.337952130695064]).addTo(map)
-                 .addTo(map)
-                 .bindPopup(textMarker8);
+
 
 textMarker9 = `
 <b>Atelier Groot Eiland</b>
@@ -134,9 +146,7 @@ Quai du Hainaut 29, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker9 = L.marker([50.852030028017204, 4.340462898557711]).addTo(map)
-                 .addTo(map)
-                 .bindPopup(textMarker9);
+
 
 
 textMarker10 = `
@@ -151,9 +161,7 @@ Niveau de difficulté : facile
 Distance : 7.5km<br>Dénivelé : nulle    `
 
 
-const marker10 = L.marker([50.855654495785004, 4.342767434120627]).addTo(map)
-                  .addTo(map)
-                  .bindPopup(textMarker10);
+
 
 textMarker11 = `
 <b>C'est si bon</b>
@@ -165,9 +173,7 @@ Quai des Charbonnages 46, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker11 = L.marker([50.8557841196206, 4.3430386172498165]).addTo(map)
-                  .addTo(map)
-                  .bindPopup(textMarker11);
+
 
 textMarker12 = `
 <b>Le chhien du chien / Les tissus du chien vert</b>
@@ -179,9 +185,7 @@ Quai des Charbonnages 50A, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker12 = L.marker([50.85580918983987, 4.343160722759251]).addTo(map)
-                  .addTo(map)
-                  .bindPopup(textMarker12);
+
 
 textMarker13 = `
 <b>De Vaartkapoen</b>
@@ -193,9 +197,7 @@ Pl. Sainctelette 1, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker13 = L.marker([50.858742065666554, 4.345308286498817]).addTo(map)
-                  .addTo(map)
-                  .bindPopup(textMarker13);
+
 
 textMarker14 = `
 <b>Monument aux Promoteurs des Installations Maritimes</b>
@@ -205,9 +207,7 @@ textMarker14 = `
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker14 = L.marker([50.85906204560511, 4.3454303336194275]).addTo(map)
-                  .addTo(map)
-                  .bindPopup(textMarker14);
+
 
 textMarker15 = `
 <b>Foyer</b>
@@ -219,9 +219,7 @@ Rue des Ateliers 25, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker15 = L.marker([50.85806470057518, 4.344168845750541]).addTo(map)
-                  .addTo(map)
-                  .bindPopup(textMarker15);
+
 
 textMarker16 = `
 <b>Musée de la Migration (MMM)</b>
@@ -233,9 +231,7 @@ Rue des Ateliers 17, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker16 = L.marker([50.857969640331234, 4.343517590417422]).addTo(map)
-                  .addTo(map)
-                  .bindPopup(textMarker16);
+
 
 textMarker17 = `
 <b>Eglise St Jean-Baptiste</b>
@@ -247,9 +243,7 @@ Parv. Saint-Jean-Baptiste, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker17 = L.marker([50.85716936247415, 4.340373063361232]).addTo(map)
-                  .addTo(map)
-                  .bindPopup(textMarker17);
+
 
 textMarker18 = `
 <b>Académie de Dessin et des Arts Visuels</b>
@@ -261,9 +255,7 @@ Rue Mommaerts 2A, 1080 Molenbeek-Saint-Jean
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker18 = L.marker([50.85778152952077, 4.338111889811175]).addTo(map)
-                  .addTo(map)
-                  .bindPopup(textMarker18);
+
 
 textMarker19 = `
 <b>Maison des cultures et de la Cohésion Sociale</b>
@@ -275,9 +267,7 @@ Rue Mommaerts 4, 1080 Molenbeek-Saint-Jean
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker19 = L.marker([50.85799147811224, 4.339367163590906]).addTo(map)
-                  .addTo(map)
-                  .bindPopup(textMarker19);
+
 
 textMarker20 = `
 <b>Panaderia Bakery</b>
@@ -289,9 +279,7 @@ Rue de l'Ecole 56, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker20 = L.marker([50.85627559448729, 4.338123506857903]).addTo(map)
-                  .addTo(map)
-                  .bindPopup(textMarker20);
+
 
 textMarker21 = `
 <b>Parc Bonnevie</b>
@@ -303,9 +291,7 @@ Rue Bonnevie, 1080 Bxl
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker21 = L.marker([50.856402962322456, 4.336903220843801]).addTo(map)
-                  .addTo(map)
-                  .bindPopup(textMarker21);
+
 
 textMarker22 = `
 <b>Place de la Minoterie</b>
@@ -315,12 +301,236 @@ textMarker22 = `
 Niveau de difficulté : facile
 <br>
 Distance : 7.5km<br>Dénivelé : nulle    `
-const marker22 = L.marker([50.855564, 4.341385]).addTo(map)
-                  .addTo(map)
-                  .bindPopup(textMarker22);
 
 
-                  //Trace itinéraire:
+//Génération des marqeurs + paramètre changement couleur:
+const markers = [
+    [
+        L.marker([50.85538037305153, 4.339400499483728], { icon: blueIcon})                                 
+        .bindPopup(textMarker1)
+        .openPopup(), 
+        L.marker([50.85538037305153, 4.339400499483728], { icon: redIcon})
+        .addTo(map)                                     
+        .bindPopup(textMarker1)                     
+        .openPopup() 
+    ],
+    [
+        L.marker([50.85533107240288, 4.3386152723646605], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker2),
+        L.marker([50.85533107240288, 4.3386152723646605], { icon: redIcon})
+        .bindPopup(textMarker2)
+    ],
+    [
+        L.marker([50.854828, 4.338677], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker3),
+        L.marker([50.854828, 4.338677], { icon: redIcon})
+        .bindPopup(textMarker3)
+    ],
+    [
+        L.marker([50.854702473961176, 4.338428822706077], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker4),
+        L.marker([50.854702473961176, 4.338428822706077], { icon: redIcon})
+        .bindPopup(textMarker4)
+    ],
+    [
+        L.marker([50.85280408956153, 4.337271600409956], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker5),
+        L.marker([50.85280408956153, 4.337271600409956], { icon: redIcon})
+        .bindPopup(textMarker5)
+    ],
+    [
+        L.marker([50.85265509314037, 4.335905653001505], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker6),
+        L.marker([50.85265509314037, 4.335905653001505], { icon: redIcon})
+        .bindPopup(textMarker6)
+    ],
+    [
+        L.marker([50.85199792005185, 4.333654601478056], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker7),
+        L.marker([50.85199792005185, 4.333654601478056], { icon: redIcon})
+        .bindPopup(textMarker7)
+    ],
+    [
+        L.marker([50.85107281916792, 4.337952130695064], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker8),
+        L.marker([50.85107281916792, 4.337952130695064], { icon: redIcon})
+        .bindPopup(textMarker8)
+    ],
+    [
+        L.marker([50.852030028017204, 4.340462898557711], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker9),
+        L.marker([50.852030028017204, 4.340462898557711], { icon: redIcon})
+        .bindPopup(textMarker9)
+    ],
+    [
+        L.marker([50.855654495785004, 4.342767434120627], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker10),
+        L.marker([50.855654495785004, 4.342767434120627], { icon: redIcon})
+        .bindPopup(textMarker10)
+    ],
+    [
+        L.marker([50.8557841196206, 4.3430386172498165], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker11),
+        L.marker([50.8557841196206, 4.3430386172498165], { icon: redIcon})
+        .bindPopup(textMarker11)
+    ],
+    [
+        L.marker([50.85580918983987, 4.343160722759251], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker12),
+        L.marker([50.85580918983987, 4.343160722759251], { icon: redIcon})
+        .bindPopup(textMarker12)
+    ],
+    [
+        L.marker([50.858742065666554, 4.345308286498817], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker13),
+        L.marker([50.858742065666554, 4.345308286498817], { icon: redIcon})
+        .bindPopup(textMarker13)
+    ],
+    [
+        L.marker([50.85906204560511, 4.3454303336194275], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker14),
+        L.marker([50.85906204560511, 4.3454303336194275], { icon: redIcon})
+        .bindPopup(textMarker14)
+    ],
+    [
+        L.marker([50.85806470057518, 4.344168845750541], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker15),
+        L.marker([50.85806470057518, 4.344168845750541], { icon: redIcon})
+        .bindPopup(textMarker15)
+    ],
+    [
+        L.marker([50.857969640331234, 4.343517590417422], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker16),
+        L.marker([50.857969640331234, 4.343517590417422], { icon: redIcon})
+        .bindPopup(textMarker16)
+    ],
+    [
+        L.marker([50.85716936247415, 4.340373063361232], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker17),
+        L.marker([50.85716936247415, 4.340373063361232], { icon: redIcon})
+        .bindPopup(textMarker17)
+    ],
+    [
+        L.marker([50.85778152952077, 4.338111889811175], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker18),
+        L.marker([50.85778152952077, 4.338111889811175], { icon: redIcon})
+        .bindPopup(textMarker18)
+    ],
+    [
+        L.marker([50.85799147811224, 4.339367163590906], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker19),
+        L.marker([50.85799147811224, 4.339367163590906], { icon: redIcon})
+        .bindPopup(textMarker19)
+    ],
+    [
+        L.marker([50.85627559448729, 4.338123506857903], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker20),
+        L.marker([50.85627559448729, 4.338123506857903], { icon: redIcon})
+        .bindPopup(textMarker20)
+    ],
+    [
+        L.marker([50.856402962322456, 4.336903220843801], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker21),
+        L.marker([50.856402962322456, 4.336903220843801], { icon: redIcon})
+        .bindPopup(textMarker21)
+    ],
+    [
+        L.marker([50.855564, 4.341385], { icon: blueIcon})
+        .addTo(map)
+        .bindPopup(textMarker22),
+        L.marker([50.855564, 4.341385], { icon: redIcon})
+        .bindPopup(textMarker22)
+    ]
+
+ ];
+
+//Récupération des id pour créer une fonction qui permet de cliquer sur les liens:
+
+$(document).ready(function(){
+
+    $("#stationMetroComteDeFlandre").click(function (){
+            update_markers(0);
+    });
+    
+    $("#administrationCommunale").click(function (){
+            update_markers(1);
+    });
+    
+    $("#laFlammeDeLespoir").click(function (){
+        update_markers(2);
+    });
+    
+    $("#placeCommunale").click(function (){
+        update_markers(3);
+    });
+    
+    $("#rueFin").click(function (){
+        update_markers(4);
+    });
+    
+    $("#laFonderie").click(function (){
+        update_markers(5);
+    });
+    
+    $("#parcDeLaFonderie").click(function (){
+        update_markers(6);
+    });
+
+    $("#belmundoHotelBelvue").click(function(){
+        update_markers(7);
+    });
+
+    $("#mima").click(function(){
+        update_markers(8);
+    });
+
+    $("#atelierGrootEiland").click(function(){
+        update_markers(9);
+    });
+    
+    
+    });
+    
+//Fonction:
+    
+    function update_markers(new_red) {
+        if (new_red !== current_red){
+            markers[new_red][0].removeFrom(map);
+            markers[new_red][1].addTo(map).openPopup();
+    
+            markers[current_red][1].removeFrom(map);
+            markers[current_red][0].addTo(map);
+    
+            current_red = new_red;
+        }
+    }
+    
+
+
+
+
+
+//Trace itinéraire:
 var latLng = [
     [50.85538037305153, 4.339400499483728],
     [50.85533107240288, 4.3386152723646605],

@@ -3,6 +3,7 @@
 const centroid = [50.859619, 4.316703];
 const map = L.map('mapid1').setView(centroid, 16.5);
 
+//Définition des couleurs des marqeurs
 let current_red = 0;
 
 
