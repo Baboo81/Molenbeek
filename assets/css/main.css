@@ -489,16 +489,30 @@ div {
   display: flex;
 }
 
+a {
+  text-decoration: none;
+}
+
 #intro {
-  padding: 30px 40px;
+  padding: 20px 40px;
 }
 #intro #intro-title, #intro #intro-text {
   flex-wrap: wrap;
+}
+#intro #intro-title img {
+  z-index: 1;
 }
 
 .btn-wrapper {
   justify-content: center;
   padding: 20px 0;
+}
+
+#intro-img {
+  width: 100%;
+  transform: scale(1.15);
+  z-index: 0;
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -765,7 +779,7 @@ div {
 }
 
 footer {
-  padding: 30px 40px;
+  padding: 20px 40px;
 }
 footer ul a:link, footer ul a:visited {
   color: #033333;
@@ -817,7 +831,7 @@ footer ul a:link, footer ul a:visited {
 .slider {
   width: 100%;
   max-width: 800px;
-  height: 660px;
+  height: 700px;
   position: relative;
   background: #BBE8EF;
   display: grid;

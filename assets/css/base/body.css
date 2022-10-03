@@ -75,16 +75,30 @@ div {
   display: flex;
 }
 
+a {
+  text-decoration: none;
+}
+
 #intro {
-  padding: 30px 40px;
+  padding: 20px 40px;
 }
 #intro #intro-title, #intro #intro-text {
   flex-wrap: wrap;
+}
+#intro #intro-title img {
+  z-index: 1;
 }
 
 .btn-wrapper {
   justify-content: center;
   padding: 20px 0;
+}
+
+#intro-img {
+  width: 100%;
+  transform: scale(1.15);
+  z-index: 0;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=body.css.map */
