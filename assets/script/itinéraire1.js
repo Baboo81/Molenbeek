@@ -1,7 +1,38 @@
 // Création de la map numéro 1:
 
 const centroid = [50.859619, 4.316703];
-const map = L.map('mapid').setView(centroid, 16.5);
+const map = L.map('mapid1').setView(centroid, 16.5);
+
+//Définition des couleurs des marqeurs
+let current_red = 0;
+
+
+const greenIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+  });
+
+const redIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+  });
+
+  const blueIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+  });
 
 // Add OSM tiles:
 //L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
@@ -11,110 +42,89 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
 }).addTo(map);
 
-//Ajout de POI:
+//Ajout de POI: cfr:json1.js
 
-textMarker1 = `
-<b>Parc du Karreveld</b>
-<br>
-<img src="./assets/img/itinéraire1/karreveld.JPG" alt="parc du Karreveld" />
-<br>
-Niveau de difficulté : facile
-<br>
-Distance : 1.5km<br>Dénivelé : nulle`
-const marker1 = L.marker([50.859619, 4.316703]) // Génération du marqueur
-    .addTo(map)                                 // Ajout à la carte
-    .bindPopup(textMarker1)                     // Ajout du popup au marker
-    .openPopup();                               // Ouvre le popup
 
-textMarker2 = `
-<b>Cimetière de Molenbeek</b>
-<br>
-<img src="./assets/img/itinéraire1/cimetiere.JPG" alt="cimetière de Molenbeek" />
-<br>
-Niveau de difficulté : facile
-<br>
-Distance : 2.5km<br>Dénivelé : nulle  `
-const marker2 = L.marker([50.859936, 4.310880]).addTo(map)
-    .addTo(map)
-    .bindPopup(textMarker2);
+// //Génération des marqeurs + paramètre changement couleur:
+const popupTemplate = `
+    <b>__lieu__</b>
+    <br>
+    <img src="__img__" alt="parc du Scheutbos" />
+    <br>
+    Niveau de difficulté : __difficulte__
+    <br>
+    Distance : __distance__km<br>Dénivelé : __dinivele  
+`;
 
-textMarker3 = ` 
-<b>Quartier Diongre</b>
-<br>
-<img src="./assets/img/itinéraire1/quartierDiongre.JPG" alt="maison du quartier Diongre" />
-<br>
-Niveau de difficulté : facile
-<br>
-Distance : 3.5km<br>Dénivelé : nulle  `
+const markers = DATA.map(d => [
+    L.marker([d.lat, d.lng], { icon: blueIcon}) 
+    .addTo(map)                                
+    .bindPopup(popupTemplate
+        .replace('__lieu__', d.lieu)
+        .replace('__img__', d.image)
+        .replace('__difficulte__', d.difficulte)
+        .replace('__distance__', d.distance)
+        .replace('__denivele__', d.denivele)
+    ),
+    L.marker([d.lat, d.lng], { icon: redIcon})
+                                        
+    .bindPopup(popupTemplate
+        .replace('__lieu__', d.lieu)
+        .replace('__img__', d.image)
+        .replace('__difficulte__', d.difficulte)
+        .replace('__distance__', d.distance)
+        .replace('__denivele__', d.denivele)
+    )                   
+])
 
-const marker3 = L.marker([50.857926, 4.308880]).addTo(map)
-    .addTo(map)
-    .bindPopup(textMarker3);
+markers[0][1].openPopup();
 
-textMarker4 = `
-<b>Stade Edmond Machtens</b>
-<br>
-<img src="./assets/img/itinéraire1/stade.jpeg" alt="stade de Molenbeek" />
-<br>
-Niveau de difficulté : facile
-<br>
-Distance : 4.5km<br>Dénivelé : nulle    `
-const marker4 = L.marker([50.855942, 4.311382]).addTo(map)
-    .addTo(map)
-    .bindPopup(textMarker4);
 
-textMarker5 = `
-<b>Parc des muses</b>
-<br>
-<img src="./assets/img/itinéraire1/parcDesMuses.JPG" alt="parc des muses" />
-<br>
-Niveau de difficulté : facile
-<br>
-Distance : 5.5km<br>Dénivelé : nulle   `
-const marker5 = L.marker([50.854320, 4.316353]).addTo(map)
-    .addTo(map)
-    .bindPopup(textMarker5);
+//Récupération des id pour créer une fonction qui permet de cliquer sur les liens:
 
-textMarker6 = `
-<b>Parc Albert & Marie-José</b>
-<br>
-<img src="./assets/img/itinéraire1/parcAlbert&MJ.JPG" alt="parc Albert et Marie-José" />
-<br>
-Niveau de difficulté : facile
-<br>
-Distance : 6.5km<br>Dénivelé : nulle    `
-const marker6 = L.marker([50.851194, 4.313364]).addTo(map)
-    .addTo(map)
-    .bindPopup(textMarker6);
+const linkTemplate = `<span class="clickable"><li>__lieu__</li></span>`;
 
-textMarker7 = `
-<b>Parc du Scheutbos</b>
-<br>
-<img src="./assets/img/itinéraire1/parcScheutbos.JPG" alt="parc du Scheutbos" />
-<br>
-Niveau de difficulté : facile
-<br>
-Distance : 7.5km<br>Dénivelé : nulle    `
-const marker7 = L.marker([50.851597, 4.300140]).addTo(map)
-    .addTo(map)
-    .bindPopup(textMarker7);
+$(document).ready(function(){
+
+
+    for(let index in DATA) {
+        const link = $(linkTemplate.replace('__lieu__', DATA[index].lieu)).click(function (){
+            update_markers(index);
+        });
+        $('.links').append(link);
+    }
+
+    
+    
+    
+    });
+    
+//Fonction:
+    
+    function update_markers(new_red) {
+        if (new_red !== current_red){
+            markers[new_red][0].removeFrom(map);
+            markers[new_red][1].addTo(map).openPopup();
+    
+            markers[current_red][1].removeFrom(map);
+            markers[current_red][0].addTo(map);
+    
+            current_red = new_red;
+        }
+    }
+    
 
 //Trace itinéraire:
- var latLng = [
-        [50.859619, 4.316703],
-        [50.859936, 4.310880],
-        [50.857926, 4.308880],
-        [50.855942, 4.311382],
-        [50.854320, 4.316353],
-        [50.851194, 4.313364],
-        [50.851597, 4.300140]
-	];
+var latLng = [
+    [50.859619, 4.316703],
+    [50.859936, 4.310880],
+    [50.857926, 4.308880],
+    [50.855942, 4.311382],
+    [50.854320, 4.316353],
+    [50.851194, 4.313364],
+    [50.851597, 4.300140]
+   
+];
 
-    var polyline = L.polyline(latLng, {color: 'red'}).addTo(map);
-
-
-
-
-
-
+var polyline = L.polyline(latLng, {color: '#003366'}).addTo(map);
 
