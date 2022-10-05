@@ -51,7 +51,7 @@ const popupTemplate = `
     <br>
     Niveau de difficulté : __difficulte__
     <br>
-    Distance : __distance__km<br>Dénivelé : __dinivele  
+    Distance : __distance__km<br>Dénivelé : __denivele  
 `;
 
 const markers = DATA.map(d => [
