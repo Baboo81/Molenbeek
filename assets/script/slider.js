@@ -1,3 +1,5 @@
+// 
+if(window.innerWidth < 961){
 // Select all slides
 const slides = document.querySelectorAll( ".slide" );
 
@@ -197,6 +199,18 @@ if (el === slide3) {
 if (el === slide1) {
     arrowPrev.classList.remove('pale');
 }
+}
+}
+
+let arrow = document.getElementsByClassName('arrow');
+
+if(window.innerWidth > 961){ 
+console.log(arrow);
+// Have to do loop because getElementsByClassName returns a collection. Loop deals with each element in the collection individually.
+for (let i = 0; i < arrow.length; i++) {
+    arrow[i].classList.add("hidden");
+console.log(arrow[i]);
+  }
 }
   
 

@@ -52,13 +52,13 @@
   background: #bfbfbf;
 }
 
-@media (min-width: 320px) { /* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
   .cards-wrapper {
     overflow: hidden;
   }
   .slider {
     width: 100%;
-    max-width: 800px;
     height: 700px;
     position: relative;
     background: #BBE8EF;
@@ -169,6 +169,55 @@
   }
   .arrow svg.pale {
     opacity: 0.2;
+  }
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .card-item .description {
+    padding: 20px 30px 30px 30px;
+  }
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .slide {
+    width: 70vw;
+  }
+  .arrow-prev {
+    padding: 0 7vw 0 3vw;
+  }
+  .arrow-next {
+    padding: 0 3vw 0 7vw;
+  }
+  .card-item {
+    margin: 20px 25px;
+  }
+}
+@media (min-width: 961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .slider {
+    padding: 50px 5vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+  }
+  .slide {
+    width: 300px;
+    position: relative;
+  }
+  .card-item {
+    margin: 0px;
+  }
+  .arrow {
+    display: none;
+  }
+  .cards-wrapper {
+    justify-content: center;
+  }
+}
+@media (min-width: 1025px) { /* big landscape tablets, laptops, and desktops */
+  .slider {
+    grid-column-gap: 20px;
+    padding: 50px 10vw;
   }
 }
 

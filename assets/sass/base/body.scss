@@ -2,6 +2,9 @@
     /* smartphones, iPhone, portrait 480x320 phones */
     @import '../base/var.scss';
 
+    .hidden {
+        display: none;
+    }
     body {
         background-color: $bg1;
         font-size: 16px;
@@ -25,7 +28,7 @@
     }
 
     h3 {
-        font-size: 30px;
+        font-size: 28px;
         line-height: 1.5;
         margin: 0 0 10px 0;
         font-family: $font-titles;
@@ -289,26 +292,37 @@
 
     //! Cannot get links to work when z-index = -1 !!!
 
-    #liens-utiles {
-        flex-direction: column;
+    
+#liens-utiles {
+	flex-direction: column;
+	li {
+		list-style: none;
+		padding: 5px 0;
+		display: grid;
+		grid-template-columns: 20px 1fr;
+		grid-column-gap: 15px;
+		img {
+			max-width: 100%;
+			height: 15px;
+			padding-top: 7px;
+		}
+		a {
+			&:hover, &:active {
+				opacity: 60%;
+				font-weight: 600;
+				text-decoration: underline;
+			}
+		}
+	}
+}
 
-        li {
-            list-style: none;
-            padding: 5px 0;
-            display: grid;
-            grid-template-columns: 20px 1fr;
-            grid-column-gap: 15px;
-            img {
-                max-width: 100%;
-                height: 15px;
-                padding-top: 7px;
-            }
-        }
-
-        a:hover,
-        a:active {
-            opacity: 60%;
-            font-weight: 600;
-            text-decoration: underline;
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    h3 {
+        font-size: 30px;
     }
 }
+
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

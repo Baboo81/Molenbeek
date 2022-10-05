@@ -52,6 +52,10 @@
   background: #bfbfbf;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   background-color: #FFFFFF;
   font-size: 16px;
@@ -74,7 +78,7 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1.5;
   margin: 0 0 10px 0;
   font-family: "Shadows Into Light", cursive;
@@ -302,11 +306,20 @@ section.guide .website a:hover, section.guide .website a:active {
   height: 15px;
   padding-top: 7px;
 }
-#liens-utiles a:hover,
-#liens-utiles a:active {
+#liens-utiles li a:hover, #liens-utiles li a:active {
   opacity: 60%;
   font-weight: 600;
   text-decoration: underline;
 }
+
+@media (min-width: 481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  h3 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width: 961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width: 1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width: 1281px) { /* hi-res laptops and desktops */ }
 
 /*# sourceMappingURL=body.css.map */

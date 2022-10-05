@@ -218,14 +218,13 @@
     text-transform: none;
     font-size: 1.2rem;
   }
-  .menu-items li .submenu a:link,
-.menu-items li .submenu a:visited {
+  .menu-items li .submenu:link, .menu-items li .submenu:visited {
     padding: 10px, 20px;
   }
-  .menu-items li .submenu a:active {
+  .menu-items li .submenu:active {
     font-weight: 600;
   }
-  .menu-items li .submenu a:active .bullet {
+  .menu-items li .submenu:active .bullet {
     background-image: url("/assets/img/icons/moulin-shape.svg");
   }
   .logo {
