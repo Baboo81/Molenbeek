@@ -36,15 +36,13 @@
 }
 
 .cards-wrapper {
-  height: 100vh;
-  background-color: #FFFFFF;
   overflow: hidden;
 }
 
 .slider {
   width: 100%;
   max-width: 800px;
-  height: 660px;
+  height: 700px;
   position: relative;
   background: #BBE8EF;
   display: grid;
@@ -102,6 +100,10 @@
 .card-item .description.description-3 {
   background: #A64253;
 }
+.card-item .description h3 {
+  width: 100%;
+  text-align: center;
+}
 
 .filter {
   margin: 15px 5px;
@@ -128,13 +130,8 @@
   justify-content: center;
 }
 
-.arrow {
-  height: 100%;
-  position: absolute;
-  align-items: center;
-}
-.arrow:active {
-  transform: scale(1.1);
+.loaded {
+  opacity: 1;
 }
 
 .arrow-prev {
@@ -147,6 +144,23 @@
   right: 0;
   padding: 0 1vw 0 2vw;
   background: linear-gradient(to left, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.arrow {
+  height: 100%;
+  position: absolute;
+  align-items: center;
+}
+.arrow:active {
+  transform: scale(1.1);
+}
+
+.arrow svg {
+  opacity: 1;
+  transition: opacity 0.9s;
+}
+.arrow svg.pale {
+  opacity: 0.2;
 }
 
 /*# sourceMappingURL=slider.css.map */

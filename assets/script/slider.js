@@ -53,14 +53,14 @@ nextSlide.addEventListener( "click", function ()
         slide.style.transform = `translateX(${ 100 * ( indx - curSlide ) }%)`;
     } );
 
-    if ( curSlide === maxSlide )
-    {
-        arrowNext.style.opacity = `0.2`;
-    }
-    else
-    {
-        arrowNext.style.opacity = `1`;
-    }
+    // if ( curSlide === maxSlide )
+    // {
+    //     arrowNext.style.opacity = `0.2`;
+    // }
+    // else
+    // {
+    //     arrowNext.style.opacity = `1`;
+    // }
 } );
 
 // select prev slide button
@@ -86,13 +86,118 @@ prevSlide.addEventListener( "click", function ()
     {
         slide.style.transform = `translateX(${ 100 * ( index - curSlide ) }%)`;
     } );
-    if ( curSlide === 0 )
-    {
-        arrowPrev.style.opacity = `0.2`;
-    }
-    else
-    {
-        arrowPrev.style.opacity = `1`;
-    }
+    // if ( curSlide === 0 )
+    // {
+    //     arrowPrev.style.opacity = `0.2`;
+    // }
+    // else
+    // {
+    //     arrowPrev.style.opacity = `1`;
+    // }
 
 } );
+
+
+// Intersection observer (something happens when an element scrolls into view)
+
+// Grab all of the elements that you wish to play with
+
+   
+console.log(slides);
+console.log(arrowNext);
+console.log(arrowPrev);
+
+//    loop through each element and add the “loadin” class.
+
+slides.forEach((slide) => {
+console.log(slide);
+slide.classList.add('loadin');
+});
+
+// let curSlide = 0;
+
+// let maxSlide = slides.length - 1;
+
+// let midSlide = slides.length - 2;
+
+const slide1 = document.querySelector('.slide-1');
+
+const slide2 = document.querySelector('.slide-2');
+
+const slide3 = document.querySelector('.slide-3');
+
+console.log(slide1, slide2, slide3);
+
+// if ( curSlide === maxSlide )
+// {
+//     curSlide = 0;
+
+//     // if not, go to next slide
+// } else
+// {
+//     curSlide++;
+// }
+
+// if ( curSlide === maxSlide )
+// {
+//     arrowNext.style.opacity = `0.2`;
+// }
+// else
+// {
+//     arrowNext.style.opacity = `1`;
+//    }
+
+
+//    set up the Intersection Observer API
+
+const observerOptions = {
+    root: null, // viewport is root element
+    rootMargin: '0px',
+    threshold: 0.5, // how much of target object needs to appear in viewport to register
+   };
+
+// function that we will pass as a callback to the intersection instance. We are adding the class as soon as the element enters the viewport.
+
+function observerCallback(entries) {
+    entries.forEach((entry) => {
+     if (entry.isIntersecting) {
+      entry.target.classList.add('loaded');
+      fadeArrow(entry.target);
+    //   arrowNext.classList.add('pale');
+     } else {
+        entry.target.classList.remove("loaded");
+        revertArrow(entry.target);
+        // arrowNext.classList.remove('pale');
+      }
+    });
+  }
+
+// create a new instance of the API. Apply callback function using options set above.
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+observer.observe(slide1);
+observer.observe(slide3);
+
+
+  
+function fadeArrow(el) {
+if (el === slide3) {
+    arrowNext.classList.add('pale');
+}
+if (el === slide1) {
+    arrowPrev.classList.add('pale');
+}
+}
+
+function revertArrow(el) {
+if (el === slide3) {
+    arrowNext.classList.remove('pale');
+}
+if (el === slide1) {
+    arrowPrev.classList.remove('pale');
+}
+}
+  
+
+

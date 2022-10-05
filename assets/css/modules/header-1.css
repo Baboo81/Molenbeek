@@ -117,7 +117,10 @@
   height: 60px;
 }
 .nav-container .hamburger-lines {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
   height: 26px;
   width: 32px;
   position: absolute;
