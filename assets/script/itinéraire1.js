@@ -45,7 +45,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //Ajout de POI: cfr:json1.js
 
 
-// //Génération des marqeurs + paramètre changement couleur:
+//Génération des marqeurs + paramètre changement couleur:
 const popupTemplate = `
     <b>__lieu__</b>
     <br>
