@@ -312,14 +312,64 @@ section.guide .website a:hover, section.guide .website a:active {
   text-decoration: underline;
 }
 
-@media (min-width: 481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
   h3 {
     font-size: 30px;
   }
 }
-@media (min-width: 641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width: 961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width: 1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width: 1281px) { /* hi-res laptops and desktops */ }
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  p {
+    margin: 20px 0;
+  }
+  #intro .btn-wrapper {
+    display: none;
+  }
+  #intro {
+    display: grid;
+    grid-template-columns: 25vw 1fr 1fr;
+    grid-template-rows: 130px 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+  #intro #intro-title {
+    grid-area: 1/1/2/2;
+    width: 330px;
+    align-content: flex-start;
+  }
+  #intro #intro-text {
+    grid-area: 2/1/3/2;
+  }
+  #intro #intro-img {
+    grid-area: 1/2/3/4;
+    align-items: flex-end;
+    padding-top: 20px;
+  }
+  #intro {
+    /* padding: 20px 40px; */
+    padding: 50px 5vw;
+  }
+  body {
+    /* font-size: 16px; */
+    font-size: 14px;
+  }
+  #intro {
+    /* grid-template-columns: 30vw 1fr 1fr; */
+    grid-template-columns: 25vw 1fr 1fr;
+  }
+  #intro #intro-text {
+    display: block;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
 
 /*# sourceMappingURL=body.css.map */
