@@ -203,6 +203,7 @@ if (el === slide1) {
 }
 
 let arrow = document.getElementsByClassName('arrow');
+let cardsWrapper = document.getElementById('cards-wrapper');
 
 if(window.innerWidth > 961){ 
 console.log(arrow);
@@ -211,6 +212,8 @@ for (let i = 0; i < arrow.length; i++) {
     arrow[i].classList.add("hidden");
 console.log(arrow[i]);
   }
+console.log(cardsWrapper);
+cardsWrapper.style.background = "linear-gradient(to bottom, rgba(187,232,239,0) 0%,rgba(187,232,239,0.55) 30%,rgba(187,232,239,0.7) 45%,rgba(187,232,239,1) 100%)";
 }
   
 

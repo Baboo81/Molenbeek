@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .infobox {
-  background: #BBE8EF;
+  background: #bbe8ef;
   padding: 25px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -56,12 +56,13 @@
   /* smartphones, iPhone, portrait 480x320 phones */
   .cards-wrapper {
     overflow: hidden;
+    background: #bbe8ef;
   }
   .slider {
     width: 100%;
+    max-width: 1000px;
     height: 700px;
     position: relative;
-    background: #BBE8EF;
     display: grid;
     place-items: center;
   }
@@ -206,7 +207,7 @@
 }
 @media (min-width: 961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
   .slider {
-    padding: 50px 5vw;
+    padding: 0 10vw 50px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
@@ -229,7 +230,7 @@
 @media (min-width: 1025px) { /* big landscape tablets, laptops, and desktops */
   .slider {
     grid-column-gap: 20px;
-    padding: 50px 10vw;
+    padding: 0 50px 10vw;
   }
 }
 
