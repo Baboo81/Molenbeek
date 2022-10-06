@@ -21,6 +21,7 @@ $padding-box: 25px;
 $margin-p: 10px 0;
 $padding-0: 0;
 
+
 // boîtes d'information
 
 @mixin infobox($bg) {
@@ -232,3 +233,4 @@ $padding-0: 0;
 // { @include box_shadow(1, 'bottom');}
 // { @include box_shadow(3, 'top'); } 
 // etc... 
+
