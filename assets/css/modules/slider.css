@@ -166,6 +166,9 @@
   .arrow svg {
     opacity: 1;
     transition: opacity 0.9s;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
   }
   .arrow svg.pale {
     opacity: 0.2;
@@ -173,20 +176,29 @@
 }
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .slide {
+    width: 360px;
+  }
   .card-item .description {
     padding: 20px 30px 30px 30px;
+  }
+  .arrow-prev {
+    padding: 0 2vw 0 calc(38vw - 140px);
+  }
+  .arrow-next {
+    padding: 0 calc(38vw - 140px) 0 2vw;
   }
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
   .slide {
-    width: 70vw;
+    width: 400px;
   }
   .arrow-prev {
-    padding: 0 7vw 0 3vw;
+    padding: 0 2vw 0 calc(45vw - 170px);
   }
   .arrow-next {
-    padding: 0 3vw 0 7vw;
+    padding: 0 calc(45vw - 170px) 0 2vw;
   }
   .card-item {
     margin: 20px 25px;
