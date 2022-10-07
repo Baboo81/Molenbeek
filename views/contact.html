@@ -1,14 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <script src="assets/script/header.js" defer></script>
+    <script src="/assets/script/header.js" defer></script>
     <title>Document</title>
 </head>
+
 <body>
-    <h2>Voici la page: contact</h2>
+    <header class="global-header">
+		<nav>
+			<div class="navbar">
+				<div class="container nav-container">
+					<!-- <input class="checkbox" type="checkbox" name="" id="" /> -->
+					<div class="hamburger-lines">
+						<span class="line line1"></span>
+						<span class="line line2"></span>
+						<span class="line line3"></span>
+					</div>
+					<div class="logo">
+						<img src="/assets/img/logos/logo-uni.svg" alt="logo">
+					</div>
+					<div class="menu-items right">
+						<ul class="main-menu">
+							<li><a id="first-child" href="#">Les Itinéraires<div id="dropdown-arrow">
+									</div>
+								</a>
+
+								<ul class="submenu hidden">
+									<li><a href="/views/itin1.html">
+											<div class="bullet"></div>Molenbeek Maritime
+										</a></li>
+									<li><a href="/views/itin2.html">
+											<div class="bullet"></div>Molenbeek en Vélo
+										</a></li>
+									<li><a href="/views/itin3.html">
+											<div class="bullet"></div>Molenbeek Historique
+										</a></li>
+								</ul>
+							</li>
+
+							<li><a href="/views/contact.html">Contact</a></li>
+							<li><a href="/views/projet.html">Le Projet</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+    <main>
+    <section id="contact">
+        <h2>Contact</h3>
+
+            <p>Envie de poser une question ? Besoin de plus d'informations sur les itinéraires, les points d'intérest ou
+                sur
+                notre projet ? Avoir des suggestions de nouveaux itinéraires, ou des améliorations à apporter à notre
+                site
+                web ?</p>
+
+                <p>
+                    N'hésitez pas à nous contacter !
+                </p>
+
+                <h3>Où nous trouver</h3>
+            <div id="contact-box" class="infobox">
+
+                <div id="contact-details">
+                    <img src="/assets/img/icons/icon-address.svg" alt="adresse">
+
+                    <address>
+                        Interface3 | Rue Gaucheret 88-90 | 1030 Bruxelles
+                    </address>
+                    <img src="/assets/img/icons/icon-email.svg" alt="e-mail"><a
+                        href="mailto: info@example.com">info@example.com</a>
+                    <img src="/assets/img/icons/icon-phone.svg" alt="téléphone"><a href="tel:+32 (0)2 219 15 10">+32
+                        (0)2 219 15 10</a>
+                </div>
+            </div>
+
+            <p>Nous nous efforcerons de répondre le plus rapidement possible.</p>
+<!-- 
+<div class="infobox">
+    <h3>Social media</h3>
+    <div id="social-media">
+        <a href="#"><img src="/assets/img/icons/icon-insta.svg" alt="Instagram">Instagram</a>
+        <a href="#"><img src="/assets/img/icons/icon-fb.svg" alt="Facebook">Facebook</a>
+        <a href="#"><img src="/assets/img/icons/icon-twitter.svg" alt="Twitter">Twitter</a>
+        <a href="#"><img src="/assets/img/icons/icon-linkedin.svg" alt="Linkedin">Linkedin</a>
+    </div>
+</div>
+         -->
+
+
+         <h3>Liens utiles</h3>
+            <ul id="liens-utiles">
+
+                <li><img src="/assets/img/icons/moulin.svg" alt="moulin"><a href="https://www.molenbeek.irisnet.be/fr" target="_blank">
+                    Commune de Molenbeek</a></li>
+                
+                <li><img src="/assets/img/icons/moulin.svg" alt="moulin"><a href="http://www.lamaison1080hethuis.be/" target="_blank">
+                    Maison des Cultures et de la Cohésion Sociale de Molenbeek</a></li>
+                
+                <li><img src="/assets/img/icons/moulin.svg" alt="moulin"><a href="https://www.visit.brussels/fr/visiteurs" target="_blank">
+                    Visit Brussels</a></li>
+                
+                <li><img src="/assets/img/icons/moulin.svg" alt="moulin"><a href="https://be.brussels/" target="_blank">
+                Région de Bruxelles</a></li>
+                
+            </ul>
+    </section>
+</main>
 </body>
+
 </html>

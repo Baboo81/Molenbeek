@@ -21,14 +21,12 @@
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
 		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
 		crossorigin=""></script>
-	 <script src="assets/script/header.js" defer>
 		</script>
 		<script src="assets/script/slider.js" defer></script>
 		<!--Lien  trace itinéraire-->
-		
 		<script src="assets/script/header.js" defer></script>
+		<script src="assets/script/main.js" defer></script>
 
-		
 
 </head>
 
@@ -77,15 +75,15 @@
 	</header>
 	<main>
 		<section id="intro">
-			<div id="wrapper">
+			<!-- <div id="wrapper"> -->
 				<div id="intro-title">
 					<img src="/assets/img/logos/logo-thin.svg" alt="Molenbeek en promenade">
 				</div>
 				<div id="intro-img">
-					<img ig="cityscape" src="assets/img/illustrations/Molenbeek-scene-mobile-outline.svg"
+					<img id="cityscape" src="assets/img/illustrations/Molenbeek-scene-mobile-outline.svg"
 						alt="Paysage urbain de Molenbeek">
 				</div>
-			</div>
+			<!-- </div> -->
 			<div id="intro-text" class="text">
 				<h1>Molenbeek en quelques mots ...</h1>
 
@@ -104,7 +102,7 @@
 			<!-- <button class="btn btn-light">les itinéraires</button> -->
 		</section>
 		<section id="carousel">
-			<div class="cards-wrapper">
+			<div class="cards-wrapper" id="cards-wrapper">
 
 				<div class="slider">
 
@@ -127,7 +125,7 @@
 									<img src="/assets/img/icons/icon-personne.svg" alt="horloge">
 									<p class="route-info" id="info-3">Familles, personnes à mobilité reduite</p>
 								</div>
-								<div class="btn-wrapper-card"><a href="/views/itin2.html"><button
+								<div class="btn-wrapper-card"><a href="/views/itin1.html"><button
 											class="btn btn-light">Itineraire</button></a></div>
 							</div>
 						</div>
@@ -152,7 +150,7 @@
 									<img src="/assets/img/icons/icon-personne.svg" alt="horloge">
 									<p class="route-info" id="info-3">Familles, personnes à mobilité reduite</p>
 								</div>
-								<div class="btn-wrapper-card"><a href="/views/itin1.html"><button
+								<div class="btn-wrapper-card"><a href="/views/itin2.html"><button
 											class="btn btn-light">Itineraire</button></a></div>
 							</div>
 						</div>
@@ -201,8 +199,6 @@
 
 			</div>
 		</section>
-
-		
 	</main>
 	<footer>
 		<div id="footer-top">
