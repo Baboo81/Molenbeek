@@ -1,218 +1,10 @@
 @import "../base/var.scss";
 
-<<<<<<< HEAD
 .cards-wrapper {
 	overflow: hidden;
-=======
-//TODO Make carousel swipable !
-@media (min-width:320px) {
-
-	/* smartphones, iPhone, portrait 480x320 phones */
-	.cards-wrapper {
-		overflow: hidden;
-		background: $bg2;
-
-	}
-
-	.slider {
-		width: 100%;
-		max-width: 1000px;
-		height: 700px;
-		position: relative;
-		display: grid;
-		place-items: center;
-	}
-
-	.slide {
-		width: 85vw;
-		position: absolute;
-		transition: all 0.5s;
-		justify-content: center;
-	}
-
-	.card-item {
-		overflow: hidden;
-		margin: 20px 10px 20px 10px;
-		border-radius: 10px;
-		width: 80vw;
-		flex-wrap: wrap;
-		flex-direction: row;
-
-		.thumb {
-			background-position: 50% 50%;
-			background-repeat: no-repeat;
-			background-size: cover;
-			width: 80vw;
-			height: 230px;
-			z-index: 0;
-
-			&.thumb-1 {
-				background-image: url("/assets/img/itinéraire-maritime/maritime-sm/canal-soir-sm.jpeg");
-			}
-
-			&.thumb-2 {
-				background-image: url("/assets/img/itinéraire-maritime/maritime-sm/fleurs-sm.jpeg");
-			}
-
-			&.thumb-3 {
-				background-image: url("/assets/img/itinéraire-maritime/maritime-sm/De_Vaartkapoen-sm.jpeg");
-			}
-
-		}
-
-		.description {
-			max-width: 100%;
-			padding: 20px 20px 30px 20px;
-			background: $route1;
-			font-size: 14px;
-			color: $bg1;
-			flex-wrap: wrap;
-			flex-direction: row;
-			justify-content: space-between;
-
-
-			&.description-1 {
-				background: $route1;
-			}
-
-			&.description-2 {
-				background: $route2;
-			}
-
-			&.description-3 {
-				background: $route3;
-			}
-
-			h3 {
-				width: 100%;
-				text-align: center;
-			}
-		}
-	}
-
-	.filter {
-		margin: 15px 5px;
-		display: grid;
-		grid-template-columns: 1fr 5fr;
-		grid-template-rows: repeat(3);
-		grid-column-gap: 5px;
-		grid-row-gap: 10px;
-		font-weight: 300;
-
-		p {
-			padding: 0;
-			margin: 0;
-		}
-
-		img {
-			width: 20px;
-			height: 20px;
-			margin-right: 15px;
-		}
-	}
-
-	.btn-wrapper-card {
-		display: flex;
-		width: 100%;
-		justify-content: center;
-	}
-
-	// Intersection observer (something happens when an element scrolls into view)
-
-
-
-
-
-	.loaded {
-		opacity: 1;
-
-	}
-
-	.arrow-prev {
-		left: 0;
-		padding: 0 2vw 0 1vw;
-		background: $grad-right;
-	}
-
-	.arrow-next {
-		right: 0;
-		padding: 0 1vw 0 2vw;
-		background: $grad-left;
-	}
-
-	.arrow {
-
-		height: 100%;
-		position: absolute;
-		align-items: center;
-
-
-		&:active {
-			transform: scale(1.1);
-		}
-	}
-
-	.arrow {
-
-		svg {
-			opacity: 1;
-			transition: opacity 0.9s;
-			background-color: white;
-    padding: 10px;
-    border-radius: 50%;
-
-			&.pale {
-				opacity: 0.2;
-			}
-
-		}
-
-	}
->>>>>>> origin/ellie
 }
 
-@media (min-width: 481px) {
-
-	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-
-	.slide {
-		width: 360px;
-	}
-
-	.card-item .description {
-		padding: 20px 30px 30px 30px;
-	}
- 
-	.arrow-prev {
-		padding: 0 2vw 0 calc(38vw - 140px);
-	}
-	.arrow-next {
-	padding: 0 calc(38vw - 140px) 0 2vw;
-	}
-}
-
-@media (min-width: 641px) {
-	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-	.slide {
-		width: 400px;
-	}
-
-	.arrow-prev {
-		padding: 0 2vw 0 calc(45vw - 170px);
-	}
-
-	.arrow-next {
-		padding: 0 calc(45vw - 170px) 0 2vw;
-	}
-
-	.card-item {
-	margin: 20px 25px;
-	}
-}
-//TODO remove carousel function, have simple cards
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 .slider {
-<<<<<<< HEAD
 	width: 100%;
 	max-width: 800px;
 	height: 700px;
@@ -221,22 +13,15 @@
 	display: grid;
 	place-items: center;
 }
-=======
-	padding: 0 10vw 50px;
-	grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 20px;
-grid-row-gap: 0px;
->>>>>>> origin/ellie
 
-}
 .slide {
-		width: 300px;
-		position:relative;
+	width: 85vw;
+	position: absolute;
+	transition: all 0.5s;
+	justify-content: center;
 }
 
 .card-item {
-<<<<<<< HEAD
 	overflow: hidden;
 	margin: 20px 10px 20px 10px;
 	border-radius: 10px;
@@ -372,22 +157,3 @@ grid-row-gap: 0px;
 
 }
 
-=======
-	margin: 0px;
-}
-
-.arrow {
-	display: none;
-}
-
-.cards-wrapper {
-	justify-content: center;
-}
-}
-@media (min-width: 1025px) { /* big landscape tablets, laptops, and desktops */ 
-	.slider {
-	grid-column-gap: 20px;
-	padding: 0 50px 10vw;
-	}
-}
->>>>>>> origin/ellie

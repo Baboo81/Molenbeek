@@ -1,9 +1,4 @@
-/* smartphones, iPhone, portrait 480x320 phones */
 @import '../base/var.scss';
-
-.hidden {
-    display: none;
-}
 
 body {
     background-color: $bg1;
@@ -28,7 +23,7 @@ h2 {
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 1.5;
     margin: 0 0 10px 0;
     font-family: $font-titles;
@@ -59,12 +54,8 @@ address {
 }
 
 p {
-<<<<<<< HEAD
     padding: 10px 0;
     margin: 0;
-=======
-    margin: 10px 0;
->>>>>>> origin/ellie
 }
 
 // home
@@ -72,38 +63,11 @@ p {
 #intro {
     padding: $padding-section;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/ellie
     #intro-title,
     #intro-text {
         flex-wrap: wrap;
         width: 100%;
-<<<<<<< HEAD
-=======
-    }
-
-    #wrapper {
-        flex-direction: column;
-    }
-
-    .btn-wrapper {
-        justify-content: center;
-        padding: 20px 0;
-    }
-
-    #intro-img {
-        width: 100%;
-        flex-wrap: wrap;
-        // transform:scale(1.15); //! gâche le z-index !
-        // z-index: 0;
-        margin-bottom: 20px;
-
-        img {
-            flex-wrap: wrap;
-        }
->>>>>>> origin/ellie
     }
 
     // #intro-title {
@@ -117,45 +81,8 @@ p {
     flex-direction: column;
 }
 
-// projet
-.top-photo {
-    height: 400px;
-
-    img {
-        object-fit: cover;
-    }
-}
-
-.top-photo~section {
-    padding: $padding-section;
-
-    a {
-        text-decoration: underline;
-        font-weight: 600;
-
-        &:hover,
-        &:active {
-            opacity: 60%;
-        }
-
-        &:visited {
-            opacity: 80%;
-        }
-    }
-}
-
-// itinéraire
-
-.header-space {
-    height: 60px;
-    background: $bg3;
-}
-
-.title-box {
-    width: 100%;
-    height: 120px;
+.btn-wrapper {
     justify-content: center;
-<<<<<<< HEAD
     padding: 20px 0;
 }
 
@@ -209,8 +136,6 @@ p {
     width: 100%;
     height: 120px;
     justify-content: center;
-=======
->>>>>>> origin/ellie
     align-items: center;
     border-bottom: 5px solid $route1;
 
@@ -304,210 +229,10 @@ section.guide {
         a {
             color: $bg3;
 
-<<<<<<< HEAD
             &:hover, &:active {
-=======
-            &:hover,
-            &:active {
->>>>>>> origin/ellie
                 color: $text;
                 opacity: 80%;
             }
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
-
-
-
-// contact
-
-#contact {
-    padding: $padding-section;
-
-    a:hover,
-    a:active {
-        opacity: 60%;
-    }
-
-    p {
-        margin: $margin-p;
-    }
-
-}
-
-#contact-box {
-    flex-direction: column;
-    align-items: center;
-
-    #contact-details {
-        display: grid;
-        grid-template-columns: 20px 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 15px;
-
-
-        img {
-            max-width: 100%;
-        }
-
-
-    }
-
-}
-
-#social-media {
-    flex-direction: column;
-
-    a {
-        display: grid;
-        grid-template-columns: 25px 1fr;
-        grid-column-gap: 10px;
-        margin: $margin-p;
-
-        img {
-            max-width: 100%;
-            height: 25px;
-        }
-
-    }
-}
-
-//! Cannot get links to work when z-index = -1 !!!
-
-
-#liens-utiles {
-    flex-direction: column;
-
-    li {
-        list-style: none;
-        padding: 5px 0;
-        display: grid;
-        grid-template-columns: 20px 1fr;
-        grid-column-gap: 15px;
-
-        img {
-            max-width: 100%;
-            height: 15px;
-            padding-top: 7px;
-        }
-
-        a {
-
-            &:hover,
-            &:active {
-                opacity: 60%;
-                font-weight: 600;
-                text-decoration: underline;
-            }
-        }
-    }
-}
-
-@media (min-width:481px) {
-
-    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-    h3 {
-        font-size: 30px;
-    }
-
-    #intro {
-        /* padding: 20px 40px; */
-        padding: 5vw 40px;
-      }
-}
-
-@media (min-width:641px) {
-    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-
-    #intro {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        grid-template-rows: 1fr 1fr auto;
-        padding: 50px 0;
-        #intro-title {
-            grid-area: 1 / 1 / 2 / 2;
-            position: relative;
-            z-index: 1;
-            width: 40vw;
-            left: calc(20vw - 50px);
-            min-width: 50%;
-            margin: auto;
-        }
-        #intro-text {
-            grid-area: 3 / 1 / 4 / 3;
-            width: 100%;
-            padding-left: 80px;
-        }
-        #intro-img {
-            grid-area: 1 / 2 / 3 / 4;
-            right: 80px;
-            position: relative;
-            z-index: 0;
-        }
-        .btn-wrapper {
-            grid-area: 3 /3 /4 /4;
-            display: none;
-        }
-    }
-
-
-}
-
-
-@media (min-width:961px) {
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
-    body {
-        font-size: 14px;
-    }
-    p {
-        margin: 20px 0;
-    }
-    #intro {
-        .btn-wrapper {
-            display: none;
-        }
-        display: grid;
-        grid-template-columns: 25vw 1fr 1fr;
-        grid-template-rows: 130px 1fr;
-        grid-column-gap: 30px;
-        grid-row-gap: 0px;
-        padding: 50px 5vw;
-        #intro-title {
-            grid-area: 1 / 1 / 2 / 2;
-            width: 330px;
-            align-content: flex-start;
-            position: static;
-        }
-        #intro-text {
-            grid-area: 2 / 1 / 3 / 2;
-            display: block;
-            margin-bottom: 30px;
-            padding-left: 0;
-        }
-        #intro-img {
-            grid-area: 1 / 2 / 3 / 4;
-            align-items: flex-end;
-            padding-top: 20px;
-            position: static;
-        }
-    }
-}
-
-@media (min-width:1025px) {
-    /* big landscape tablets, laptops, and desktops */
-    #intro {
-        width: 1025px;
-        margin: auto;
-        #intro-img {
-            padding-top: 20px;
-            align-content: space-around;
-        }
-    }
-    
-}
->>>>>>> origin/ellie

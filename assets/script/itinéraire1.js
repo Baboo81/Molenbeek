@@ -126,5 +126,5 @@ var latLng = [
    
 ];
 
-var polyline = L.polyline(latLng, {color: '#006600'}).addTo(map);
+var polyline = L.polyline(latLng, {color: '#003366'}).addTo(map);
 
