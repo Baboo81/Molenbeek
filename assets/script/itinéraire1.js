@@ -51,9 +51,11 @@ const popupTemplate = `
     <br>
     <img src="__img__" alt="parc du Scheutbos" />
     <br>
-    Niveau de difficulté : __difficulte__
+    Niveau de difficulté : Facile
     <br>
-    Distance : __distance__km<br>Dénivelé : __dinivele  
+    Distance : __distance__km
+    <br>
+    Dénivelé : Null 
 `;
 
 const markers = DATA.map(d => [

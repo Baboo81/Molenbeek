@@ -17,7 +17,7 @@ const DATA = [
         image: '/assets/img/itinéraire2/maritime-sm/Maison_Communale_1-sm.jpeg',
         distance: 8,
         denivele: null,
-        difficulte: 'difficile'
+        difficulte: 'facile'
         
     },
     {
@@ -27,7 +27,7 @@ const DATA = [
         image: '/assets/img/itinéraire2/maritime-sm/Flamme-sm.jpeg',
         distance: 8,
         denivele: null,
-        difficulte: 'difficile'
+        difficulte: 'facile'
          
     },
     {
@@ -37,7 +37,7 @@ const DATA = [
         image: '/assets/img/itinéraire2/maritime-lg/Maison_Communale_1.jpeg',
         distance: 8,
         denivele: null,
-        difficulte: 'difficile'
+        difficulte: 'facile'
            
     },
     {
