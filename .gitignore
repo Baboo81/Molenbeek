@@ -1,0 +1,8 @@
+# ignore maquettes
+assets/img/maquettes/
+
+# ignore test files
+test/
+
+#ignore .vscode
+.vscode
