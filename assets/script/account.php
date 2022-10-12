@@ -1,5 +1,5 @@
 <?php
-    try {
+    try {//Objet PDO permet la connection à la BD:
         $mysqlClient = new PDO(
             sprintf('mysql:host=%s;dbname=%s;port=%s', 
             "localhost",
@@ -50,15 +50,6 @@
 
             $statement = $mysqlClient->prepare($sqlQuery); 
             $statement->execute(array("param_username" => $user_name, "param_password" => $pass_word));
-            
-    
-            //   SELECT *
-            //   FROM members
-            //   WHERE username = 'tata' AND password = '1234Soleil' 
-              
-                
-
-            
             $result = $statement->fetchAll(); 
          
             if($result){
