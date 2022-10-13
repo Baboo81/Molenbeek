@@ -34,7 +34,7 @@
         $connectedUser;
         $loginAttempt = 0;
 
-        if(isset($_POST['user'],$_POST['mail'] $_POST['password'])){
+        if(isset($_POST['user'],$_POST['mail'],$_POST['password'])){
             
             $loginAttempt++;
 
