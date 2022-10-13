@@ -11,6 +11,7 @@
 		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<!--Lien : main.css : Rassemble toutes les feuilles de style scss, compilées en css. -->
 	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/modules/header-1.css">
 	<!--Leaflet.js -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -19,7 +20,7 @@
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
 		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
 		crossorigin=""></script>
-	<script src="assets/script/header.js"></script>
+	<script src="/assets/script/header.js" defer></script>
 	<!--Lien  trace itinéraire-->
 
 </head>
@@ -29,7 +30,7 @@
 		<nav>
 			<div class="navbar">
 				<div class="container nav-container">
-					<input class="checkbox" type="checkbox" name="" id="" />
+					<!-- <input class="checkbox" type="checkbox" name="" id="" /> -->
 					<div class="hamburger-lines">
 						<span class="line line1"></span>
 						<span class="line line2"></span>
@@ -39,26 +40,33 @@
 						<img src="assets/img/logos/logo-uni.svg" alt="logo">
 					</div>
 					<div class="menu-items right">
-						<ul>
-							<li><a href="#">Les Itinéraires</a>
-								<div id="checkbox-wrapper"><input class="checkbox" type="checkbox" name="" id="checkbox-menu" />
-								</div>
-								<div class="arrow"><img src="./assets/img/icons/arrow-white-2.svg" alt="flèche" id="menu-arrow"></div>
+						<ul class="main-menu">
+							<li><a id="first-child" href="#">Les Itinéraires<div id="dropdown-arrow">
+									</div>
+								</a>
+
 								<ul class="submenu hidden">
-									<li><a href="#">Molenbeek Maritime</a></li>
-									<li><a href="#">Molenbeek en Vélo</a></li>
-									<li><a href="#">Molenbeek Historique</a></li>
+									<li><a href="/views/itin1.html">
+											<div class="bullet"></div>Molenbeek Maritime
+										</a></li>
+									<li><a href="/views/itin2.html">
+											<div class="bullet"></div>Molenbeek en Vélo
+										</a></li>
+									<li><a href="/views/itin3.html">
+											<div class="bullet"></div>Molenbeek Historique
+										</a></li>
 								</ul>
 							</li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Le Projet</a></li>
+
+							<li><a href="/views/contact.html">Contact</a></li>
+							<li><a href="/views/projet.html">Le Projet</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</nav>
 	</header>
-	
+
 </body>
 
 </html>

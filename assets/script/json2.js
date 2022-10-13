@@ -7,7 +7,7 @@ const DATA = [
         distance: 7.5,
         denivele: null,
         difficulte: 'facile'
-       
+       // adresse: Rue Sainte-Marie 1-6, 1080 Bxl
 
     },
     { 
@@ -17,8 +17,8 @@ const DATA = [
         image: '/assets/img/itinéraire2/maritime-sm/Maison_Communale_1-sm.jpeg',
         distance: 8,
         denivele: null,
-        difficulte: 'facile'
-        
+        difficulte: 'difficile'
+        //adresse: Rue Comte de Flandre 20, 1080 Bxl
     },
     {
         lat: 50.854828,
@@ -27,8 +27,8 @@ const DATA = [
         image: '/assets/img/itinéraire2/maritime-sm/Flamme-sm.jpeg',
         distance: 8,
         denivele: null,
-        difficulte: 'facile'
-         
+        difficulte: 'difficile'
+        //adresse: Place Communale, 1080 Bxl  
     },
     {
         lat: 50.854702473961176,
@@ -37,8 +37,8 @@ const DATA = [
         image: '/assets/img/itinéraire2/maritime-lg/Maison_Communale_1.jpeg',
         distance: 8,
         denivele: null,
-        difficulte: 'facile'
-           
+        difficulte: 'difficile'
+        //adresse:     
     },
     {
         lat: 50.85280408956153,
@@ -48,7 +48,7 @@ const DATA = [
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
-               
+        //adresse: Rue Fin, 1080 Bxl        
     },
     {
         lat: 50.85265509314037,
@@ -58,7 +58,7 @@ const DATA = [
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
-               
+        //adresse: Rue Ransfort 27, 1080 Bxl        
     },
     {
         lat: 50.85199792005185,
@@ -68,7 +68,7 @@ const DATA = [
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
-                 
+        //adresse: Rue de l'éléphant, 1080 Bxl          
     },
     {
         lat: 50.85107281916792,
@@ -78,7 +78,7 @@ const DATA = [
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
-                
+        //adresse: Quai du Hainaut 41-43, 1080 Bxl          
     },
     {
         lat: 50.852030028017204,
@@ -88,7 +88,7 @@ const DATA = [
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
-                  
+        //adresse: Quai du Hainaut 29, 1080 Bxl            
     },
     {
         lat: 50.855654495785004,
@@ -98,7 +98,7 @@ const DATA = [
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
-          
+        //Adresse: Quai des charbonnages 40, 1080 Bxl     
     }
   ]
 

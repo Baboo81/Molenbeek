@@ -1,3 +1,20 @@
+.infobox {
+  background: #bbe8ef;
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  a: hover;
+}
+.infobox h3 {
+  text-align: center;
+}
+.infobox a:visited {
+  opacity: 60%;
+}
+
 .btn {
   text-decoration: none;
   border: none;
