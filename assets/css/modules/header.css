@@ -2,11 +2,12 @@
   text-decoration: none;
   border: none;
   padding: 12px 25px;
-  min-width: 100px;
+  width: fit-content;
   border-radius: 25px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  display: flex;
 }
 
 .btn-dark {
