@@ -19,7 +19,7 @@
             $image_extensions = array("png","jpg","jpeg","gif","JPG");
 
             // Target directory
-            $dir = 'images/';
+            $dir = '../../assets/gallery2/images';
             if (is_dir($dir)){
                 
                 if ($dh = opendir($dir)){
