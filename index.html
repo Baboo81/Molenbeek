@@ -21,14 +21,12 @@
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
 		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
 		crossorigin=""></script>
-    <script src="assets/script/header.js" defer>
 		</script>
 		<script src="assets/script/slider.js" defer></script>
 		<!--Lien  trace itinéraire-->
-	
 		<script src="assets/script/header.js" defer></script>
+		<script src="assets/script/main.js" defer></script>
 
-		
 
 </head>
 
@@ -53,10 +51,10 @@
 								</a>
 
 								<ul class="submenu hidden">
-									<li><a href="/views/itin2.html">
+									<li><a href="/views/itin1.html">
 											<div class="bullet"></div>Molenbeek Maritime
 										</a></li>
-									<li><a href="/views/itin1.html">
+									<li><a href="/views/itin2.html">
 											<div class="bullet"></div>Molenbeek en Vélo
 										</a></li>
 									<li><a href="/views/itin3.html">
@@ -67,8 +65,6 @@
 
 							<li><a href="/views/contact.html">Contact</a></li>
 							<li><a href="/views/projet.html">Le Projet</a></li>
-							<li><a href="/views/galerie.html">Galerie</a></li>
-							<li><a href="/views/login.html">Login</a></li>
 						</ul>
 					</div>
 				</div>
@@ -77,18 +73,16 @@
 	</header>
 	<main>
 		<section id="intro">
-			<div id="wrapper">
+			<!-- <div id="wrapper"> -->
 				<div id="intro-title">
 					<img src="/assets/img/logos/logo-thin.svg" alt="Molenbeek en promenade">
 				</div>
 				<div id="intro-img">
-					<img ig="cityscape" src="assets/img/illustrations/Molenbeek-scene-mobile-outline.svg"
+					<img id="cityscape" src="assets/img/illustrations/Molenbeek-scene-mobile-outline.svg"
 						alt="Paysage urbain de Molenbeek">
 				</div>
-			</div>
+			<!-- </div> -->
 			<div id="intro-text" class="text">
-				<h2>Molenbeek en quelques phrases : </h2>
-
 				<p>Molenbeek est une des communes les plus passionnantes de Bruxelles.
 				</p>
 				<p>Autrefois centre industriel, Molenbeek est aujourd’hui un quartier diversifié et de plus en plus
@@ -104,7 +98,7 @@
 			<!-- <button class="btn btn-light">les itinéraires</button> -->
 		</section>
 		<section id="carousel">
-			<div class="cards-wrapper">
+			<div class="cards-wrapper" id="cards-wrapper">
 
 				<div class="slider">
 
@@ -201,8 +195,6 @@
 
 			</div>
 		</section>
-
-		
 	</main>
 	<footer>
 		<div id="footer-top">
