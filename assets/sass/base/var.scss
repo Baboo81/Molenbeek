@@ -1,15 +1,14 @@
 // Couleurs
 $bg1: #FFFFFF;
-$bg2: #bbe8ef;
+$bg2: #BBE8EF;
 $bg3: #669999;
 $text: #033333;
 $grey: #707070;
 $route1: #003366;
 $route2: #006600;
 $route3: #A64253;
-$grad-right: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-$grad-left: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-$grad-down: linear-gradient(to bottom, rgba(187,232,239,0) 0%,rgba(187,232,239,0.55) 30%,rgba(187,232,239,0.7) 45%,rgba(187,232,239,1) 100%);
+$grad-right: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+$grad-left: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 
 // Polices
 // @use '../base/fonts.scss';
@@ -18,80 +17,7 @@ $font-titles: 'Shadows Into Light', cursive;
 
 // Mise en page
 $padding-section: 20px 40px;
-$padding-box: 25px;
-$margin-p: 10px 0;
 $padding-0: 0;
-
-
-// boîtes d'information
-
-@mixin infobox($bg) {
-    background: $bg;
-    padding: $padding-box;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-
-    h3 {
-        text-align: center;
-    }
-
-    a:hover;
-
-    a:visited {
-        opacity: 60%;
-    }
-}
-
-.infobox {
-    @include infobox($bg2);
-}
-
-// @mixin ul-moulin {
-
-//         z-index: -1;
-//         position: relative;
-//         flex-direction: column;
-//         padding: 0;
-
-//         li {
-//             list-style: none;
-//             position: relative;
-//             padding: 5px 0 5px 30px;
-//         }
-
-//         li:before {
-//             content: '';
-//             background-image: url('/assets/img/icons/moulin-shape.svg');
-//             background-size: 15px 15px;
-//             background-repeat: no-repeat;
-//             display: inline-flex;
-//             position: absolute;
-//             left: 0;
-//             top: 10px;
-//             width: 15px;
-//             height: 15px;
-//         }
-
-//         li a  {
-//             list-style: none;
-//         }
-
-//         li a:hover,
-//         li a:active {
-//             opacity: 60%;
-//             font-weight: 600;
-//             text-decoration: underline;
-//     }
-        
-//     }
-       
-
-// .ul-moulin {
-//     @include ul-moulin;
-// }
 
 // Boutons
 @mixin button-bg-darken($bg) {
@@ -149,9 +75,8 @@ $padding-0: 0;
 // Box-shadow
 @mixin box_shadow ($level, $side) {
 
-    // Si tu veux une ombre plus lourde en bas...
+// Si tu veux une ombre plus lourde en bas...
     @if $side =='bottom' {
-
         // et que tu veux une ombre moins intense...
         @if $level ==1 {
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.12);
@@ -231,7 +156,7 @@ $padding-0: 0;
 // Alors écrire le niveau d'intensité (1-3), 
 // puis la direction de l'ombre (left, right, bottom, top, middle) 
 // dans le Sass, comme ça :
-// { @include box_shadow(1, 'bottom');}
-// { @include box_shadow(3, 'top'); } 
-// etc... 
+    // { @include box_shadow(1, 'bottom');}
+    // { @include box_shadow(3, 'top'); } 
+    // etc... 
 

@@ -45,15 +45,17 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //Ajout de POI: cfr:json1.js
 
 
-// //Génération des marqeurs + paramètre changement couleur:
+//Génération des marqeurs + paramètre changement couleur:
 const popupTemplate = `
     <b>__lieu__</b>
     <br>
     <img src="__img__" alt="parc du Scheutbos" />
     <br>
-    Niveau de difficulté : __difficulte__
+    Niveau de difficulté : Facile
     <br>
-    Distance : __distance__km<br>Dénivelé : __dinivele  
+    Distance : __distance__km
+    <br>
+    Dénivelé : Null 
 `;
 
 const markers = DATA.map(d => [
@@ -126,5 +128,5 @@ var latLng = [
    
 ];
 
-var polyline = L.polyline(latLng, {color: '#003366'}).addTo(map);
+var polyline = L.polyline(latLng, {color: '#006600'}).addTo(map);
 

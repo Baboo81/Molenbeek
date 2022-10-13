@@ -1,5 +1,3 @@
-// 
-if(window.innerWidth < 961){
 // Select all slides
 const slides = document.querySelectorAll( ".slide" );
 
@@ -199,21 +197,6 @@ if (el === slide3) {
 if (el === slide1) {
     arrowPrev.classList.remove('pale');
 }
-}
-}
-
-let arrow = document.getElementsByClassName('arrow');
-let cardsWrapper = document.getElementById('cards-wrapper');
-
-if(window.innerWidth > 961){ 
-console.log(arrow);
-// Have to do loop because getElementsByClassName returns a collection. Loop deals with each element in the collection individually.
-for (let i = 0; i < arrow.length; i++) {
-    arrow[i].classList.add("hidden");
-console.log(arrow[i]);
-  }
-console.log(cardsWrapper);
-cardsWrapper.style.background = "linear-gradient(to bottom, rgba(187,232,239,0) 0%,rgba(187,232,239,0.55) 30%,rgba(187,232,239,0.7) 45%,rgba(187,232,239,1) 100%)";
 }
   
 

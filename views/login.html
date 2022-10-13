@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <script src="assets/script/header.js" defer></script>
+        <title>Login</title>
+    </head>
+    <body>
+       
+        <h1>Connectez-vous à votre compte :</h1>
+
+        <form method="post" action="/assets/script/account.php">
+
+            <div> 
+                <label for="user">Nom d'utilisateur :</label>
+                <br />
+                <input type="text" id="user" required>
+            </div>
+            <div>
+                <label for="mail">Adresse mail :</label>
+                <br />
+                <input type="email" id="mail" required>
+            </div>
+            <div>
+                <label for="password">Mot de passe :</label>
+                <br />
+                <input type="password" id="password" placeholder="ZaRmT3NB8" required>
+            </div>
+            <div>
+                <input type="submit" value="Envoyer">
+            </div>
+
+        </form>
+
+
+
+    </body>
+</html>

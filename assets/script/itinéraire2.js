@@ -49,9 +49,10 @@ const popupTemplate = `
     <br>
     <img src="__img__" alt="parc du Scheutbos" />
     <br>
-    Niveau de difficulté : __difficulte__
+    Niveau de difficulté : facile
     <br>
-    Distance : __distance__km<br>Dénivelé : __dinivele  
+    Distance : __distance__km
+    <br>Dénivelé : Null  
 `;
 
 const markers = DATA.map(d => [
@@ -141,5 +142,5 @@ var latLng = [
     [50.855564, 4.341385],
 ];
 
-var polyline = L.polyline(latLng, {color: '#006600'}).addTo(map);
+var polyline = L.polyline(latLng, {color: '#003366'}).addTo(map);
 
