@@ -2,6 +2,7 @@
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
 header {
     z-index: 99;
+    width: 100%;
 }
 
     .hidden {
@@ -15,8 +16,7 @@ height: 0;
     color: $text !important;
     font-weight: 600;
 }
-.container {
-    max-width: 1050px;
+.nav-container {
     width: 100%;
     margin: auto;
     background: $bg3;
