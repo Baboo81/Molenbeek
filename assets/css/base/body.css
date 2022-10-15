@@ -116,6 +116,11 @@ p {
   margin: 10px 0;
 }
 
+main {
+  width: 100%;
+  overflow: hidden;
+}
+
 #intro {
   padding: 20px 40px;
 }
