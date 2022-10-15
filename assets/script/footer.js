@@ -52,7 +52,7 @@ function changeFooter(y) {
         footer.innerHTML = `
         <div id="footer-top">
             <img src="/assets/img/logos/logo-col.svg" alt="logo" id="logo-footer">
-            <a href="#" id="haut">
+            <a href="#top" id="haut">
                 <p>Haut de page</p>
                 <img src="/assets/img/icons/arrow-up-1.svg" alt="flèche vers le haut">
             </a>
