@@ -180,9 +180,6 @@
   .slide {
     width: 360px;
   }
-  .card-item .description {
-    padding: 20px 30px 30px 30px;
-  }
   .arrow-prev {
     padding: 0 2vw 0 calc(38vw - 140px);
   }

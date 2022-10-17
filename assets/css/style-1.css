@@ -36,32 +36,28 @@ body
     
 }
 
+section
+{
+    /*display: flex;*/
+    grid-column: 30% 70%;
+    
+}
 
-
+.points
+{
+    /*flex-direction: column;*/
+    
+}
 
 
 #mapid1
 { 
     height: 600px; 
-    width: 30vh;
+    width: 100%;
     padding: 10px;
 }
 
-.map1
-{
-    background-color: var(--colorX);
-    font-family: 'Courier New', Courier, monospace;
-    color: var(--colorZ);
-    margin-left: 20px ;
-    margin-top: 20px;
-    height: 600px;
-    width: 32vh;
-    padding: 20px;
-    border-radius: 3%;
-    border: 2px solid black; 
-    display: flex;
-    flex-direction: column;
-}
+
 
 
 #mapid2
