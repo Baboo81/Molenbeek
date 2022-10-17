@@ -8,9 +8,11 @@
   flex-direction: column;
   a: hover;
 }
+
 .infobox h3 {
   text-align: center;
 }
+
 .infobox a:visited {
   opacity: 60%;
 }
@@ -19,6 +21,8 @@
   text-decoration: none;
   border: none;
   padding: 12px 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 25px;
   font-family: "Poppins", sans-serif;
@@ -31,10 +35,12 @@
   background: #033333;
   color: white;
 }
+
 .btn-dark:hover {
   background: #055a5a;
   transition: all 0.3s ease;
 }
+
 .btn-dark:active {
   background: #0aabab;
 }
@@ -43,12 +49,14 @@
   background: white;
   color: #033333;
 }
+
 .btn-light:hover {
   background: #ebebeb;
   transition: all 0.3s ease;
 }
+
 .btn-light:active {
   background: #bfbfbf;
-}
+} /*# sourceMappingURL=var.css.map */
 
 /*# sourceMappingURL=var.css.map */
