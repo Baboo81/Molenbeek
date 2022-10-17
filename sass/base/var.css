@@ -1,0 +1,54 @@
+.infobox {
+  background: #bbe8ef;
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  a: hover;
+}
+.infobox h3 {
+  text-align: center;
+}
+.infobox a:visited {
+  opacity: 60%;
+}
+
+.btn {
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+}
+
+.btn-dark {
+  background: #033333;
+  color: white;
+}
+.btn-dark:hover {
+  background: #055a5a;
+  transition: all 0.3s ease;
+}
+.btn-dark:active {
+  background: #0aabab;
+}
+
+.btn-light {
+  background: white;
+  color: #033333;
+}
+.btn-light:hover {
+  background: #ebebeb;
+  transition: all 0.3s ease;
+}
+.btn-light:active {
+  background: #bfbfbf;
+}/*# sourceMappingURL=var.css.map */

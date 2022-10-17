@@ -1,0 +1,165 @@
+@import '../base/var.scss';
+
+@media (min-width:320px) {
+
+    /* smartphones, iPhone, portrait 480x320 phones */
+    footer {
+        padding: 30px 40px 50px 40px;
+        border-top: solid $text 2px;
+
+        a:link,
+        a:visited {
+            color: $text;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:active {
+            opacity: 60%;
+        }
+    }
+
+    #footer-top {
+        flex-direction: row;
+        justify-content: space-between;
+
+        p {
+            margin: 0;
+        }
+
+        img {
+            &:first-child {
+                min-width: 120px;
+                max-width: 150px;
+                padding-top: 10px;
+
+                &:hover,
+                &:active {
+                    opacity: 60%;
+                }
+            }
+        }
+
+        #haut {
+            display: inline-flex;
+            gap: 10px;
+            align-items: center;
+
+            img {
+                min-width: 15px;
+                width: 15px;
+            }
+        }
+
+    }
+
+    #footer-middle {
+        flex-direction: column;
+
+        #footer-contact {
+            flex-direction: column;
+            grid-row-gap: 20px;
+            padding: 30px 0;
+            border-bottom: solid $text 1px;
+
+            div {
+                flex-direction: column;
+            }
+        }
+    }
+
+
+
+    #footer-bottom {
+        flex-direction: column;
+        align-items: center;
+
+
+        ul {
+            margin: 40px 0 30px 0;
+            text-align: center;
+        }
+    }
+}
+
+#social {
+    flex-direction: row;
+    margin: 40px 0 0 0;
+    gap: 20px;
+    align-items: center;
+
+    img {
+        height: 25px;
+    }
+}
+
+// media queries 
+
+@media (min-width: 768px) {
+	#footer-middle {
+		align-items: center;
+		#footer-contact {
+			div {
+				align-items: center;
+			}
+		}
+	}
+}
+
+//! ATTENTION !!! FOOTER.JS CHANGE LA STRUCTURE DE L'HTML LORSQUE LA TAILLE D'ÉCRAN DÉPASSE 961 PX !!!
+
+@media (min-width: 961px) {
+	footer {
+		padding: 30px 40px 20px 40px;
+	}
+	#footer-inner {
+		display: flex;
+		gap: 50px;
+		justify-content: space-between;
+		max-width: 900px;
+		#footer-top {
+			align-items: flex-start;
+			img {
+				padding: 0;
+			}
+		}
+		ul {
+			font-weight: 600;
+			margin: 0;
+		}
+		#footer-contact {
+			flex-direction: column;
+			max-width: 400px;
+			a {
+				&:hover {
+					font-weight: 600;
+				}
+				&:active {
+					font-weight: 600;
+				}
+			}
+		}
+	}
+	#social {
+		justify-content: flex-end;
+		gap: 17px;
+		img {
+			height: 20px;
+		}
+	}
+}
+@media (min-width: 1025px) {
+	#footer-inner {
+		max-width: 1000px;
+	}
+	#footer-top {
+		img {
+			max-width: 180px !important;
+		}
+	}
+}
+@media (min-width: 1281px) {
+	footer {
+		padding: 30px 5vh 20px 10vh;
+	}
+}
