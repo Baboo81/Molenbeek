@@ -72,7 +72,10 @@ p {
 main {
   width: 100%;
   overflow: hidden;
+<<<<<<< HEAD
   padding-top: 40px;
+=======
+>>>>>>> 89421f73b226a51a946b9091616ee0ac5bed9f73
 }
 
 #intro {
@@ -202,7 +205,10 @@ div#page-wrapper {
   width: 100%;
   margin-bottom: 20px;
   bottom: 0;
+<<<<<<< HEAD
   justify-content: center;
+=======
+>>>>>>> 89421f73b226a51a946b9091616ee0ac5bed9f73
 }
 
 // guide
@@ -483,6 +489,10 @@ section.guide {
   }
 
 }
+  #contact-1  {
+    flex-direction: row !important;
+    gap: 40px;
+  }
 
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
