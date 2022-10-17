@@ -390,7 +390,7 @@ section.guide {
       padding-left: 0;
     }
     #intro-img {
-      width: calc(40vw + 280px);
+      width: calc(40vw + 200px);
       grid-area: 1 / 2 / 3 / 4;
       align-items: flex-end;
       padding-top: 20px;
@@ -425,6 +425,7 @@ section.guide {
   #intro {
     margin: auto;
     #intro-img {
+        width: calc(40vw + 200px);
       padding-top: 20px;
       align-content: space-around;
     }

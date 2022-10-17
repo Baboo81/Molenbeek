@@ -388,7 +388,7 @@ section.guide .website a:hover, section.guide .website a:active {
     padding-left: 0;
   }
   #intro #intro-img {
-    width: calc(40vw + 280px);
+    width: calc(40vw + 200px);
     grid-area: 1/2/3/4;
     align-items: flex-end;
     padding-top: 20px;
@@ -419,6 +419,7 @@ section.guide .website a:hover, section.guide .website a:active {
     margin: auto;
   }
   #intro #intro-img {
+    width: calc(40vw + 200px);
     padding-top: 20px;
     align-content: space-around;
   }
