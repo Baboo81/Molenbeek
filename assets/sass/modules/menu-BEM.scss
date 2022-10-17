@@ -8,12 +8,14 @@ body {
 button {
     border: none;
 }
+
 .menu {
   position: fixed;
   background: $bg3;
   color: $text;
   height: 80px;
   width: 100%;
+  z-index: 2;
 }
 .menu__container {
   display: flex;
@@ -36,7 +38,7 @@ button {
   justify-content: center;
 }
 
-.item {
+.menu__item {
   display: inline-block;
   box-sizing: border-box;
   padding: 10px 20px;
@@ -48,67 +50,86 @@ button {
   cursor: pointer;
 }
 
-.item:nth-child(n+2) {
+.menu__item:nth-child(n+2) {
   margin-left: 5px;
 }
-.item:hover {
+.menu__item:hover {
   transition-duration: 0.1s;
   background: $bg4;
   color: $text;
 }
 
-.item--register:hover {
+.menu__item--register:hover {
     transition-duration: 0.1s;
     background: $text;
     color: $bg1;
 }
-.item--small {
+.menu__item--small {
   width: 100px;
 }
-.item--medium {
+.menu__item--medium {
   width: 150px;
 }
-.item--white {
+.menu__item--white {
   color: $text;
   background: $bg1;
   border: none;
 }
-.item--green {
+.menu__item--green {
   color: $bg1;
   background: $text;
   border: none;
 }
-.item--red {
+.menu__item--red {
   color: #fff;
   background: #f55;
   border: none;
 }
-.item--dark {
+.menu__item--dark {
   background: #33334c;
   color: #fff;
 }
-.item--disabled {
+.menu__item--disabled {
   background: #aaa;
 }
-.item--login {
+.menu__item--login {
   padding-right: 35px;
 }
-.item--login:after {
+.menu__item--login:after {
   position: absolute;
   margin-left: 5px;
   margin-top: 0px;
   font-family: "Material Icons";
   content: "vpn_key";
 }
-.item--register {
+.menu__item--register {
   padding-right: 35px;
 }
-.item--register:after {
+.menu__item--register:after {
   margin-left: 5px;
   margin-top: 0px;
   position: absolute;
   font-family: "Material Icons";
   content: "lock";
+}
+
+.menu__dropdown {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  gap: 10px;
+  background: $bg3;
+  padding: 10px;
+  top: 80px;
+  left: calc(50vw - 220px);
+}
+
+.menu__dropdown.show-dropdown {
+  display: flex;
+}
+
+.menu__item.menu__item--sub {
+  margin: 0;
 }
 
 .button {
@@ -131,22 +152,24 @@ button {
     background: transparent;
   }
 
-
 @media screen and (max-width: 961px) {
   .menu__container {
     width: 90%;
   }
-  .item--login,
-  .item--register {
+  .menu__item--login,
+  .menu__item--register {
     height: 44px;
   }
-  .item--login span,
-  .item--register span {
+  .menu__item--login span,
+  .menu__item--register span {
     display: none;
   }
-  .item--login:after,
-  .item--register:after {
+  .menu__item--login:after,
+  .menu__item--register:after {
     margin-left: 0;
+  }
+  .menu__dropdown {
+  left: calc(50vw - 150px);
   }
 }
 @media screen and (max-width: 768px) {
@@ -167,23 +190,58 @@ button {
   .menuItemClicked .menu__items {
     display: block;
   }
-  .menuItemClicked .menu__container .item {
+  .menuItemClicked .menu__container .menu__item {
     display: block;
     width: 90%;
     margin: 7px auto;
   }
 
-  .menuItemClicked .menu__container .item:first-child {
+  .menuItemClicked .menu__container .menu__item:first-child {
     margin-top: 40px;
     }
 
-  .menuItemClicked .menu__container .item span {
+  .menuItemClicked .menu__container .menu__item span {
     display: inline-block;
   }
-  .menuItemClicked .menu__container .item:after {
+  .menuItemClicked .menu__container .menu__item:after {
     margin-left: 5px;
   }
   .menuItemClicked .menu__container .--menu:after {
     margin-left: 0;
   }
+
+  .menu__dropdown {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: fit-content !important;
+  }
+
+  .menu__dropdown.show-dropdown .menu__item--sub {
+    display: flex;
+    width: 200px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+      justify-content: space-between;
+      align-content: center;
+
+      i {
+        line-height: revert;
+      }
+    
+
+    &:hover {
+      background: $bg3  !important;
+  }
+  }
+
+ .menu__dropdown.show-dropdown .menu__item--sub:hover  {
+    background: $bg3  !important;
+}
+
+.active {
+  background: $bg4;
+}
 }

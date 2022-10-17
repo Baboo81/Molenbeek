@@ -29,6 +29,10 @@
 	<script src="assets/script/header.js" defer></script>
 	<script src="assets/script/footer.js" defer></script>
 	<script src="assets/script/main.js" defer></script>
+	<script src="/assets/script/menu-BEM.js" defer></script>
+    <!-- icônes fontawesome -->
+    <script src="https://kit.fontawesome.com/f64cbb42a1.js" crossorigin="anonymous"></script>
+
 
 
 </head>
@@ -36,47 +40,26 @@
 
 <body>
 	<header class="global-header">
-		<nav>
-			<div class="navbar">
-				<div class="container nav-container">
-					<!-- <input class="checkbox" type="checkbox" name="" id="" /> -->
-					<div class="hamburger-lines">
-						<span class="line line1"></span>
-						<span class="line line2"></span>
-						<span class="line line3"></span>
-					</div>
-					<div class="logo">
-						<img src="assets/img/logos/logo-uni.svg" alt="logo">
-					</div>
-					<div class="menu-items right">
-						<ul class="main-menu">
-							<li><a href="/index.html">Home</a></li>
-							<li><a id="first-child" href="#">Les Itinéraires<div id="dropdown-arrow">
-									</div>
-								</a>
-
-								<ul class="submenu hidden">
-									<li><a href="/views/itin1.html">
-											<div class="bullet"></div>Molenbeek Maritime
-										</a></li>
-									<li><a href="/views/itin2.html">
-											<div class="bullet"></div>Molenbeek en Vélo
-										</a></li>
-									<li><a href="/views/itin3.html">
-											<div class="bullet"></div>Molenbeek Historique
-										</a></li>
-								</ul>
-							</li>
-
-							<li><a href="/views/contact.html">Contact</a></li>
-							<li><a href="/views/projet.html">Le Projet</a></li>
-							<li><a href="#">Galerie</a></li>
-							<li><a href="#">Login</a></li>
-						</ul>
-					</div>
-				</div>
+		<div class="menu">
+			<div class="menu__container">
+			  <a class="menu__logo">
+				  <img src="/assets/img/logos/logo-uni.svg" alt="logo">
+			  </a>
+			  <div class="menu__items">
+				<a href="index.html" class="item"><i class="fa-solid fa-house"></i></a>
+				<a href="#carousel" class="item">Itinéraires</a>
+				<a href="/views/projet.html" class="item">Projet</a>
+				<a href="#" class="item">Galerie</a>
+				<a href="/views/contact.html" class="item item--active">Contact</a>
+			  </div>
+			  <div class="menu__items">
+				<a href="views/login.html" class="item item--login"> <span>Se connecter</span></a>
+				<a href="#" class="item item--white item--register"> <span>Enregistrer</span></a>
+			  </div>
+			  <button class="button button--menu"><i class="fa-solid fa-bars"></i></button>
 			</div>
-		</nav>
+		  </div>
+		  
 	</header>
 	<main>
 		<section id="intro">
@@ -104,7 +87,7 @@
 			</div>
 			<!-- <button class="btn btn-light">les itinéraires</button> -->
 		</section>
-		<section id="carousel">
+		<section id="carousel"></section><a name="carousel"></a>
 			<div class="cards-wrapper" id="cards-wrapper">
 
 				<div class="slider">

@@ -72,6 +72,7 @@ p {
 main {
   width: 100%;
   overflow: hidden;
+  padding-top: 40px;
 }
 
 #intro {
@@ -201,6 +202,7 @@ div#page-wrapper {
   width: 100%;
   margin-bottom: 20px;
   bottom: 0;
+  justify-content: center;
 }
 
 // guide
@@ -469,6 +471,15 @@ section.guide {
 
   #contact-box {
     width: 550px;
+  }
+
+  // légende
+
+  .legend-page-wrapper {
+    height: 100%;
+    width: 330px;
+    display: block;
+    border: solid black;
   }
 
 }
