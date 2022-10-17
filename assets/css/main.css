@@ -897,7 +897,6 @@ section.guide .website a:hover, section.guide .website a:active {
     height: 100%;
     width: 330px;
     display: block;
-    border: solid black;
   }
 }
 @media (min-width: 1025px) {
