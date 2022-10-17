@@ -43,23 +43,27 @@
 		<div class="menu">
 			<div class="menu__container">
 			  <a class="menu__logo">
-				  <img src="/assets/img/logos/logo-uni.svg" alt="logo">
+				<img src="/assets/img/logos/logo-uni.svg" alt="logo">
 			  </a>
 			  <div class="menu__items">
-				<a href="index.html" class="item"><i class="fa-solid fa-house"></i></a>
-				<a href="#carousel" class="item">Itinéraires</a>
-				<a href="/views/projet.html" class="item">Projet</a>
-				<a href="#" class="item">Galerie</a>
-				<a href="/views/contact.html" class="item item--active">Contact</a>
+				<a class="menu__item"><i class="fa-solid fa-house"></i></a>
+				<a class="menu__item menu__trigger">Itinéraires</a>
+				<div class="menu__dropdown">
+				  <a class="menu__item menu__item--sub">Molenbeek en vélo<i class="fa-solid fa-arrow-right"></i></a>
+				  <a class="menu__item menu__item--sub">Molenbeek maritime<i class="fa-solid fa-arrow-right"></i></a>
+				  <a class="menu__item menu__item--sub">Molenbeek historique<i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+				<a class="menu__item">Projet</a>
+				<a class="menu__item">Galerie</a>
+				<a class="menu__item menu__item--active">Contact</a>
 			  </div>
 			  <div class="menu__items">
-				<a href="views/login.html" class="item item--login"> <span>Se connecter</span></a>
-				<a href="#" class="item item--white item--register"> <span>Enregistrer</span></a>
+				<a class="menu__item menu__item--login"> <span>Se connecter</span></a>
+				<a class="menu__item menu__item--white menu__item--register"> <span>Enregistrer</span></a>
 			  </div>
 			  <button class="button button--menu"><i class="fa-solid fa-bars"></i></button>
 			</div>
 		  </div>
-		  
 	</header>
 	<main>
 		<section id="intro">

@@ -6,3 +6,6 @@ test/
 
 #ignore .vscode
 .vscode
+
+# ignore css files
+assets/css/

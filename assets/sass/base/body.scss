@@ -72,10 +72,7 @@ p {
 main {
   width: 100%;
   overflow: hidden;
-<<<<<<< HEAD
   padding-top: 40px;
-=======
->>>>>>> 89421f73b226a51a946b9091616ee0ac5bed9f73
 }
 
 #intro {
@@ -147,69 +144,7 @@ div#page-wrapper {
   }
 }
 
-// itinéraire
 
-.header-space {
-  height: 60px;
-  background: $bg3;
-}
-
-.title-box {
-  width: 100%;
-  height: 120px;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 5px solid $route1;
-
-  h3 {
-    margin: 0px;
-  }
-}
-
-.points-list {
-  display: flex;
-  height: calc(100vh - (240px));
-  overflow: scroll;
-
-  ol {
-    list-style: none;
-    counter-reset: item;
-    margin: 50px 0;
-  }
-
-  li {
-    counter-increment: item;
-    margin-bottom: 5px;
-    line-height: 2.8rem;
-  }
-
-  li:hover {
-    opacity: 60%;
-  }
-
-  li:before {
-    margin-right: 30px;
-    content: counter(item);
-    border-radius: 100%;
-    color: $text;
-    opacity: 50%;
-    width: 1.2em;
-    font-weight: 800;
-    text-align: center;
-    display: inline-block;
-  }
-}
-
-.btn-wrapper-1 {
-  position: fixed;
-  width: 100%;
-  margin-bottom: 20px;
-  bottom: 0;
-<<<<<<< HEAD
-  justify-content: center;
-=======
->>>>>>> 89421f73b226a51a946b9091616ee0ac5bed9f73
-}
 
 // guide
 
@@ -441,7 +376,7 @@ section.guide {
     grid-template-rows: 130px 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 0px;
-    padding: 50px 5vw;
+    padding: 50px 5vw 20px 5vw;
     #intro-title {
       grid-area: 1 / 1 / 2 / 2;
       width: 330px;
@@ -455,7 +390,7 @@ section.guide {
       padding-left: 0;
     }
     #intro-img {
-      width: 60vw;
+      width: calc(40vw + 280px);
       grid-area: 1 / 2 / 3 / 4;
       align-items: flex-end;
       padding-top: 20px;
@@ -479,15 +414,6 @@ section.guide {
     width: 550px;
   }
 
-  // légende
-
-  .legend-page-wrapper {
-    height: 100%;
-    width: 330px;
-    display: block;
-    
-  }
-
 }
   #contact-1  {
     flex-direction: row !important;
@@ -497,7 +423,6 @@ section.guide {
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
   #intro {
-    width: 1025px;
     margin: auto;
     #intro-img {
       padding-top: 20px;
