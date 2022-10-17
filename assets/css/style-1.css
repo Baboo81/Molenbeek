@@ -42,8 +42,8 @@ body
 
 #mapid1
 { 
-    height: 600px; 
-    width: 30vh;
+    height: 400px; 
+    width: 90%;
     padding: 10px;
 }
 
@@ -54,8 +54,8 @@ body
     color: var(--colorZ);
     margin-left: 20px ;
     margin-top: 20px;
-    height: 600px;
-    width: 32vh;
+    height:fit-content;
+    width: 100%;
     padding: 20px;
     border-radius: 3%;
     border: 2px solid black; 
@@ -66,8 +66,8 @@ body
 
 #mapid2
 { 
-    height: 900px; 
-    width: 30vh;
+    height: 400px; 
+    width: 98%;
     padding: 10px;
 }
 
@@ -78,8 +78,8 @@ body
     color: var(--colorZ);
     margin-left: 20px ;
     margin-top: 20px;
-    height: 600px;
-    width: 32vh;
+    height:fit-content;
+    width: 100%;
     padding: 20px;
     border-radius: 3%;
     border: 2px solid black; 
