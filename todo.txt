@@ -1,3 +1,6 @@
 # rajouter barre de menu nouvelle et le mettre partout
 # ajouter les liens au menu
-# faire le design des itinéraire
+# faire le design des itinéraires (ordi et mobile)
+# media queries pour la page de login
+# page d'inscription (HTML, CSS, PHP)
+
