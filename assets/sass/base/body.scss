@@ -72,6 +72,7 @@ p {
 main {
   width: 100%;
   overflow: hidden;
+  padding-top: 40px;
 }
 
 #intro {
@@ -201,6 +202,7 @@ div#page-wrapper {
   width: 100%;
   margin-bottom: 20px;
   bottom: 0;
+  justify-content: center;
 }
 
 // guide
@@ -471,7 +473,20 @@ section.guide {
     width: 550px;
   }
 
+  // légende
+
+  .legend-page-wrapper {
+    height: 100%;
+    width: 330px;
+    display: block;
+    
+  }
+
 }
+  #contact-1  {
+    flex-direction: row !important;
+    gap: 40px;
+  }
 
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */

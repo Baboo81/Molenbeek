@@ -7,7 +7,7 @@ const DATA = [
         distance: 7.5,
         denivele: null,
         difficulte: 'facile'
-       // adresse: Rue Sainte-Marie 1-6, 1080 Bxl
+       
 
     },
     { 
@@ -18,7 +18,7 @@ const DATA = [
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
-        //adresse: Rue Comte de Flandre 20, 1080 Bxl
+        
     },
     {
         lat: 50.854828,
@@ -28,7 +28,7 @@ const DATA = [
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
-        //adresse: Place Communale, 1080 Bxl  
+         
     },
     {
         lat: 50.854702473961176,
