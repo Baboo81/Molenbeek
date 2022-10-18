@@ -3,8 +3,7 @@
  * 13 | $grad-right: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
  *    |                                                                                               ^
  *    '
- *   assets/sass/base/var.scss 13:95        @import
- *   assets/sass/modules/menu-BEM.scss 2:9  root stylesheet */
+ *   assets/sass/base/var.scss 13:95  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 13 \2502  $grad-right: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);\a    \2502                                                                                                ^\a    \2575 \a   assets/sass/base/var.scss 13:95        @import\a   assets/sass/modules/menu-BEM.scss 2:9  root stylesheet';
+  content: 'Error: expected "{".\a    \2577 \a 13 \2502  $grad-right: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);\a    \2502                                                                                                ^\a    \2575 \a   assets/sass/base/var.scss 13:95  root stylesheet';
 }
