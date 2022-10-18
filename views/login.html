@@ -6,38 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <script src="/assets/script/header.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/modules/menu-BEM.css">
+    <script src="/assets/script/menu-BEM.js" defer></script>
     <script src="/assets/script/footer.js" defer></script>
     <title>Login</title>
 </head>
-<header></header>
+<header>
+    <div class="menu">
+        <div class="menu__container">
+            <a class="menu__logo">
+                <img src="/assets/img/logos/logo-uni.svg" alt="logo">
+            </a>
+            <div class="menu__items">
+                <a class="menu__item"><i class="fa-solid fa-house"></i></a>
+                <a class="menu__item menu__trigger">Itinéraires</a>
+                <div class="menu__dropdown">
+                    <a class="menu__item menu__item--sub">Molenbeek en vélo<i class="fa-solid fa-arrow-right"></i></a>
+                    <a class="menu__item menu__item--sub">Molenbeek maritime<i class="fa-solid fa-arrow-right"></i></a>
+                    <a class="menu__item menu__item--sub">Molenbeek historique<i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <a class="menu__item">Projet</a>
+                <a class="menu__item">Galerie</a>
+                <a class="menu__item menu__item--active">Contact</a>
+            </div>
+            <div class="menu__items">
+                <a class="menu__item menu__item--login"> <span>Se connecter</span></a>
+                <a class="menu__item menu__item--white menu__item--register"> <span>Enregistrer</span></a>
+            </div>
+            <button class="button button--menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </div>
+
+
+
+</header>
 
 <body>
     <main>
-        <h1>Connectez-vous à votre compte :</h1>
+        <div class="page-wrapper-login">
 
-        <form method="post" action="/assets/script/account.php">
 
-            <div>
-                <label for="user">Nom d'utilisateur :</label>
-                <br />
-                <input type="text" id="user" required>
-            </div>
-            <div>
-                <label for="mail">Adresse mail :</label>
-                <br />
-                <input type="email" id="mail" required>
-            </div>
-            <div>
-                <label for="password">Mot de passe :</label>
-                <br />
-                <input type="password" id="password" placeholder="ZaRmT3NB8" required>
-            </div>
-            <div>
-                <input type="submit" value="Envoyer">
-            </div>
+            <form class="form" method="post" action="/assets/script/account.php">
+                <h2 class="">Login</h2>
+                <div class="form__fields">
+                    <div class="form__input">
+                        <label for="mail">Adresse mail :</label>
+                        <input type="email" name="mail" id="mail" placeholder="Entrez votre adresse e-mail" required>
+                    </div>
+                    <div class="form__input">
+                        <label for="password">Mot de passe :</label>
+                        <input type="password" name="password" id="password" placeholder="Entrez votre mot de passe"
+                            required>
+                    </div>
+                </div>
+                <div class="button-wrapper form__submit">
+                    <input class="btn btn-dark" type="submit" value="Connectez-vous">
+                </div>
 
-        </form>
+
+
+            </form>
+
+        </div>
     </main>
 
 
