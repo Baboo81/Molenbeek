@@ -1,3 +1,1 @@
-# rajouter barre de menu nouvelle et le mettre partout
-# ajouter les liens au menu
-# faire le design des itinéraire
+# create html pages for all links

@@ -9,9 +9,14 @@ $grey: #707070;
 $route1: #003366;
 $route2: #006600;
 $route3: #A64253;
+<<<<<<< HEAD
 $grad-right: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 $grad-left: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 $grad-down: linear-gradient(to bottom, rgba(187,232,239,0) 0%,rgba(187,232,239,0.55) 30%,rgba(187,232,239,0.7) 45%,rgba(187,232,239,1) 100%);
+=======
+$grad-right: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+$grad-left: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+>>>>>>> mergeVic
 
 // Polices
 // @use '../base/fonts.scss';
@@ -20,9 +25,12 @@ $font-titles: 'Shadows Into Light', cursive;
 
 // Mise en page
 $padding-section: 20px 40px;
+<<<<<<< HEAD
 $padding-section-lg: 50px 5vw;
 $padding-box: 25px;
 $margin-p: 10px 0;
+=======
+>>>>>>> mergeVic
 $padding-0: 0;
 
 
