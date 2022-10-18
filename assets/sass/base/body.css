@@ -9,11 +9,9 @@
   flex-direction: column;
   a: hover;
 }
-
 .infobox h3 {
   text-align: center;
 }
-
 .infobox a:visited {
   opacity: 60%;
 }
@@ -36,12 +34,10 @@
   background: #033333;
   color: white;
 }
-
 .btn-dark:hover {
   background: #055a5a;
   transition: all 0.3s ease;
 }
-
 .btn-dark:active {
   background: #0aabab;
 }
@@ -50,12 +46,10 @@
   background: white;
   color: #033333;
 }
-
 .btn-light:hover {
   background: #ebebeb;
   transition: all 0.3s ease;
 }
-
 .btn-light:active {
   background: #bfbfbf;
 }
@@ -132,33 +126,27 @@ main {
 #intro {
   padding: 20px 40px;
 }
-
 #intro #intro-title,
 #intro #intro-text {
   flex-wrap: wrap;
   width: 100%;
 }
-
 #intro #intro-title {
   z-index: -1;
 }
-
 #intro #wrapper {
   flex-direction: column;
 }
-
 #intro .btn-wrapper {
   justify-content: center;
   padding: 20px 0;
 }
-
 #intro #intro-img {
   width: 100%;
   flex-wrap: wrap;
   z-index: -2;
   margin-bottom: 20px;
 }
-
 #intro #intro-img img {
   flex-wrap: wrap;
 }
@@ -171,26 +159,22 @@ div#page-wrapper {
   min-height: 400px;
   max-height: 570px;
 }
-
 .top-photo img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   max-width: 100%;
 }
 
 .top-photo ~ section {
   padding: 20px 40px;
 }
-
 .top-photo ~ section a {
   text-decoration: underline;
   font-weight: 600;
 }
-
 .top-photo ~ section a:hover, .top-photo ~ section a:active {
   opacity: 60%;
 }
-
 .top-photo ~ section a:visited {
   opacity: 80%;
 }
@@ -207,7 +191,6 @@ div#page-wrapper {
   align-items: center;
   border-bottom: 5px solid #003366;
 }
-
 .title-box h3 {
   margin: 0px;
 }
@@ -217,23 +200,19 @@ div#page-wrapper {
   height: calc(100vh - 240px);
   overflow: scroll;
 }
-
 .points-list ol {
   list-style: none;
   counter-reset: item;
   margin: 50px 0;
 }
-
 .points-list li {
   counter-increment: item;
   margin-bottom: 5px;
   line-height: 2.8rem;
 }
-
 .points-list li:hover {
   opacity: 60%;
 }
-
 .points-list li:before {
   margin-right: 30px;
   content: counter(item);
@@ -257,10 +236,9 @@ div#page-wrapper {
   height: 37vh;
   border-bottom: 5px solid #003366;
 }
-
 .top-photo-2 img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .title-box-2 {
@@ -269,7 +247,6 @@ div#page-wrapper {
   justify-content: center;
   align-items: center;
 }
-
 .title-box-2 h3 {
   margin: 0px;
 }
@@ -277,7 +254,6 @@ div#page-wrapper {
 section.guide {
   padding: 20px 40px;
 }
-
 section.guide .website {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -287,16 +263,13 @@ section.guide .website {
   width: 300px;
   margin: 20px 0;
 }
-
 section.guide .website img {
   min-width: 30px;
   width: 30px;
 }
-
 section.guide .website a {
   color: #669999;
 }
-
 section.guide .website a:hover, section.guide .website a:active {
   color: #033333;
   opacity: 80%;
@@ -307,16 +280,13 @@ section.guide .website a:hover, section.guide .website a:active {
   flex-direction: column;
   padding: 20px 40px;
 }
-
 #contact a:hover,
 #contact a:active {
   opacity: 60%;
 }
-
 #contact div {
   flex-direction: column;
 }
-
 #contact p {
   margin: 10px 0;
 }
@@ -327,14 +297,12 @@ section.guide .website a:hover, section.guide .website a:active {
   align-self: center;
   max-width: 520px;
 }
-
 #contact-box #contact-details {
   display: grid;
   grid-template-columns: 20px 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 15px;
 }
-
 #contact-box #contact-details img {
   max-width: 100%;
 }
@@ -342,14 +310,12 @@ section.guide .website a:hover, section.guide .website a:active {
 #social-media {
   flex-direction: column;
 }
-
 #social-media a {
   display: grid;
   grid-template-columns: 25px 1fr;
   grid-column-gap: 10px;
   margin: 10px 0;
 }
-
 #social-media a img {
   max-width: 100%;
   height: 25px;
@@ -358,7 +324,6 @@ section.guide .website a:hover, section.guide .website a:active {
 #liens-utiles {
   flex-direction: column;
 }
-
 #liens-utiles li {
   list-style: none;
   padding: 5px 0;
@@ -366,13 +331,11 @@ section.guide .website a:hover, section.guide .website a:active {
   grid-template-columns: 20px 1fr;
   grid-column-gap: 15px;
 }
-
 #liens-utiles li img {
   max-width: 100%;
   height: 15px;
   padding-top: 7px;
 }
-
 #liens-utiles li a:hover, #liens-utiles li a:active {
   opacity: 60%;
   font-weight: 600;
@@ -390,7 +353,7 @@ section.guide .website a:hover, section.guide .website a:active {
   }
   .top-photo img {
     -o-object-position: center 65%;
-    object-position: center 65%;
+       object-position: center 65%;
   }
 }
 @media (min-width: 641px) {
@@ -430,7 +393,7 @@ section.guide .website a:hover, section.guide .website a:active {
   }
   .top-photo img {
     -o-object-position: center 65%;
-    object-position: center 65%;
+       object-position: center 65%;
   }
 }
 @media (min-width: 768px) {
@@ -513,6 +476,4 @@ section.guide .website a:hover, section.guide .website a:active {
     padding-top: 20px;
     align-content: space-around;
   }
-} /*# sourceMappingURL=body.css.map */
-
-/*# sourceMappingURL=body.css.map */
+}/*# sourceMappingURL=body.css.map */
