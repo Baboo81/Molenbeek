@@ -1,18 +1,184 @@
-/* Error: expected "{".
- *    ,
- * 13 | $grad-right: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
- *    |                                                                                               ^
- *    '
- *   assets/sass/base/var.scss 13:95      @import
- *   assets/sass/modules/footer.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 13 \2502  $grad-right: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);\a    \2502                                                                                                ^\a    \2575 \a   assets/sass/base/var.scss 13:95      @import\a   assets/sass/modules/footer.scss 1:9  root stylesheet';
+.infobox {
+  background: #bbe8ef;
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  a: hover;
 }
+.infobox h3 {
+  text-align: center;
+}
+.infobox a:visited {
+  opacity: 60%;
+}
+
+.btn {
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  width: fit-content;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+}
+
+.btn-dark {
+  background: #033333;
+  color: white;
+}
+.btn-dark:hover {
+  background: #055a5a;
+  transition: all 0.3s ease;
+}
+.btn-dark:active {
+  background: #0aabab;
+}
+
+.btn-light {
+  background: white;
+  color: #033333;
+}
+.btn-light:hover {
+  background: #ebebeb;
+  transition: all 0.3s ease;
+}
+.btn-light:active {
+  background: #bfbfbf;
+}
+
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  footer {
+    padding: 30px 40px 50px 40px;
+    border-top: solid #033333 2px;
+  }
+  footer a:link,
+footer a:visited {
+    color: #033333;
+    text-decoration: none;
+  }
+  footer a:hover,
+footer a:active {
+    opacity: 60%;
+  }
+  #footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #footer-top p {
+    margin: 0;
+  }
+  #footer-top img:first-child {
+    min-width: 120px;
+    max-width: 150px;
+    padding-top: 10px;
+  }
+  #footer-top img:first-child:hover, #footer-top img:first-child:active {
+    opacity: 60%;
+  }
+  #footer-top #haut {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+  }
+  #footer-top #haut img {
+    min-width: 15px;
+    width: 15px;
+  }
+  #footer-middle {
+    flex-direction: column;
+  }
+  #footer-middle #footer-contact {
+    flex-direction: column;
+    grid-row-gap: 20px;
+    padding: 30px 0;
+    border-bottom: solid #033333 1px;
+  }
+  #footer-middle #footer-contact div {
+    flex-direction: column;
+  }
+  #footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer-bottom ul {
+    margin: 40px 0 30px 0;
+    text-align: center;
+  }
+}
+#social {
+  flex-direction: row;
+  margin: 40px 0 0 0;
+  gap: 20px;
+  align-items: center;
+}
+#social img {
+  height: 25px;
+}
+
+@media (min-width: 768px) {
+  #footer-middle {
+    align-items: center;
+  }
+  #footer-middle #footer-contact div {
+    align-items: center;
+  }
+}
+@media (min-width: 961px) {
+  footer {
+    padding: 30px 40px 20px 40px;
+  }
+  #footer-inner {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    max-width: 900px;
+  }
+  #footer-inner #footer-top {
+    align-items: flex-start;
+  }
+  #footer-inner #footer-top img {
+    padding: 0;
+  }
+  #footer-inner ul {
+    font-weight: 600;
+    margin: 0;
+  }
+  #footer-inner #footer-contact {
+    flex-direction: column;
+    max-width: 400px;
+  }
+  #footer-inner #footer-contact a:hover {
+    font-weight: 600;
+  }
+  #footer-inner #footer-contact a:active {
+    font-weight: 600;
+  }
+  #social {
+    justify-content: flex-end;
+    gap: 17px;
+  }
+  #social img {
+    height: 20px;
+  }
+}
+@media (min-width: 1025px) {
+  #footer-inner {
+    max-width: 1000px;
+  }
+  #footer-top img {
+    max-width: 180px !important;
+  }
+}
+@media (min-width: 1281px) {
+  footer {
+    padding: 30px 5vh 20px 10vh;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

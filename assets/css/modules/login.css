@@ -1,0 +1,87 @@
+.t-center {
+  text-align: center;
+}
+
+.page-wrapper-login {
+  width: 100%;
+  height: calc(100vh - 80px);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+  flex-direction: column;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.form__fields {
+  flex-direction: column;
+  flex-wrap: wrap;
+  line-height: 1.8;
+}
+
+.form__help {
+  margin-top: 20px;
+}
+
+.input-group {
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.input-group__input {
+  max-width: 100%;
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 6px;
+  border: 1px solid rgb(105, 105, 105);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.button-wrapper {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#agree {
+  margin-top: 20px;
+}
+
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .page-wrapper-login {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  .form {
+    width: 400px;
+    padding: 10px 20px;
+    box-shadow: 2px 3px 13px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .form {
+    padding: 20px 40px;
+  }
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
+
+/*# sourceMappingURL=login.css.map */
