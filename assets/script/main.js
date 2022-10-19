@@ -2,7 +2,7 @@
 // récupérer élément
 const cityscape = document.getElementById("cityscape");
 const logo = document.querySelector("#intro-title img");
-console.log(logo);
+console.log(logo, cityscape);
 
 function changePic(x) {
 
