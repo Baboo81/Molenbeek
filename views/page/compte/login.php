@@ -13,13 +13,21 @@
                         <input type="password" name="password" id="password" class="input-group__input" placeholder="Entrez votre mot de passe"
                             required>
                     </div>
-                </div>
-                <div class="button-wrapper form__submit">
-                    <input class="btn btn-dark" type="submit" value="Connectez-vous">
-                </div>
-                <span class="form__help"><a href="/views/forgot-password.html">
+                    <span class="form__help"><a href="?nav=forgot-password">
                     Mot de passe oublié ?
                 </a></span>
+                </div>
+
+                <!-- Démarrer la session - que mettre ici ?? -->
+
+                <div class="button-wrapper form__submit">
+                <a href="#"><input class="btn btn-dark" type="submit" value="Connectez-vous"></a>
+                </div>
+
+                <span class="form__help">
+                Nouvel utilisateur ? <a href="?nav=subscribe">Créez un compte ici
+                </a></span>
+                
 
             </form>
 

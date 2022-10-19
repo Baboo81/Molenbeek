@@ -26,11 +26,11 @@
 	<script src="assets/script/main.js" defer></script>
 	<!-- JS : itinéraires -->
 	<script src="assets/script/itin1.js" defer></script>
-	<script src="assets/script/itin2.js" defer></script>
-	<script src="assets/script/itin3.js" defer></script>
+	<!-- <script src="assets/script/itin2.js" defer></script>
+	<script src="assets/script/itin3.js" defer></script> -->
 	<script src="assets/script/json1.js" defer></script>
-	<script src="assets/script/json2.js" defer></script>
-	<script src="assets/script/json3.js" defer></script>
+	<!-- <script src="assets/script/json2.js" defer></script>
+	<script src="assets/script/json3.js" defer></script> -->
 	<!-- JS : slider -->
 	<script src="assets/script/slider.js" defer></script>
     <!-- icônes fontawesome -->

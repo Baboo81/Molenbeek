@@ -11,13 +11,13 @@
                     </div>
                 </div>
                 <div class="button-wrapper form__submit">
-                    <input class="btn btn-dark" type="submit" value="Réinitialiser le mot de passe">
+                <a href="?nav=reset-password"><input class="btn btn-dark" type="submit" value="Réinitialiser le mot de passe"></a>
                 </div>
-                <span class="form__help"><a href="/views/login.html">
+                <span class="form__help"><a href="?nav=login">
                     Retour à l'écran de connexion
                 </a></span>
-                <span class="form__help"><a href="/views/subscribe.html">
-                    Pas encore de compte ?
+                <span class="form__help">
+                    Pas encore de compte ? <a href="?nav=subscribe">Créez-en un ici
                 </a></span>
 
             </form>

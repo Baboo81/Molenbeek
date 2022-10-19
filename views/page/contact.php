@@ -20,14 +20,14 @@
                 </div>
                 <div id="contact-box" class="infobox">
                     <div id="contact-details">
-                        <img src="/assets/img/icons/icon-address.svg" alt="adresse">
+                        <img src="assets/img/icons/icon-address.svg" alt="adresse">
 
                         <address>
                             Interface3 | Rue Gaucheret 88-90 | 1030 Bruxelles
                         </address>
-                        <img src="/assets/img/icons/icon-email.svg" alt="e-mail"><a
+                        <img src="assets/img/icons/icon-email.svg" alt="e-mail"><a
                             href="mailto: info@example.com">info@example.com</a>
-                        <img src="/assets/img/icons/icon-phone.svg" alt="téléphone"><a href="tel:+32 (0)2 219 15 10">+32
+                        <img src="assets/img/icons/icon-phone.svg" alt="téléphone"><a href="tel:+32 (0)2 219 15 10">+32
                             (0)2 219 15 10</a>
                     </div>
                 </div>
@@ -35,19 +35,19 @@
             <h3>Liens utiles</h3>
             <ul id="liens-utiles">
 
-                <li><img src="/assets/img/icons/moulin.svg" alt="moulin"><a href="https://www.molenbeek.irisnet.be/fr"
+                <li><img src="assets/img/icons/moulin.svg" alt="moulin"><a href="https://www.molenbeek.irisnet.be/fr"
                         target="_blank">
                         Commune de Molenbeek</a></li>
 
-                <li><img src="/assets/img/icons/moulin.svg" alt="moulin"><a href="http://www.lamaison1080hethuis.be/"
+                <li><img src="assets/img/icons/moulin.svg" alt="moulin"><a href="http://www.lamaison1080hethuis.be/"
                         target="_blank">
                         Maison des Cultures et de la Cohésion Sociale de Molenbeek</a></li>
 
-                <li><img src="/assets/img/icons/moulin.svg" alt="moulin"><a
+                <li><img src="assets/img/icons/moulin.svg" alt="moulin"><a
                         href="https://www.visit.brussels/fr/visiteurs" target="_blank">
                         Visit Brussels</a></li>
 
-                <li><img src="/assets/img/icons/moulin.svg" alt="moulin"><a href="https://be.brussels/" target="_blank">
+                <li><img src="assets/img/icons/moulin.svg" alt="moulin"><a href="https://be.brussels/" target="_blank">
                         Région de Bruxelles</a></li>
 
             </ul>

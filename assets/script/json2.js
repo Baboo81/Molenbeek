@@ -3,7 +3,7 @@ const DATA = [
         lat:50.85538037305153,
         lng: 4.339400499483728,
         lieu: 'Station métro: Comte de Flandre',
-        image: '/assets/img/itinéraire2/maritime-lg/Comte de Flandre.jpeg',
+        image: 'assets/img/itinéraire2/maritime-lg/Comte de Flandre.jpeg',
         distance: 7.5,
         denivele: null,
         difficulte: 'facile'
@@ -14,7 +14,7 @@ const DATA = [
         lat: 50.85533107240288,
         lng: 4.3386152723646605,
         lieu: 'Administration communale de Molenbeek Saint-Jean',
-        image: '/assets/img/itinéraire2/maritime-sm/Maison_Communale_1-sm.jpeg',
+        image: 'assets/img/itinéraire2/maritime-sm/Maison_Communale_1-sm.jpeg',
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
@@ -24,7 +24,7 @@ const DATA = [
         lat: 50.854828,
         lng: 4.338677,
         lieu: 'Flamme de l\' espoir',
-        image: '/assets/img/itinéraire2/maritime-sm/Flamme-sm.jpeg',
+        image: 'assets/img/itinéraire2/maritime-sm/Flamme-sm.jpeg',
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
@@ -34,7 +34,7 @@ const DATA = [
         lat: 50.854702473961176,
         lng: 4.338428822706077,
         lieu: 'Place communale',
-        image: '/assets/img/itinéraire2/maritime-lg/Maison_Communale_1.jpeg',
+        image: 'assets/img/itinéraire2/maritime-lg/Maison_Communale_1.jpeg',
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
@@ -44,7 +44,7 @@ const DATA = [
         lat: 50.85280408956153,
         lng: 4.337271600409956,
         lieu: 'Rue Fin',
-        image: '/assets/img/itinéraire2/maritime-sm/Rue_Fin-sm.jpeg',
+        image: 'assets/img/itinéraire2/maritime-sm/Rue_Fin-sm.jpeg',
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
@@ -54,7 +54,7 @@ const DATA = [
         lat: 50.85265509314037,
         lng: 4.335905653001505,
         lieu: 'La Fonderie',
-        image: '/assets/img/itinéraire2/maritime-sm/Fonderie_2-sm.jpeg',
+        image: 'assets/img/itinéraire2/maritime-sm/Fonderie_2-sm.jpeg',
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
@@ -64,7 +64,7 @@ const DATA = [
         lat: 50.85199792005185,
         lng: 4.333654601478056,
         lieu: 'Parc de la Fonderie',
-        image: '/assets/img/itinéraire2/maritime-sm/Parc_Fonderie-sm.jpeg',
+        image: 'assets/img/itinéraire2/maritime-sm/Parc_Fonderie-sm.jpeg',
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
@@ -74,7 +74,7 @@ const DATA = [
         lat: 50.85107281916792,
         lng: 4.337952130695064,
         lieu: 'Belmundo/Hotel BELVUE',
-        image: '/assets/img/itinéraire2/maritime-sm/Belmundo-sm.jpeg',
+        image: 'assets/img/itinéraire2/maritime-sm/Belmundo-sm.jpeg',
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
@@ -84,7 +84,7 @@ const DATA = [
         lat: 50.852030028017204,
         lng: 4.340462898557711,
         lieu: 'Atelier Groot Eiland',
-        image: '/assets/img/itinéraire2/maritime-sm/Groot_Eiland-sm.jpeg',
+        image: 'assets/img/itinéraire2/maritime-sm/Groot_Eiland-sm.jpeg',
         distance: 8,
         denivele: null,
         difficulte: 'difficile'
@@ -94,7 +94,7 @@ const DATA = [
         lat: 50.855654495785004,
         lng: 4.342767434120627,
         lieu: 'Phare du Canal',
-        image: '/assets/img/itinéraire2/maritime-sm/Phare-sm.jpeg',
+        image: 'assets/img/itinéraire2/maritime-sm/Phare-sm.jpeg',
         distance: 8,
         denivele: null,
         difficulte: 'difficile'

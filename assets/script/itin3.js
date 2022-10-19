@@ -47,7 +47,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 textMarker1 = `
 <b>Chateau du Karreveld</b>
 <br>
-<img class="mini" src="./assets/img/itinéraire3/photo2.JPG" alt="un truc" />
+<img class="mini" src=".assets/img/itinéraire3/photo2.JPG" alt="un truc" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -64,7 +64,7 @@ Distance : 1.5km<br>Dénivelé : nulle`
 textMarker2 = `
 <b>Sculpture de l'argent</b>
 <br>
-<img class="mini" src="./assets/img/itinéraire3/flic.JPG" alt="" />
+<img class="mini" src=".assets/img/itinéraire3/flic.JPG" alt="" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -76,7 +76,7 @@ Distance : 2.5km<br>Dénivelé : nulle  `
 textMarker3 = ` 
 <b>Gare-aux-fantomes</b>
 <br>
-<img class="mini" src="./assets/img/itinéraire3/photo12.JPG" alt="" />
+<img class="mini" src=".assets/img/itinéraire3/photo12.JPG" alt="" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -92,7 +92,7 @@ Distance : 3.5km<br>Dénivelé : nulle  `
 textMarker4 = `
 <b>Maison culturelle Molenbeek</b>
 <br>
-<img class="mini" src="./assets/img/itinéraire3/asbl.JPG" alt="" />
+<img class="mini" src=".assets/img/itinéraire3/asbl.JPG" alt="" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -104,7 +104,7 @@ Distance : 4.5km<br>Dénivelé : nulle    `
 textMarker5 = `
 <b>L'église St Jean-Baptiste</b>
 <br>
-<img class="mini" src="./assets/img/itinéraire3/saint-baptiste.JPG" alt="" />
+<img class="mini" src=".assets/img/itinéraire3/saint-baptiste.JPG" alt="" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -116,7 +116,7 @@ Distance : 5.5km<br>Dénivelé : nulle   `
 textMarker6 = `
 <b>Maison communale</b>
 <br>
-<img class="mini" src="./assets/img/itinéraire3/placeCommunale.JPG" alt="" />
+<img class="mini" src=".assets/img/itinéraire3/placeCommunale.JPG" alt="" />
 <br>
 Niveau de difficulté : facile
 <br>
@@ -128,7 +128,7 @@ Distance : 6.5km<br>Dénivelé : nulle    `
 textMarker7 = `
 <b>La Fonderie</b>
 <br>
-<img class="mini" src="./assets/img/itinéraire3/fonderie.JPG" alt="" />
+<img class="mini" src=".assets/img/itinéraire3/fonderie.JPG" alt="" />
 <br>
 Niveau de difficulté : facile
 <br>

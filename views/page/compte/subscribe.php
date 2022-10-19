@@ -29,7 +29,7 @@
                 <div class="button-wrapper form__submit">
                     <input class="btn btn-dark" type="submit" value="Enregistrer">
                 </div>
-                <span class="form__help"><a href="/views/login.html">
+                <span class="form__help"><a href="?nav=login">
                         Vous avez déjà un compte ?
                     </a></span>
 

@@ -2,15 +2,14 @@
 // BASE
 @import 'base/reset.scss';
 @import 'base/var.scss';
-@import 'base/fonts';
+@import 'base/fonts.scss';
 @import 'base/body.scss';
 @import 'base/media-queries.scss';
 
 // MODULES
 @import 'modules/header.scss';
-@import 'modules/home.scss';
-@import 'modules/slider.scss';
-@import 'modules/menu-BEM.scss';
-@import 'modules/itin1.scss';
 @import 'modules/footer.scss';
+@import 'modules/itin1.scss';
+@import 'modules/slider.scss';
+@import 'modules/cards.scss';
 @import 'modules/login.scss';

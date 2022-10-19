@@ -2,7 +2,7 @@
 		<section id="intro">
 			<!-- <div id="wrapper"> -->
 			<div id="intro-title">
-				<img src="/assets/img/logos/logo-thin.svg" alt="Molenbeek en promenade">
+				<img src="assets/img/logos/logo-thin.svg" alt="Molenbeek en promenade">
 			</div>
 			<div id="intro-img">
 				<img id="cityscape" src="assets/img/illustrations/Molenbeek-scene-mobile-outline.svg"
@@ -41,14 +41,14 @@
 									quartier
 									dynamique, créatif et durable.</div>
 								<div class="filter">
-									<img src="/assets/img/icons/icon-stopwatch.svg" alt="horloge">
+									<img src="assets/img/icons/icon-stopwatch.svg" alt="horloge">
 									<p class="route-info" id="info-1">1 heure 30 minutes</p>
-									<img src="/assets/img/icons/icon-distance.svg" alt="horloge">
+									<img src="assets/img/icons/icon-distance.svg" alt="horloge">
 									<p class="route-info" id="info-2">5 km</p>
-									<img src="/assets/img/icons/icon-personne.svg" alt="horloge">
+									<img src="assets/img/icons/icon-personne.svg" alt="horloge">
 									<p class="route-info" id="info-3">Familles, personnes à mobilité reduite</p>
 								</div>
-								<div class="btn-wrapper-card"><a href="/views/itin1.html"><button
+								<div class="btn-wrapper-card"><a href="?nav=itin1"><button
 											class="btn btn-light">Itineraire</button></a></div>
 							</div>
 						</div>
@@ -66,14 +66,14 @@
 									quartier
 									dynamique, créatif et durable.</div>
 								<div class="filter">
-									<img src="/assets/img/icons/icon-stopwatch.svg" alt="horloge">
+									<img src="assets/img/icons/icon-stopwatch.svg" alt="horloge">
 									<p class="route-info" id="info-1">1 heure 30 minutes</p>
-									<img src="/assets/img/icons/icon-distance.svg" alt="horloge">
+									<img src="assets/img/icons/icon-distance.svg" alt="horloge">
 									<p class="route-info" id="info-2">5 km</p>
-									<img src="/assets/img/icons/icon-personne.svg" alt="horloge">
+									<img src="assets/img/icons/icon-personne.svg" alt="horloge">
 									<p class="route-info" id="info-3">Familles, personnes à mobilité reduite</p>
 								</div>
-								<div class="btn-wrapper-card"><a href="/views/itin2.html"><button
+								<div class="btn-wrapper-card"><a href="?nav=itin2"><button
 											class="btn btn-light">Itineraire</button></a></div>
 							</div>
 						</div>
@@ -90,14 +90,14 @@
 									quartier
 									dynamique, créatif et durable.</div>
 								<div class="filter">
-									<img src="/assets/img/icons/icon-stopwatch.svg" alt="horloge">
+									<img src="assets/img/icons/icon-stopwatch.svg" alt="horloge">
 									<p class="route-info" id="info-1">1 heure 30 minutes</p>
-									<img src="/assets/img/icons/icon-distance.svg" alt="horloge">
+									<img src="assets/img/icons/icon-distance.svg" alt="horloge">
 									<p class="route-info" id="info-2">5 km</p>
-									<img src="/assets/img/icons/icon-personne.svg" alt="horloge">
+									<img src="assets/img/icons/icon-personne.svg" alt="horloge">
 									<p class="route-info" id="info-3">Familles, personnes à mobilité reduite</p>
 								</div>
-								<div class="btn-wrapper-card"><a href="/views/itin3.html"><button
+								<div class="btn-wrapper-card"><a href="?nav=itin3"><button
 											class="btn btn-light">Itineraire</button></a></div>
 							</div>
 						</div>

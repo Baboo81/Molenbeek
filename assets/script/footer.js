@@ -9,7 +9,7 @@ function changeFooter(y) {
     if (y.matches) { // Si le media query correspond...
         footer.innerHTML = `<div id="footer-inner">
 			<div id="footer-top">
-				<a href="/index.html"><img src="/assets/img/logos/logo-col.svg" alt="logo" id="logo-footer"></a>
+				<a href="?nav=accueil"><img src="assets/img/logos/logo-col.svg" alt="logo" id="logo-footer"></a>
 			</div>
 
 			<ul id="footer-links">
@@ -42,19 +42,19 @@ function changeFooter(y) {
 		</div>
 
 		<div id="social">
-			<a href="#"><img src="/assets/img/icons/icon-insta.svg" alt="Instagram"></a>
-			<a href="#"><img src="/assets/img/icons/icon-fb.svg" alt="Facebook"></a>
-			<a href="#"><img src="/assets/img/icons/icon-twitter.svg" alt="Twitter"></a>
-			<a href="#"><img src="/assets/img/icons/icon-linkedin.svg" alt="Linkedin"></a>
+			<a href="#"><img src="assets/img/icons/icon-insta.svg" alt="Instagram"></a>
+			<a href="#"><img src="assets/img/icons/icon-fb.svg" alt="Facebook"></a>
+			<a href="#"><img src="assets/img/icons/icon-twitter.svg" alt="Twitter"></a>
+			<a href="#"><img src="assets/img/icons/icon-linkedin.svg" alt="Linkedin"></a>
 		</div>`;
     }  
     else {
         footer.innerHTML = `
         <div id="footer-top">
-            <img src="/assets/img/logos/logo-col.svg" alt="logo" id="logo-footer">
+            <a href="?nav=accueil"><img src="assets/img/logos/logo-col.svg" alt="logo" id="logo-footer"></a>
             <a href="#top" id="haut">
                 <p>Haut de page</p>
-                <img src="/assets/img/icons/arrow-up-1.svg" alt="flèche vers le haut">
+                <img src="assets/img/icons/arrow-up-1.svg" alt="flèche vers le haut">
             </a>
         </div>
         <div id="footer-middle">
@@ -72,10 +72,10 @@ function changeFooter(y) {
 
             <div id="footer-bottom">
                 <div id="social">
-                    <a href="#"><img src="/assets/img/icons/icon-insta.svg" alt="Instagram"></a>
-                    <a href="#"><img src="/assets/img/icons/icon-fb.svg" alt="Facebook"></a>
-                    <a href="#"><img src="/assets/img/icons/icon-twitter.svg" alt="Twitter"></a>
-                    <a href="#"><img src="/assets/img/icons/icon-linkedin.svg" alt="Linkedin"></a>
+                    <a href="#"><img src="assets/img/icons/icon-insta.svg" alt="Instagram"></a>
+                    <a href="#"><img src="assets/img/icons/icon-fb.svg" alt="Facebook"></a>
+                    <a href="#"><img src="assets/img/icons/icon-twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="assets/img/icons/icon-linkedin.svg" alt="Linkedin"></a>
                 </div>
                 <ul id="footer-links">
                     <li>

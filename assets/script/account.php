@@ -34,7 +34,7 @@
         $connectedUser;
         $loginAttempt = 0;
 
-        if(isset($_POST['user'],$_POST['mail'] $_POST['password'])){
+        if(isset($_POST['user'],$_POST['mail'], $_POST['password'])){
             
             $loginAttempt++;
 
@@ -45,8 +45,7 @@
             $sqlQuery = "
                 SELECT *
                 FROM membres
-                WHERE username = :param_username AND passwd = :param_password 
-            ";
+                WHERE username = :param_username AND passwd = :param_password";
 
             $statement = $mysqlClient->prepare($sqlQuery); 
             $statement->execute(array("param_username" => $user_name, "param_password" => $pass_word));
