@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,24 +10,24 @@
 	<!-- jQuery -->
 
 		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery-3.6.0.js"
-		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<!-- <script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
 	<!--Lien : main.css : Rassemble toutes les feuilles de style scss, compilées en css. -->
-	<link rel="stylesheet" href="/assets/css/main.css">
-	<link rel="stylesheet" href="/assets/css/modules/slider.css">
+	<!-- <link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/modules/slider.css"> -->
 	<!--Leaflet.js -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	<!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
 		crossorigin="" />
 		
 
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
 		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-		crossorigin=""></script>
+		crossorigin=""></script> -->
 		
   		<!--Leaflet.js -->
 	
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	<!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
 		crossorigin="" />
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
@@ -45,9 +45,9 @@
 
 </head>
 
-<body>
+<body> -->
 	<!--Barre de navigation-->
-	<header class="global-header">
+	<!-- <header class="global-header">
 
 		<div class="menu">
 			<div class="menu__container">
@@ -76,7 +76,7 @@
 				<button class="button button--menu"><i class="fa-solid fa-bars"></i></button>
 			</div>
 		</div>
-	</header>
+	</header>  -->
 
 	<!--Section itinéraire 1-->
 	<section class="section">
@@ -120,70 +120,5 @@
 			</div>
 			<!-- <div class="btn-wrapper-1"><button class="btn btn-dark"></button></div> -->
 		</div>
-		<!-- <div class="points">
-<h3>Parcours vélo (6,5km):</h3> -->
 
-			<!-- <ol class="links"> -->
-				<!-- <span class="clickable" id="parcDuKarreveld"><li>Parc du Karreveld.</li></span>
-				<span class="clickable" id="cimetiereDeMolenbeek"><li>Cimetière de Molenbeek.</li></span>
-				<span class="clickable" id="quartierDiongre"><li>Quartier Diongre.</li></span>
-				<span class="clickable" id="parcDuScheutbos"><li>Stade Edmond Machtens.</li></span>
-				<span class="clickable" id="parcAlbertEtMarieJose"><li>Parcs des Muses.</li></span>
-				<span class="clickable" id="parcDesMuses"><li>Parcs Albert & Marie-José.</li></span>
-				<span class="clickable" id="stadeDeMolenbeek"><li>Parc du Scheutbos.</li></span> -->
-			<!-- </ol>
-		</div> -->
 	</section>
-
-	<footer>
-		<div id="footer-top">
-			<img src="/assets/img/logos/logo-col.svg" alt="logo" id="logo-footer">
-			<a href="#top" id="haut">
-				<p>Haut de page</p>
-				<img src="/assets/img/icons/arrow-up-1.svg" alt="flèche vers le haut">
-			</a>
-		</div>
-		<div id="footer-middle">
-			<div id="footer-contact">
-				<div>
-					<address><a href="https://goo.gl/maps/bdHCxq9JNCSn16qPA" target="_blank">
-							Interface3 | Rue Gaucheret 88-90 | 1030 Bruxelles</a>
-					</address>
-					<a href="tel:+32 (0)2 219 15 10">+32 (0)2 219 15 10</a>
-				</div>
-				<div id="footer-copyright">
-					<p>© Christel Rodriguez Perez | Nasra Ahmed Ibrahim | Eleanor Mears, 2022</p>
-				</div>
-			</div>
-
-			<div id="footer-bottom">
-				<div id="social">
-					<a href="#"><img src="/assets/img/icons/icon-insta.svg" alt="Instagram"></a>
-					<a href="#"><img src="/assets/img/icons/icon-fb.svg" alt="Facebook"></a>
-					<a href="#"><img src="/assets/img/icons/icon-twitter.svg" alt="Twitter"></a>
-					<a href="#"><img src="/assets/img/icons/icon-linkedin.svg" alt="Linkedin"></a>
-				</div>
-				<ul id="footer-links">
-					<li>
-						<a href="#">Vie privée</a>
-					</li>
-					<li>
-						<a href="#">Conditions générales d’utilisation
-						</a>
-					</li>
-					<li>
-						<a href="#">Cookies</a>
-					</li>
-					<li>
-						<a href="#">Transparence et Légal
-						</a>
-					</li>
-				</ul>
-			</div>
-	</footer>
-
-
-
-</body>
-
-</html>

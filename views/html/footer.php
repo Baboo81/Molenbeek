@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/modules/footer.css">
-    <script src="/assets/script/footer.js" defer></script>
-
-    <title>Footer</title>
-</head>
-
-<body>
-    <!-- <footer>
+<footer>
         <div id="footer-top">
             <img src="/assets/img/logos/logo-col.svg" alt="logo" id="logo-footer">
-            <a href="#" id="haut">
+            <a href="#top" id="haut">
                 <p>Haut de page</p>
                 <img src="/assets/img/icons/arrow-up-1.svg" alt="flèche vers le haut">
             </a>
@@ -24,13 +9,13 @@
         <div id="footer-middle">
             <div id="footer-contact">
                 <div>
-                    <address><a href="https://goo.gl/maps/bdHCxq9JNCSn16qPA" target="_blank">
+                   <address><a href="https://goo.gl/maps/bdHCxq9JNCSn16qPA" target="_blank">
 					Interface3 | Rue Gaucheret 88-90 | 1030 Bruxelles</a>
 				</address>
                     <a href="tel:+32 (0)2 219 15 10">+32 (0)2 219 15 10</a>
                 </div>
                 <div id="footer-copyright">
-                    <p>© Christel Rodriguez Perez Nasra Ahmed Ibrahim | Eleanor Mears, 2022</p>
+                    <p>© Christel Rodriguez Perez | Nasra Ahmed Ibrahim | Eleanor Mears, 2022</p>
                 </div>
             </div>
 
@@ -58,7 +43,8 @@
                     </li>
                 </ul>
             </div>
-    </footer> -->
+    </footer>
+
 </body>
 
 </html>
