@@ -1,61 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <script src="/assets/script/header.js" defer></script>
-    <script src="/assets/script/footer.js" defer></script>
-    <title>Document</title>
-</head>
-
-<body>
-    <header class="global-header">
-        <nav>
-            <div class="navbar">
-                <div class="container nav-container">
-                    <!-- <input class="checkbox" type="checkbox" name="" id="" /> -->
-                    <div class="hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
-                    </div>
-                    <div class="logo">
-                        <img src="/assets/img/logos/logo-uni.svg" alt="logo">
-                    </div>
-                    <div class="menu-items right">
-                        <ul class="main-menu">
-                            <li><a href="/index.html">Home</a></li>
-                            <li><a id="first-child" href="#">Les Itinéraires<div id="dropdown-arrow">
-                                    </div>
-                                </a>
-
-                                <ul class="submenu hidden">
-
-                                    <li><a href="/views/itin1.html">
-                                            <div class="bullet"></div>Molenbeek Maritime
-                                        </a></li>
-                                    <li><a href="/views/itin2.html">
-                                            <div class="bullet"></div>Molenbeek en Vélo
-                                        </a></li>
-                                    <li><a href="/views/itin3.html">
-                                            <div class="bullet"></div>Molenbeek Historique
-                                        </a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="/views/contact.html">Contact</a></li>
-                            <li><a href="/views/projet.html">Le Projet</a></li>
-                            <li><a href="#">Galerie</a></li>
-                            <li><a href="#">Login</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
     <main>
         <section id="contact">
             <div id="contact-1">
@@ -111,6 +53,3 @@
             </ul>
         </section>
     </main>
-</body>
-
-</html>

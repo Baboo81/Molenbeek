@@ -7,11 +7,11 @@ console.log(logo);
 function changePic(x) {
 
     if (x.matches) { // Si le media query correspond, changez le src de img#cityscape.
-      cityscape.src = "/assets/img/illustrations/Molenbeek-scene-lg.svg";
-      logo.src = "/assets/img/logos/logo-uni-3.svg"
+      cityscape.src = "assets/img/illustrations/Molenbeek-scene-lg.svg";
+      logo.src = "assets/img/logos/logo-uni-3.svg"
     } else {
-        cityscape.src = "/assets/img/illustrations/Molenbeek-scene-mobile-outline.svg";
-        logo.src = "/assets/img/logos/logo-uni.svg"
+        cityscape.src = "assets/img/illustrations/Molenbeek-scene-mobile-outline.svg";
+        logo.src = "assets/img/logos/logo-uni.svg"
     }
   }
   

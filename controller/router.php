@@ -1,5 +1,5 @@
 <?php
-if (isset($_GET["nav"])) {
+if (isset($_GET['nav'])) {
     switch ($_GET['nav']) {
         case 'itin1':
             include("controller/itineraire/itin1Controller.php");
@@ -40,4 +40,5 @@ if (isset($_GET["nav"])) {
     }
 } else {
     include("controllers/accueilController.php");
-}
+};
+?>

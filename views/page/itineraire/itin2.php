@@ -1,38 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.6.0.js"
-		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-
-	<!--Lien: Normalize, permet de supprimer le CSS pré-programmé-->
-	<link rel="stylesheet" href="./assets/css/normalize.css" />
-	<!--Lien: CSS-->
-	<link rel="stylesheet" href="/assets/css/style-1.css" />
-
-	<!--Leaflet.js -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-		crossorigin="" />
-
-
-
-	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-		crossorigin=""></script>
-
-	<!--Lien  trace itinéraire-->
-
-
-</head>
-
-<body>
 	<main>
 
 
@@ -94,9 +59,6 @@
 
 		</section>
 	</main>
-
-	<script src="/assets/script/json2.js"></script>
-	<script src="/assets/script/itinéraire2.js"></script>
 
 </body>
 
