@@ -60,12 +60,7 @@ section
 }
 
 
-    height: 400px; 
-    width: 90%;
-    height: 600px; 
-    width: 30vh;
-    padding: 10px;
-}
+
 
 .map1
 {
@@ -88,16 +83,14 @@ section
 
 #mapid2
 { 
-    height: 400px; 
-    width: 98%;
-    height: 900px; 
-    width: 30vh;
+    height: 600px; 
+    width: 100%;
     padding: 10px;
 }
 
 .map2
 {
-    background-color: var(--colorX);
+   /* background-color: var(--colorX);
     font-family: 'Courier New', Courier, monospace;
     color: var(--colorZ);
     margin-left: 20px ;
@@ -107,29 +100,24 @@ section
     height: 600px;
     width: 32vh;
     padding: 20px;
-    border-radius: 3%;
-    border: 2px solid black; 
     display: flex;
-    flex-direction: column;
+    flex-direction: column;*/
 }
 
 #mapid3
 { 
     height: 600px; 
-    width: 30vh;
+    width: 100%;
     padding: 10px;
 }
 
-    height: 400px; 
-    width: 98%;
-    padding: 10px;
-}
+
 
 
 
 .map3
 {
-    background-color: var(--colorX);
+   /* background-color: var(--colorX);
     font-family: 'Courier New', Courier, monospace;
     color: var(--colorZ);
     margin-left: 20px ;
@@ -142,6 +130,6 @@ section
     border-radius: 3%;
     border: 2px solid black; 
     display: flex;
-    flex-direction: column;
+    flex-direction: column;*/
 }
 
