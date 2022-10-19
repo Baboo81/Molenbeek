@@ -76,6 +76,7 @@ z-index: -1;
     width: 380px;
     box-shadow: 4px 0px 29px -4px rgba(71,71,71,0.5);
   }
+  
 
   .points-list {
     flex-direction: column;
@@ -152,3 +153,10 @@ z-index: -1;
     flex-direction: column;
 }
 
+.minimise {
+    transform: translateY(calc(100vh - 205px));
+}
+
+.minimise-legende {
+
+}

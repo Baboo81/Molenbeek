@@ -128,3 +128,14 @@ var latLng = [
 
 var polyline = L.polyline(latLng, {color: '#003366'}).addTo(map);
 
+// légende
+
+const legende = document.querySelector(".legend-page-wrapper");
+const minimiseLegende = document.querySelector(".minimise-legende");
+
+
+console.log(minimiseLegende, legende);
+
+minimiseLegende.addEventListener("click", function() {
+    legende.classList.toggle("minimise");
+});

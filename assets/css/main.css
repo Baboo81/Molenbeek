@@ -1862,6 +1862,10 @@ button {
   flex-direction: column;
 }
 
+.minimise {
+  transform: translateY(calc(100vh - 205px));
+}
+
 .infobox {
   background: #bbe8ef;
   padding: 25px;
