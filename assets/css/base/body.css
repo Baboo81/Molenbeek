@@ -185,7 +185,9 @@
 }
 
 .btn--small {
-  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 12px;
 }
 
 .btn--dark {
@@ -296,13 +298,6 @@ main {
 #intro #wrapper {
   flex-direction: column;
 }
-#intro .btn-wrapper {
-  justify-content: center;
-  padding: 20px 0;
-}
-#intro .btn-wrapper--small {
-  padding: 10px 0;
-}
 #intro #intro-img {
   width: 100%;
   flex-wrap: wrap;
@@ -311,6 +306,19 @@ main {
 }
 #intro #intro-img img {
   flex-wrap: wrap;
+}
+
+.btn-wrapper {
+  justify-content: center;
+  padding: 20px;
+}
+
+.btn-wrapper--right {
+  justify-content: flex-end;
+}
+
+.btn-wrapper--legend {
+  padding: 10px 10px 0 0;
 }
 
 div#page-wrapper {

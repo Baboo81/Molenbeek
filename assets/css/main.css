@@ -407,7 +407,9 @@ th {
 }
 
 .btn--small {
-  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 12px;
 }
 
 .btn--dark {
@@ -778,7 +780,9 @@ th {
 }
 
 .btn--small {
-  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 12px;
 }
 
 .btn--dark {
@@ -889,13 +893,6 @@ main {
 #intro #wrapper {
   flex-direction: column;
 }
-#intro .btn-wrapper {
-  justify-content: center;
-  padding: 20px 0;
-}
-#intro .btn-wrapper--small {
-  padding: 10px 0;
-}
 #intro #intro-img {
   width: 100%;
   flex-wrap: wrap;
@@ -904,6 +901,19 @@ main {
 }
 #intro #intro-img img {
   flex-wrap: wrap;
+}
+
+.btn-wrapper {
+  justify-content: center;
+  padding: 20px;
+}
+
+.btn-wrapper--right {
+  justify-content: flex-end;
+}
+
+.btn-wrapper--legend {
+  padding: 10px 10px 0 0;
 }
 
 div#page-wrapper {
@@ -1372,7 +1382,9 @@ section.guide .website a:hover, section.guide .website a:active {
 }
 
 .btn--small {
-  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 12px;
 }
 
 .btn--dark {
@@ -1835,7 +1847,9 @@ button {
 }
 
 .btn--small {
-  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 12px;
 }
 
 .btn--dark {
@@ -2178,7 +2192,9 @@ footer a:active {
 }
 
 .btn--small {
-  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 12px;
 }
 
 .btn--dark {
@@ -2227,6 +2243,8 @@ footer a:active {
   overflow: scroll;
 }
 .points-list ol {
+  font-family: "Poppins";
+  font-weight: 400;
   list-style: none;
   counter-reset: item;
   margin: 50px 0;
@@ -2249,13 +2267,6 @@ footer a:active {
   font-weight: 800;
   text-align: center;
   display: inline-block;
-}
-
-.btn-wrapper-1 {
-  width: 100%;
-  margin-bottom: 20px;
-  bottom: 0;
-  justify-content: center;
 }
 
 .section {
@@ -2532,7 +2543,9 @@ footer a:active {
 }
 
 .btn--small {
-  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 12px;
 }
 
 .btn--dark {
@@ -2924,7 +2937,9 @@ footer a:active {
 }
 
 .btn--small {
-  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 12px;
 }
 
 .btn--dark {
@@ -3236,7 +3251,9 @@ ul.card-list li.card-item:focus div.thumb {
 }
 
 .btn--small {
-  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 12px;
 }
 
 .btn--dark {

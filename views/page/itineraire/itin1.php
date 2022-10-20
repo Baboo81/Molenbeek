@@ -5,9 +5,9 @@
 			<div id="mapid1" class="container-fluid"></div>
 		</div>
 		<div class="legend-page-wrapper minimise-legende">
-			<div><button class="btn btn--dark btn--small">Minimiser légende</i></button><i class="fa-solid fa-xmark"></div>
-			<div class="title-box">
 			
+			<div class="title-box">
+			<div class="btn-wrapper btn-wrapper--right btn-wrapper--legend"><button class="btn btn--dark btn--small">Minimiser légende</button></div>
 				<h3>
 					Parcours vélo (6,5km)
 				</h3>

@@ -90,15 +90,6 @@ main {
     flex-direction: column;
   }
 
-  .btn-wrapper {
-    justify-content: center;
-    padding: 20px 0;
-  }
-
-  .btn-wrapper--small {
-    padding: 10px 0;
-  }
-
   #intro-img {
     width: 100%;
     flex-wrap: wrap;
@@ -110,6 +101,19 @@ main {
       flex-wrap: wrap;
     }
   }
+}
+
+.btn-wrapper {
+  justify-content: center;
+  padding: 20px;
+}
+
+.btn-wrapper--right {
+  justify-content: flex-end;
+}
+
+.btn-wrapper--legend {
+  padding: 10px 10px 0 0;
 }
 
 // projet

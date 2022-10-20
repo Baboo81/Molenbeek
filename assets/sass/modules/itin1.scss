@@ -22,8 +22,9 @@
     overflow: scroll;
   
     ol {
+      font-family: 'Poppins';
+      font-weight: 400;
       list-style: none;
-      
       counter-reset: item;
       margin: 50px 0;
     }
@@ -51,13 +52,6 @@
     }
   }
   
-  .btn-wrapper-1 {
-    width: 100%;
-    margin-bottom: 20px;
-    bottom: 0;
-    justify-content: center;
-  }
-
   .section {
 z-index: -1;
   }
