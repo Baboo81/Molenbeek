@@ -1,25 +1,32 @@
 
+    <?php echo "Hello !";?>
     <main>
         <div class="page-wrapper-login">
-            <form class="form" method="post" action="/assets/script/account.php">
+            <form class="form" id="form-login" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <!-- <form class="form" method="post" action="?nav=accueil.php"> -->
                 <h2>Login</h2>
                 <div class="form__fields">
+                <span>* le champ est requis</span>
                 <div class="input-group">
                         <label for="prenom" class="input-group__label">Prénom :</label>
-                        <input type="email" name="prenom" id="prenom" class="input-group__input" placeholder="Entrez votre prénom" required>
+                        <input type="text" name="prenom" id="prenom" class="input-group__input" placeholder="Entrez votre prénom" value="<?php echo $prenom;?>" required>
+                        <span class="error">* <?php echo $prenomErr;?></span>
                     </div>
                     <div class="input-group">
                         <label for="nom" class="input-group__label">Nom de famille :</label>
-                        <input type="email" name="nom" id="nom" class="input-group__input" placeholder="Entrez votre nom de famille" required>
+                        <input type="text" name="nom" id="nom" class="input-group__input" placeholder="Entrez votre nom de famille" value="<?php echo $nom;?>" required>
+                        <span class="error">* <?php echo $nomErr;?></span>
                     </div>
                     <div class="input-group">
                         <label for="mail" class="input-group__label">Adresse mail :</label>
-                        <input type="email" name="mail" id="mail" class="input-group__input" placeholder="Entrez votre adresse e-mail" required>
+                        <input type="email" name="email" id="email" class="input-group__input" placeholder="Entrez votre adresse e-mail" value="<?php echo $email;?>" required>
+                        <span class="error">* <?php echo $emailErr;?></span>
                     </div>
                     <div class="input-group">
                         <label for="password" class="input-group__label">Mot de passe :</label>
                         <input type="password" name="password" id="password" class="input-group__input" placeholder="Entrez votre mot de passe"
                             required>
+                            <span class="error">* <?php echo $nameErr;?></span>
                     </div>
                     <span class="form__help"><a href="?nav=forgot-password">
                     Mot de passe oublié ?
@@ -29,7 +36,7 @@
                 <!-- Démarrer la session - que mettre ici ?? -->
 
                 <div class="button-wrapper form__submit">
-                <a href="#"><input class="btn btn--dark" type="submit" value="Connectez-vous"></a>
+                <a href="#"><input class="btn btn--dark" type="submit" name="submit" id="btn-connect" value="Connectez-vous"></a>
                 </div>
 
                 <span class="form__help">
@@ -42,72 +49,79 @@
         </div>
         
     </main>
+
     <?php
-    try {//Objet PDO permet la connection à la BD:
-        $mysqlClient = new PDO(
-            sprintf('mysql:host=%s;dbname=%s;port=%s', 
-            "localhost",
-            "membres",
-            3306),
-            "root",
-            "root"
-        );
-        $mysqlClient->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        
-    } catch(Exception $exception) {
-        die('La connection a échoué : '.$exception->getMessage());
+// define variables and set to empty values
+$prenomErr = $nomlErr = $emailErr = $passwordErr = "";
+$prenom = $nom = $email = $password = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["prenom"])) {
+      $prenomErr = "Vous devez entrer votre prénom";
+    } else {
+      $prenom = test_input($_POST["prenom"]);
+          // check if first name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+        $prenomErr = "Seulement des lettres et des espaces sont autorisés";
+      }
     }
+  
+    if (empty($_POST["nom"])) {
+      $nomErr = "Vous devez entrer votre nom";
+    } else {
+      $nom = test_input($_POST["nom"]);
+          // check if last name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+        $prenomErr = "Seulement des lettres et des espaces sont autorisés";
+      }
+    }
+  
+    if (empty($_POST["email"])) {
+      $emailErr= "Vous devez entrer une adresse mail";
+    } else {
+        $email = test_input($_POST["email"]);
+        // check if e-mail address is well-formed
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+          $emailErr = "format invalide";
+        }
+    }
+  
+    if (empty($_POST["password"])) {
+      $password = "Vous devez entrer un mot de passe";
+    } else {
+      $password = test_input($_POST["password"]);
+    }
+
+  }
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $prenom = test_input($_POST["prenom"]);
+  $nom = test_input($_POST["nom"]);
+  $email = test_input($_POST["email"]);
+  $password = test_input($_POST["password"]);
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
 ?>
-    
-    <?php 
-        /**
-         * Vérification de l'utilisateur
-         */
-        $isFound = false; //connu
-        $connectedUser;
-        $loginAttempt = 0;
 
-        if(isset($_POST['user'],$_POST['mail'],$_POST['password'])){
-            
-            $loginAttempt++;
+<?php
+echo "<h2>Your Input:</h2>";
+echo $prenom;
+echo "<br>";
+echo $nom;
+echo "<br>";
+echo $email;
+?>
 
-            $user_user = $_POST['user'];
-            $user_mail = $_POST['mail']; 
-            $pass_word = $_POST['password'];
+<script>
+var form = document.getElementById("login-form");
 
-            $sqlQuery = "
-                SELECT *
-                FROM membres
-                WHERE username = :param_username AND passwd = :param_password 
-            ";
-
-            $statement = $mysqlClient->prepare($sqlQuery); 
-            $statement->execute(array("param_username" => $user_name, "param_password" => $pass_word));
-            $result = $statement->fetchAll();  
-         
-            if($result){
-                $isFound = true;
-                $connectedUser = $result[0]['username'];
-                $email = $result[0]['email'];
-            }
-
-        }
-
-        if($isFound){
-
-            echo "Bienvenue sur page d'accueil ! $connectedUser ($email)";
-
-        }else{
-
-
-            include_once('assets/views/login.html');
-
-
-            if(!$isFound && $loginAttempt >=1 ){
-                echo "Username and password incorrect! ";
-                $loginAttempt = 0;
-            }
-            
-        }
-
-    ?>
+document.getElementById("btn-connect").addEventListener("click", function () {
+  form.submit();
+});
+</script>
