@@ -7,7 +7,7 @@
 		<div class="legend-page-wrapper minimise-legende">
 			
 			<div class="title-box">
-			<div class="btn-wrapper btn-wrapper--right btn-wrapper--legend"><button class="btn btn--dark btn--small">Minimiser légende</button></div>
+			<div class="tab-wrapper"><div class="tab tab--desktop">Minimiser légende</div></div>
 				<h3>
 					Parcours vélo (6,5km)
 				</h3>

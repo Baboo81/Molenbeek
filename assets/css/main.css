@@ -410,6 +410,8 @@ th {
   font-size: 0.8rem;
   font-weight: 500;
   padding: 5px 12px;
+  top: -38px;
+  z-index: 100;
 }
 
 .btn--dark {
@@ -783,6 +785,8 @@ th {
   font-size: 0.8rem;
   font-weight: 500;
   padding: 5px 12px;
+  top: -38px;
+  z-index: 100;
 }
 
 .btn--dark {
@@ -913,8 +917,31 @@ main {
 }
 
 .btn-wrapper--legend {
+  position: relative;
   padding: 10px 10px 0 0;
   align-self: flex-end;
+  top: -38px;
+  z-index: 100;
+}
+
+.btn {
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  width: fit-content;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+}
+
+.btn--small {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 12px;
+  top: -38px;
+  z-index: 100;
 }
 
 div#page-wrapper {
@@ -1386,6 +1413,8 @@ section.guide .website a:hover, section.guide .website a:active {
   font-size: 0.8rem;
   font-weight: 500;
   padding: 5px 12px;
+  top: -38px;
+  z-index: 100;
 }
 
 .btn--dark {
@@ -1851,6 +1880,8 @@ button {
   font-size: 0.8rem;
   font-weight: 500;
   padding: 5px 12px;
+  top: -38px;
+  z-index: 100;
 }
 
 .btn--dark {
@@ -2196,6 +2227,8 @@ footer a:active {
   font-size: 0.8rem;
   font-weight: 500;
   padding: 5px 12px;
+  top: -38px;
+  z-index: 100;
 }
 
 .btn--dark {
@@ -2236,7 +2269,7 @@ footer a:active {
   border-bottom: 5px solid #003366;
 }
 .title-box h3 {
-  margin: 0px;
+  margin: 0 0 20px 0;
 }
 
 .points-list {
@@ -2358,8 +2391,26 @@ footer a:active {
   transform: translateY(calc(100vh - 205px));
 }
 
-.minimise-legende {
+.tab-wrapper {
+  display: flex;
   align-self: flex-end;
+  font-size: 0.8rem;
+  font-weight: 500;
+  top: -35px;
+  z-index: 100;
+  position: relative;
+}
+
+.tab {
+  text-decoration: none;
+  border: none;
+  padding: 5px 12px;
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #033333;
+  background: #FFFFFF;
 }
 
 /* font-family: 'Poppins', sans-serif; */
@@ -2552,6 +2603,8 @@ footer a:active {
   font-size: 0.8rem;
   font-weight: 500;
   padding: 5px 12px;
+  top: -38px;
+  z-index: 100;
 }
 
 .btn--dark {
@@ -2946,6 +2999,8 @@ footer a:active {
   font-size: 0.8rem;
   font-weight: 500;
   padding: 5px 12px;
+  top: -38px;
+  z-index: 100;
 }
 
 .btn--dark {
@@ -3260,6 +3315,8 @@ ul.card-list li.card-item:focus div.thumb {
   font-size: 0.8rem;
   font-weight: 500;
   padding: 5px 12px;
+  top: -38px;
+  z-index: 100;
 }
 
 .btn--dark {

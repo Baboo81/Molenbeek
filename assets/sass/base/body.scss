@@ -113,8 +113,31 @@ main {
 }
 
 .btn-wrapper--legend {
+  position: relative;
   padding: 10px 10px 0 0;
   align-self: flex-end;
+  top: -38px;
+  z-index: 100;
+}
+
+.btn {
+    text-decoration: none;
+    border: none;
+    padding: 12px 25px;
+    width: fit-content;
+    border-radius: 25px;
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+}
+
+.btn--small {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 5px 12px;
+    top: -38px;
+    z-index: 100;
 }
 
 // projet

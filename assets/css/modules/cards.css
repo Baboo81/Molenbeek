@@ -188,6 +188,8 @@
   font-size: 0.8rem;
   font-weight: 500;
   padding: 5px 12px;
+  top: -38px;
+  z-index: 100;
 }
 
 .btn--dark {
