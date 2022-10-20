@@ -19,7 +19,7 @@
 
                     <!-- Quel lien pour le bouton ? -->
                     
-                <a href="#"><input class="btn btn-dark" type="submit" value="Réinitialiser le mot de passe"></a>
+                <a href="#"><input class="btn btn--dark" type="submit" value="Réinitialiser le mot de passe"></a>
                 </div>
                 <span class="form__help"><a href="?nav=login">
                     Retour à l'écran de connexion

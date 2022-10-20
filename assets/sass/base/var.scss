@@ -95,15 +95,21 @@ $padding-0: 0;
     display: flex;
 }
 
-.btn-dark {
+.btn--small {
+    padding: 5px 10px;
+}
+
+.btn--dark {
     @include button-bg-lighten($text);
     @include button-color(white);
 }
 
-.btn-light {
+.btn--light {
     @include button-bg-darken(white);
     @include button-color($text);
 }
+
+
 
 // Box-shadow
 @mixin box_shadow ($level, $side) {

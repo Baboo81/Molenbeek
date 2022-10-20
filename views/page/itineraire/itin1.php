@@ -4,8 +4,8 @@
 			<!--<div id="map" class="map"></div>-->
 			<div id="mapid1" class="container-fluid"></div>
 		</div>
-		<div class="legend-page-wrapper">
-			<button class="minimise-legende">Minimiser légende<i class="fa-solid fa-xmark"></i></button>
+		<div class="legend-page-wrapper minimise-legende">
+			<div><button class="btn btn--dark btn--small">Minimiser légende</i></button><i class="fa-solid fa-xmark"></div>
 			<div class="title-box">
 			
 				<h3>

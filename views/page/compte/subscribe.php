@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="button-wrapper form__submit">
-                    <input class="btn btn-dark" type="submit" value="Enregistrer">
+                    <input class="btn btn--dark" type="submit" value="Enregistrer">
                 </div>
                 <span class="form__help"><a href="?nav=login">
                         Vous avez déjà un compte ?

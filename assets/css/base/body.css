@@ -184,27 +184,31 @@
   display: flex;
 }
 
-.btn-dark {
+.btn--small {
+  padding: 5px 10px;
+}
+
+.btn--dark {
   background: #033333;
   color: white;
 }
-.btn-dark:hover {
+.btn--dark:hover {
   background: #055a5a;
   transition: all 0.3s ease;
 }
-.btn-dark:active {
+.btn--dark:active {
   background: #0aabab;
 }
 
-.btn-light {
+.btn--light {
   background: white;
   color: #033333;
 }
-.btn-light:hover {
+.btn--light:hover {
   background: #ebebeb;
   transition: all 0.3s ease;
 }
-.btn-light:active {
+.btn--light:active {
   background: #bfbfbf;
 }
 
@@ -295,6 +299,9 @@ main {
 #intro .btn-wrapper {
   justify-content: center;
   padding: 20px 0;
+}
+#intro .btn-wrapper--small {
+  padding: 10px 0;
 }
 #intro #intro-img {
   width: 100%;

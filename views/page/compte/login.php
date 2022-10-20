@@ -21,7 +21,7 @@
                 <!-- Démarrer la session - que mettre ici ?? -->
 
                 <div class="button-wrapper form__submit">
-                <a href="#"><input class="btn btn-dark" type="submit" value="Connectez-vous"></a>
+                <a href="#"><input class="btn btn--dark" type="submit" value="Connectez-vous"></a>
                 </div>
 
                 <span class="form__help">

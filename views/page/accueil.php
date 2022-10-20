@@ -20,7 +20,7 @@
 				</p>
 			</div>
 			<div class="btn-wrapper">
-				<button class="btn btn-dark">Aux itinéraires</button>
+				<button class="btn btn--dark">Aux itinéraires</button>
 			</div>
 			<!-- <button class="btn btn-light">les itinéraires</button> -->
 		</section>
@@ -49,7 +49,7 @@
 									<p class="route-info" id="info-3">Familles, personnes à mobilité reduite</p>
 								</div>
 								<div class="btn-wrapper-card"><a href="?nav=itin1"><button
-											class="btn btn-light">Itineraire</button></a></div>
+											class="btn btn--light">Itineraire</button></a></div>
 							</div>
 						</div>
 
@@ -74,7 +74,7 @@
 									<p class="route-info" id="info-3">Familles, personnes à mobilité reduite</p>
 								</div>
 								<div class="btn-wrapper-card"><a href="?nav=itin2"><button
-											class="btn btn-light">Itineraire</button></a></div>
+											class="btn btn--light">Itineraire</button></a></div>
 							</div>
 						</div>
 					</div>
@@ -98,7 +98,7 @@
 									<p class="route-info" id="info-3">Familles, personnes à mobilité reduite</p>
 								</div>
 								<div class="btn-wrapper-card"><a href="?nav=itin3"><button
-											class="btn btn-light">Itineraire</button></a></div>
+											class="btn btn--light">Itineraire</button></a></div>
 							</div>
 						</div>
 					</div>
