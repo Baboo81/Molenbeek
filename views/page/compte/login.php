@@ -1,10 +1,10 @@
 
-    <?php echo "Hello !";?>
+
     <main>
         <div class="page-wrapper-login">
             <form class="form" id="form-login" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <!-- <form class="form" method="post" action="?nav=accueil.php"> -->
-                <h2>Login</h2>
+                <h2>Login    <?php echo "Hello !";?></h2>
                 <div class="form__fields">
                 <span>* le champ est requis</span>
                 <div class="input-group">
