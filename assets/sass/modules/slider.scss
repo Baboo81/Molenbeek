@@ -1,6 +1,5 @@
 @import "../base/var.scss";
 
-//TODO Make carousel swipable !
 @media (min-width:320px) {
 
 	/* smartphones, iPhone, portrait 480x320 phones */
@@ -43,15 +42,15 @@
 			z-index: 0;
 
 			&.thumb-1 {
-				background-image: url("/assets/img/itinéraire-maritime/maritime-sm/canal-soir-sm.jpeg");
+				background-image: url("../assets/img/itinéraire-maritime/maritime-sm/canal-soir-sm.jpeg");
 			}
 
 			&.thumb-2 {
-				background-image: url("/assets/img/itinéraire-maritime/maritime-sm/fleurs-sm.jpeg");
+				background-image: url("../assets/img/itinéraire-maritime/maritime-sm/fleurs-sm.jpeg");
 			}
 
 			&.thumb-3 {
-				background-image: url("/assets/img/itinéraire-maritime/maritime-sm/De_Vaartkapoen-sm.jpeg");
+				background-image: url("../assets/img/itinéraire-maritime/maritime-sm/De_Vaartkapoen-sm.jpeg");
 			}
 
 		}

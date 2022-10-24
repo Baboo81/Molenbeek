@@ -1,55 +1,26 @@
-let menuItems = document.querySelector( '.menu-items' );
-let submenu = document.querySelector( '.submenu' );
-let dropdown = document.querySelector( "#first-child" );
-let dropdownArrow = document.querySelector( "#dropdown-arrow" );
-let subItems = document.querySelectorAll( ".submenu li a" );
-let burger = document.querySelector( '.hamburger-lines' );
-let line1 = document.querySelector( ".line1" );
-let line2 = document.querySelector( ".line2" );
-let line3 = document.querySelector( ".line3" );
+// document.querySelector(()=>{
+    const buttonMenu = document.querySelector(".button--menu");
 
-function switchMenu ( z )
-{
-    if ( z.matches )
-    {
-        burger.style.display = "none";
-        burger.classList.remove( "checked" );
-        menuItems.classList.add( "desktop" );
-        dropdownArrow.style.display = "none";
+    const menuDropdown = document.querySelector(".menu__dropdown");
 
-        dropdown.addEventListener( "click", () =>
-        {
-            submenu.classList.toggle( "hidden" );
-            dropdown.classList.toggle( "active" );
-            dropdown.style.transition = "all 400ms";
-        } );
+    const menuTrigger = document.querySelector(".menu__trigger");
 
-    } else
-    {
-        burger.style.display = "flex";
+    const menuItemSub = document.querySelectorAll(".menu__item--sub");
 
-        dropdown.addEventListener( "click", () =>
-        {
-            submenu.classList.toggle( "hidden" );
-            dropdownArrow.classList.toggle( "rotate" );
-            dropdownArrow.style.transition = "all ease-in 400ms";
-            dropdown.classList.toggle( "active" );
-            dropdown.style.transition = "all 400ms";
-        } );
-    }
-}
+    const menu = document.querySelector(".menu");
+    console.log(buttonMenu, menu, menuDropdown, menuTrigger, menuItemSub);
 
 
-let z = window.matchMedia( "(min-width: 961px)" );
-switchMenu( z );
+    buttonMenu.addEventListener("click", function() {
+        menu.classList.toggle("menuItemClicked");
+        if (buttonMenu.innerHTML === `<i class="fa-solid fa-bars"></i>`) {
+            buttonMenu.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+        } else {
+            buttonMenu.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+        }
+    });
 
-burger.addEventListener( "click", () =>
-{
-    burger.classList.toggle( "checked" );
-} );
-
-
-
-
-
-console.log( submenu, dropdown, dropdownArrow, subItems, menuItems );
+    menuTrigger.addEventListener("click", function() {
+        menuDropdown.classList.toggle("show-dropdown");
+        menuTrigger.classList.toggle("active");
+    });
