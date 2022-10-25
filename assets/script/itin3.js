@@ -1,6 +1,6 @@
 //Création map:
-const centroid = [50.85538037305153, 4.339400499483728];
-const map = L.map('mapid3').setView(centroid, 16.5);
+const centroid = [50.857623, 4.325175];
+const map = L.map('mapid3').setView(centroid, 14);
 
 //Trace itinéraire:
 var latLng = [
@@ -311,7 +311,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 
-var polyline = L.polyline(latLng, {color: '#003366'}).addTo(map);
+var polyline = L.polyline(latLng, {color: '#A64253'}).addTo(map);
 
 // légende
 

@@ -103,8 +103,8 @@ let DATA_ITIN_1 = {
 
 // Création de la map numéro 1:
 
-const centroid = [50.859619, 4.316703];
-const map = L.map('mapid1').setView(centroid, 16.5);
+const centroid = [50.855942, 4.311382];
+const map = L.map('mapid1').setView(centroid, 14.5);//centroid 16.5
 
 //Définition des couleurs des marqeurs
 let current_red = 0;
