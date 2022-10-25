@@ -1,4 +1,4 @@
-//
+
 <?php
 // trouve le chemin du serveur et du répertoire racine
 $path = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";

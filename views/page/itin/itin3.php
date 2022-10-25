@@ -1,42 +1,38 @@
-	<main>
+<?php
+// trouve le chemin du serveur et du répertoire racine
+$path = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
+$path .= $_SERVER["SERVER_NAME"] . dirname($_SERVER["PHP_SELF"]);
+echo $path;
 
-		<section class="map3">
+// Utiliser <?php echo $path . "... "; pour des liens 
+?>
 
-			<h3>Parcours historique</h3>
+<section class="section">
 
-			<div id="mapid3" class="mapid container-fluid"></div>
+	<div class="map-container">
+		<!--<div id="map" class="map"></div>-->
+		<div id="mapid3" class="container-fluid"></div>
+	</div>
+	<div id="popup-card" class="popup-card"></div>
+	<div class="legend-page-wrapper minimise-legende">
 
-			<h4 class="title">Voici les différents points d'intérêts :</h4>
-
-
-			<ol>
-				<!-- <li>Karraveld</li> -->
-				<span class="clickable" id="chateaudukarreveld">
-					<li>Château du Karreveld, Av. Jean de la Hoese 32, 1080 Molenbeek-Saint-Jean</li>
-				</span>
-				<span class="clickable" id="sculpturedelagent">
-					<li>Sculpture de l'agent</li>
-				</span>
-				<span class="clickable" id="gareauxfantomes">
-					<li>Gare aux fantomes</li>
-				</span>
-				<span class="clickable" id="maisondescultures">
-					<li>Maison des Cultures et de la Cohésion Sociale de Molenbeek, Rue Mommaerts 4, 1080 Bruxelles</li>
-				</span>
-				<span class="clickable" id="eglisebaptiste">
-					<li>L'église St-Baptiste </li>
-				</span>
-				<span class="clickable" id="maisoncommunale">
-					<li>Maison communale</li>
-				</span>
-				<span class="clickable" id="fonderie">
-					<li>La Fonderie asbl, Rue Ransfort 27, 1080 Molenbeek-Saint-Jean</li>
-				</span>
-			</ol>
-
-			<section>
+		<div class="title-box title-box--blue">
+			<div class="tab-wrapper">
+				<div class="tab tab--desktop minimise-text">Minimiser légende</div>
+			</div>
+			<h3>
+				Molenbeek historique (7 km)
+			</h3>
+		</div>
+		<div class="points-list">
+		</div>
+	</div>
 
 
-				
-	<script src="./assets/script/itin3.js" defer></script>
-	<script src="./assets/script/json3.js" defer></script>
+	<div class="popup-container">
+	</div>
+
+</section>
+
+<script src="./assets/script/json3.js" defer></script>
+<script src="./assets/script/itin3.js" defer></script>
