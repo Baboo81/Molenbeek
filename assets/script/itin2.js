@@ -3,7 +3,7 @@ const centroid = [50.85538037305153, 4.339400499483728];
 const map = L.map('mapid2').setView(centroid, 16.5);
 
 //Trace itinéraire:
-var latLng = [
+const latLng = [
     [50.85538037305153, 4.339400499483728],
     [50.85533107240288, 4.3386152723646605],
     [50.854828, 4.338677],
@@ -28,7 +28,7 @@ var latLng = [
     [50.855564, 4.341385],
 ];
 
-var polyline = L.polyline(latLng, {color: '#003366'}).addTo(map);
+const polyline = L.polyline(latLng, {color: '#003366'}).addTo(map);
 
 
 let DATA_ITIN_2 = {

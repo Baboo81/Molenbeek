@@ -50,8 +50,9 @@
 					<div class="slide slide-1">
 
 						<div class="card-item">
-							<div class="thumb thumb-1" style="background-image: url('<?php echo $path . "./assets/img/itin-maritime/maritime-sm/canal-soir-sm.jpeg";?>'); ">
+							<div class="thumb thumb-1">
 								<!--image here -->
+								<img src="./assets/img/itin-maritime/maritime-sm/canal-soir-sm.jpeg" alt="image du canal">
 							</div>
 							<div class="description description-1">
 								<h3>Molenbeek maritime</h3>
@@ -76,8 +77,9 @@
 
 					<div class="slide slide-2">
 						<div id="card-item-1" class="card-item">
-							<div class="thumb thumb-2" style="background-image: url('<?php echo $path . "./assets/img/itin-maritime/maritime-sm/fleurs-sm.jpeg";?>'); ">
+							<div class="thumb thumb-2">
 								<!--image here -->
+								<img src="./assets/img/itin-maritime/maritime-sm/fleurs-sm.jpeg" alt="image de la 1ere promenade">
 							</div>
 							<div class="description description-2">
 								<h3>Molenbeek en vélo</h3>
@@ -100,8 +102,9 @@
 
 					<div class="slide slide-3">
 						<div class="card-item">
-							<div class="thumb thumb-3" style="background-image: url('<?php echo $path . "./assets/img/itin-maritime/maritime-sm/De_Vaartkapoen-sm.jpeg";?>'); ">
+							<div class="thumb thumb-3" >
 								<!--image here -->
+								<img src="./assets/img/itin-maritime/maritime-sm/De_Vaartkapoen-sm.jpeg" alt="image du monument Vaartkapoen">
 							</div>
 							<div class="description description-3">
 								<h3>Molenbeek historique</h3>
