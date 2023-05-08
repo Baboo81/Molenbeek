@@ -28,7 +28,7 @@ const latLng = [
     [50.855564, 4.341385],
 ];
 
-const polyline = L.polyline(latLng, {color: '#003366'}).addTo(map);
+const polyline1 = L.polyline(latLng, {color: '#003366'}).addTo(map);
 
 
 let DATA_ITIN_2 = {
@@ -481,7 +481,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 
-var polyline = L.polyline(latLng, {color: '#003366'}).addTo(map);
+const polyline = L.polyline(latLng, {color: '#003366'}).addTo(map);
 
 // légende
 
