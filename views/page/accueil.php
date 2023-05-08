@@ -68,7 +68,7 @@
 									<img src="./assets/img/icons/icon-personne.svg" alt="horloge">
 									<p class="route-info" id="info-3">Familles, personnes à mobilité reduite</p>
 								</div>
-								<div class="btn-wrapper-card"><a href="?nav=itin1"><button
+								<div class="btn-wrapper-card"><a href="?nav=itin2"><button
 											class="btn btn--light">Itineraire</button></a></div>
 							</div>
 						</div>
@@ -94,7 +94,7 @@
 									<img src="./assets/img/icons/icon-personne.svg" alt="horloge">
 									<p class="route-info" id="info-3">Familles, personnes à mobilité reduite</p>
 								</div>
-								<div class="btn-wrapper-card"><a href="?nav=itin2"><button
+								<div class="btn-wrapper-card"><a href="?nav=itin1"><button
 											class="btn btn--light">Itineraire</button></a></div>
 							</div>
 						</div>
